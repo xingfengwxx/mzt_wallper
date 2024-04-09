@@ -14,10 +14,7 @@ import com.hjq.demo.app.AppFragment
 import com.hjq.demo.manager.*
 import com.hjq.demo.other.DoubleClickHelper
 import com.hjq.demo.ui.adapter.NavigationAdapter
-import com.hjq.demo.ui.fragment.FindFragment
-import com.hjq.demo.ui.fragment.HomeFragment
-import com.hjq.demo.ui.fragment.MessageFragment
-import com.hjq.demo.ui.fragment.MineFragment
+import com.hjq.demo.ui.fragment.*
 
 /**
  *    author : Android 轮子哥
@@ -69,10 +66,10 @@ class HomeActivity : AppActivity(), NavigationAdapter.OnNavigationListener {
 
     override fun initData() {
         pagerAdapter = FragmentPagerAdapter<AppFragment<*>>(this).apply {
-            addFragment(HomeFragment.newInstance())
-            addFragment(FindFragment.newInstance())
-            addFragment(MessageFragment.newInstance())
-            addFragment(MineFragment.newInstance())
+            addFragment(PhoneFragment.newInstance())
+            addFragment(ComputerFragment.newInstance())
+            addFragment(Img360Fragment.newInstance())
+            addFragment(PixabayFragment.newInstance())
             viewPager?.adapter = this
         }
         onNewIntent(intent)
