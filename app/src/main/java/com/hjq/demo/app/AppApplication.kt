@@ -9,6 +9,7 @@ import android.os.Build
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
+import com.blankj.utilcode.util.Utils
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonToken
 import com.hjq.bar.TitleBar
@@ -45,6 +46,7 @@ class AppApplication : Application() {
     @Log("启动耗时")
     override fun onCreate() {
         super.onCreate()
+        Utils.init(this)
         initSdk(this)
     }
 
@@ -133,10 +135,10 @@ class AppApplication : Application() {
                 .setRetryCount(1)
                 .setInterceptor { api: IRequestApi, params: HttpParams, headers: HttpHeaders ->
                     // 添加全局请求头
-                    headers.put("token", "66666666666")
-                    headers.put("deviceOaid", UmengClient.getDeviceOaid())
-                    headers.put("versionName", AppConfig.getVersionName())
-                    headers.put("versionCode", AppConfig.getVersionCode().toString())
+//                    headers.put("token", "66666666666")
+//                    headers.put("deviceOaid", UmengClient.getDeviceOaid())
+//                    headers.put("versionName", AppConfig.getVersionName())
+//                    headers.put("versionCode", AppConfig.getVersionCode().toString())
                 }
                 .into()
 
