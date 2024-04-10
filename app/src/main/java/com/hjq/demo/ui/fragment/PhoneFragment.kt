@@ -26,11 +26,12 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * author : 王星星
  * date : 2024/4/9 18:13
  * email : 1099420259@qq.com
- * description : 手机
+ * description : 手机壁纸分类
  */
 class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
 
     companion object {
+        @JvmStatic
         fun newInstance(): PhoneFragment {
             return PhoneFragment()
         }
