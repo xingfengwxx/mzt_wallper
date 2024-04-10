@@ -7,10 +7,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import com.hjq.demo.R
 import com.hjq.demo.app.AppAdapter
-import com.hjq.demo.extension.dp2px
-import com.hjq.demo.http.api.PhoneCategoryApi
-import com.hjq.demo.http.glide.GlideApp
-import com.hjq.demo.other.RoundedCorners2
+import com.hjq.demo.http.api.Img360CategoryApi
 
 /**
  * author : 王星星
@@ -18,7 +15,7 @@ import com.hjq.demo.other.RoundedCorners2
  * email : 1099420259@qq.com
  * description : 
  */
-class PhoneCategoryAdapter constructor(context: Context) : AppAdapter<PhoneCategoryApi.Bean>(context) {
+class Img360CategoryAdapter constructor(context: Context) : AppAdapter<Img360CategoryApi.Bean>(context) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder()
@@ -33,12 +30,6 @@ class PhoneCategoryAdapter constructor(context: Context) : AppAdapter<PhoneCateg
         override fun onBindView(position: Int) {
             val bean = getItem(position)
 
-            ivCover?.let {
-                GlideApp.with(it)
-                    .load(bean.cover)
-                    .transform(RoundedCorners2(dp2px(10f), true))
-                    .into(it)
-            }
             tvName?.text = bean.name
         }
     }

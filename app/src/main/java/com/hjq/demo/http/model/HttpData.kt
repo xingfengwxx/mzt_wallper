@@ -11,9 +11,11 @@ import com.google.gson.annotations.SerializedName
 open class HttpData<T> {
 
     /** 返回码 */
+    @SerializedName(value = "code", alternate = ["errno"])
     private val code: Int = 0
 
     /** 提示语 */
+    @SerializedName(value = "msg", alternate = ["errmsg"])
     private val msg: String? = null
 
     /** 数据 */
