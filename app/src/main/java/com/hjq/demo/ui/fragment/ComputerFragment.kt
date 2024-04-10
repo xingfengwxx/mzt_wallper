@@ -20,7 +20,7 @@ class ComputerFragment : AppFragment<CopyActivity>() {
     }
 
     override fun getLayoutId(): Int {
-        return R.layout.copy_fragment
+        return R.layout.computer_fragment
     }
 
     override fun initView() {}

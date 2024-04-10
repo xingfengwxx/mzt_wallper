@@ -43,4 +43,11 @@
         android:textSize="@dimen/sp_18"
         android:textStyle="bold" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dp_60"
+        android:src="@drawable/logo_ic"/>
+
 </FrameLayout>

@@ -20,7 +20,7 @@ class Img360Fragment : AppFragment<CopyActivity>() {
     }
 
     override fun getLayoutId(): Int {
-        return R.layout.copy_fragment
+        return R.layout.img_360_fragment
     }
 
     override fun initView() {}

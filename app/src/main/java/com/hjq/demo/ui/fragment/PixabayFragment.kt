@@ -20,7 +20,7 @@ class PixabayFragment : AppFragment<CopyActivity>() {
     }
 
     override fun getLayoutId(): Int {
-        return R.layout.copy_fragment
+        return R.layout.pixabay_fragment
     }
 
     override fun initView() {}
