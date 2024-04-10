@@ -3,11 +3,12 @@ package com.hjq.demo.ui.adapter
 import android.annotation.SuppressLint
 import android.content.Context
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
+import com.blankj.utilcode.util.ColorUtils
 import com.hjq.demo.R
 import com.hjq.demo.app.AppAdapter
 import com.hjq.demo.http.api.Img360CategoryApi
+import com.hjq.shape.view.ShapeTextView
 
 /**
  * author : 王星星
@@ -21,15 +22,15 @@ class Img360CategoryAdapter constructor(context: Context) : AppAdapter<Img360Cat
         return ViewHolder()
     }
 
-    inner class ViewHolder : AppViewHolder(R.layout.phone_item) {
+    inner class ViewHolder : AppViewHolder(R.layout.img_360_item) {
 
-        private val ivCover: AppCompatImageView? by lazy { findViewById<AppCompatImageView>(R.id.iv_cover) }
+        private val tvBg: ShapeTextView? by lazy { findViewById<ShapeTextView>(R.id.tv_bg) }
         private val tvName: AppCompatTextView? by lazy { findViewById<AppCompatTextView>(R.id.tv_name) }
 
         @SuppressLint("CheckResult")
         override fun onBindView(position: Int) {
             val bean = getItem(position)
-
+            tvBg?.shapeDrawableBuilder?.setSolidColor(ColorUtils.getRandomColor())?.intoBackground()
             tvName?.text = bean.name
         }
     }
