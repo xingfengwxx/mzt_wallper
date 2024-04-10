@@ -1,5 +1,7 @@
 package com.hjq.demo.http.model
 
+import com.google.gson.annotations.SerializedName
+
 /**
  *    author : Android 轮子哥
  *    github : https://github.com/getActivity/AndroidProject-Kotlin
@@ -15,6 +17,7 @@ open class HttpData<T> {
     private val msg: String? = null
 
     /** 数据 */
+    @SerializedName(value = "data", alternate = ["res"])
     private val data: T? = null
 
     fun getCode(): Int {
@@ -33,7 +36,7 @@ open class HttpData<T> {
      * 是否请求成功
      */
     fun isRequestSucceed(): Boolean {
-        return code == 200
+        return code == 0
     }
 
     /**

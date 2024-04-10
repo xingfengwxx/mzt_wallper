@@ -9,6 +9,7 @@ import android.os.Build
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
+import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.Utils
 import com.google.gson.reflect.TypeToken
 import com.google.gson.stream.JsonToken
@@ -41,12 +42,15 @@ import timber.log.Timber
  *    time   : 2018/10/18
  *    desc   : 应用入口
  */
-class AppApplication : Application() {
+class App : Application() {
 
     @Log("启动耗时")
     override fun onCreate() {
         super.onCreate()
+        instance = this
+
         Utils.init(this)
+        initLog()
         initSdk(this)
     }
 
@@ -63,6 +67,9 @@ class AppApplication : Application() {
     }
 
     companion object {
+
+        lateinit var instance: App
+            private set
 
         /**
          * 初始化一些第三方框架
@@ -171,5 +178,13 @@ class AppApplication : Application() {
                 })
             }
         }
+
+         fun initLog() {
+            LogUtils.getConfig()
+                .setLogSwitch(AppConfig.isLogEnable())
+                .setGlobalTag("wxx")
+                .setBorderSwitch(true)
+        }
+
     }
 }
