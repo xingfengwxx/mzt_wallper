@@ -11,9 +11,10 @@ import com.hjq.demo.R
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.TitleBarFragment
 import com.hjq.demo.extension.dp2px
-import com.hjq.demo.http.api.PhoneCategoryApi
+import com.hjq.demo.http.api.AibiziCategoryApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.GridSpaceDecoration
+import com.hjq.demo.ui.activity.PhotoListActivity
 import com.hjq.demo.ui.adapter.PhoneCategoryAdapter
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.OnHttpListener
@@ -26,12 +27,11 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * author : 王星星
  * date : 2024/4/9 18:13
  * email : 1099420259@qq.com
- * description : 手机壁纸分类
+ * description : 爱壁纸-手机
  */
 class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
 
     companion object {
-        @JvmStatic
         fun newInstance(): PhoneFragment {
             return PhoneFragment()
         }
@@ -73,14 +73,14 @@ class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAd
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        toast(adapter?.getItem(position))
+        PhotoListActivity.start(requireContext(), adapter?.getItem(position)?.id!!)
     }
 
     private fun requestData() {
         EasyHttp.get(this)
-            .api(PhoneCategoryApi())
-            .request(object : OnHttpListener<HttpData<PhoneCategoryApi.Category>?>{
-                override fun onSucceed(result: HttpData<PhoneCategoryApi.Category>?) {
+            .api(AibiziCategoryApi())
+            .request(object : OnHttpListener<HttpData<AibiziCategoryApi.Category>?>{
+                override fun onSucceed(result: HttpData<AibiziCategoryApi.Category>?) {
                     adapter?.setData(result?.getData()?.category)
                     refreshLayout?.finishRefresh()
                 }

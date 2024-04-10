@@ -4,11 +4,10 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
-import androidx.appcompat.widget.AppCompatTextView
 import com.hjq.demo.R
 import com.hjq.demo.app.AppAdapter
 import com.hjq.demo.extension.dp2px
-import com.hjq.demo.http.api.AibiziCategoryApi
+import com.hjq.demo.http.api.AibiziPhoneListApi
 import com.hjq.demo.http.glide.GlideApp
 import com.hjq.demo.other.RoundedCorners2
 
@@ -18,28 +17,27 @@ import com.hjq.demo.other.RoundedCorners2
  * email : 1099420259@qq.com
  * description : 
  */
-class PhoneCategoryAdapter constructor(context: Context) : AppAdapter<AibiziCategoryApi.Bean>(context) {
+class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPhoneListApi.Bean>(context) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder()
     }
 
-    inner class ViewHolder : AppViewHolder(R.layout.phone_item) {
+    inner class ViewHolder : AppViewHolder(R.layout.photo_item) {
 
-        private val ivCover: AppCompatImageView? by lazy { findViewById<AppCompatImageView>(R.id.iv_cover) }
-        private val tvName: AppCompatTextView? by lazy { findViewById<AppCompatTextView>(R.id.tv_name) }
+        private val ivPhoto: AppCompatImageView? by lazy { findViewById<AppCompatImageView>(R.id.iv_photo) }
 
         @SuppressLint("CheckResult")
         override fun onBindView(position: Int) {
             val bean = getItem(position)
 
-            ivCover?.let {
+            ivPhoto?.let {
                 GlideApp.with(it)
-                    .load(bean.cover)
-                    .transform(RoundedCorners2(dp2px(10f), true))
+                    .load(bean.thumb)
+                    .transform(RoundedCorners2(dp2px(16f), true))
                     .into(it)
             }
-            tvName?.text = bean.name
+
         }
     }
 }

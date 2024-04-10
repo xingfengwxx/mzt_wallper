@@ -31,7 +31,6 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
 class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener  {
 
     companion object {
-        @JvmStatic
         fun newInstance(): PixabayFragment {
             return PixabayFragment()
         }

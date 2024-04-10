@@ -11,7 +11,7 @@ import com.hjq.http.config.IRequestServer
  * email : 1099420259@qq.com
  * description : 手机壁纸分类
  */
-class PhoneCategoryApi : IRequestServer, IRequestApi {
+class AibiziCategoryApi : IRequestServer, IRequestApi {
 
     override fun getHost(): String = "http://service.aibizhi.adesk.com/"
 

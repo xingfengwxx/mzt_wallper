@@ -31,7 +31,6 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
 class Img360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
 
     companion object {
-        @JvmStatic
         fun newInstance(): Img360Fragment {
             return Img360Fragment()
         }
