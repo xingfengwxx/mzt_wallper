@@ -39,7 +39,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,LockedOrientationActivity"
         tools:replace="android:allowBackup,android:supportsRtl"
-        tools:targetApi="n">
+        tools:targetApi="tiramisu">
 
         <!-- 表示当前已经适配了分区存储 -->
         <meta-data
@@ -63,6 +63,7 @@
             android:name=".ui.activity.SplashActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
+            android:exported="true"
             android:theme="@style/SplashTheme">
 
             <!-- 程序入口 -->
@@ -79,48 +80,55 @@
         <activity
             android:name=".ui.activity.GuideActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 首页 -->
         <activity
             android:name=".ui.activity.HomeActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false"/>
 
         <!-- 登录页 -->
         <activity
             android:name=".ui.activity.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false"/>
 
         <!-- 注册页 -->
         <activity
             android:name=".ui.activity.RegisterActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false"/>
 
         <!-- 崩溃展示（必须在独立进程） -->
         <activity
             android:name=".ui.activity.CrashActivity"
             android:launchMode="singleTop"
             android:process=":crash"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"
+            android:exported="false"/>
 
         <!-- 重启应用（必须在独立进程） -->
         <activity
             android:name=".ui.activity.RestartActivity"
             android:launchMode="singleTop"
-            android:process=":restart" />
+            android:process=":restart"
+            android:exported="false"/>
 
         <!-- 设置页 -->
         <activity
             android:name=".ui.activity.SettingActivity"
             android:label="@string/setting_title"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 忘记密码 -->
         <activity
@@ -128,7 +136,8 @@
             android:label="@string/password_forget_title"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false"/>
 
         <!-- 重置密码 -->
         <activity
@@ -136,7 +145,8 @@
             android:label="@string/password_reset_title"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false"/>
 
         <!-- 更换手机 -->
         <activity
@@ -144,91 +154,105 @@
             android:label="@string/phone_reset_title"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" />
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false"/>
 
         <!-- 关于我们 -->
         <activity
             android:name=".ui.activity.AboutActivity"
             android:label="@string/about_title"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 个人资料 -->
         <activity
             android:name=".ui.activity.PersonalDataActivity"
             android:label="@string/personal_data_title"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 网页浏览 -->
         <activity
             android:name=".ui.activity.BrowserActivity"
             android:label="@string/web_title"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 拍照选择 -->
         <activity
             android:name=".ui.activity.CameraActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 图片裁剪 -->
         <activity
             android:name=".ui.activity.ImageCropActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 图片选择 -->
         <activity
             android:name=".ui.activity.ImageSelectActivity"
             android:label="@string/image_select_title"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 查看大图 -->
         <activity
             android:name=".ui.activity.ImagePreviewActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 播放视频（自适应方向） -->
         <activity
             android:name=".ui.activity.VideoPlayActivity"
             android:launchMode="singleTop"
-            android:theme="@style/FullScreenTheme" />
+            android:theme="@style/FullScreenTheme"
+            android:exported="false"/>
 
         <!-- 播放视频（竖屏方向） -->
         <activity
             android:name=".ui.activity.VideoPlayActivity$Portrait"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@style/FullScreenTheme" />
+            android:theme="@style/FullScreenTheme"
+            android:exported="false"/>
 
         <!-- 播放视频（横屏方向） -->
         <activity
             android:name=".ui.activity.VideoPlayActivity$Landscape"
             android:launchMode="singleTop"
             android:screenOrientation="landscape"
-            android:theme="@style/FullScreenTheme" />
+            android:theme="@style/FullScreenTheme"
+            android:exported="false"/>
 
         <!-- 选择视频 -->
         <activity
             android:name=".ui.activity.VideoSelectActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 对话框案例 -->
         <activity
             android:name=".ui.activity.DialogActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 状态案例 -->
         <activity
             android:name=".ui.activity.StatusActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <!-- 微信回调（请注意这个 Activity 放置的包名要和当前项目的包名保持一致，否则将不能正常回调） -->
         <activity
@@ -240,12 +264,14 @@
         <activity
             android:name=".ui.activity.MztActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
         <activity
             android:name=".ui.activity.PhotoListActivity"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:exported="false"/>
 
     </application>
 

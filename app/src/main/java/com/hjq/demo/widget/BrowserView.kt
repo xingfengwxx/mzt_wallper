@@ -107,6 +107,9 @@ class BrowserView  @JvmOverloads constructor(
             Lifecycle.Event.ON_RESUME -> onResume()
             Lifecycle.Event.ON_STOP -> onPause()
             Lifecycle.Event.ON_DESTROY -> onDestroy()
+            else -> {
+
+            }
         }
     }
 

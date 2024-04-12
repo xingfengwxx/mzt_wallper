@@ -85,7 +85,8 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     }
 
     override fun initData() {
-
+//        BeautifulWallpaper
+//        beautiful-wallpaper-wxx
     }
 
 

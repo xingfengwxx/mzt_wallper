@@ -45,6 +45,7 @@
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
+            android:exported="true"
             android:noHistory="true"
             tools:node="replace">
             <intent-filter>

@@ -2,10 +2,8 @@ package com.hjq.demo.ui.activity
 
 import android.content.Intent
 import android.view.*
-import android.widget.*
 import com.hjq.base.BaseDialog
 import com.hjq.base.BasePopupWindow
-import com.hjq.base.action.AnimAction
 import com.hjq.demo.R
 import com.hjq.demo.aop.SingleClick
 import com.hjq.demo.app.AppActivity
@@ -444,46 +442,46 @@ class DialogActivity : AppActivity() {
             R.id.btn_dialog_custom -> {
 
                 // 自定义对话框
-                BaseDialog.Builder<BaseDialog.Builder<*>>(this)
-                    .setContentView(R.layout.custom_dialog)
-                    .setAnimStyle(AnimAction.ANIM_SCALE) //.setText(id, "我是预设置的文本")
-                    .setOnClickListener(R.id.btn_dialog_custom_ok, object : BaseDialog.OnClickListener<Button> {
-                        override fun onClick(dialog: BaseDialog?, view: Button) {
-                            dialog?.dismiss()
-                        }
-                    })
-                    .setOnCreateListener(object : BaseDialog.OnCreateListener {
-
-                        override fun onCreate(dialog: BaseDialog?) {
-                            toast("Dialog 创建了")
-                        }
-                    })
-                    .addOnShowListener(object : BaseDialog.OnShowListener {
-
-                        override fun onShow(dialog: BaseDialog?) {
-                            toast("Dialog 显示了")
-                        }
-                    })
-                    .addOnCancelListener(object : BaseDialog.OnCancelListener {
-
-                        override fun onCancel(dialog: BaseDialog?) {
-                            toast("Dialog 取消了")
-                        }
-                    })
-                    .addOnDismissListener(object : BaseDialog.OnDismissListener {
-
-                        override fun onDismiss(dialog: BaseDialog?) {
-                            toast("Dialog 销毁了")
-                        }
-                    })
-                    .setOnKeyListener(object : BaseDialog.OnKeyListener {
-
-                        override fun onKey(dialog: BaseDialog?, event: KeyEvent?): Boolean {
-                            toast("按键代码：" + event?.keyCode)
-                            return false
-                        }
-                    })
-                    .show()
+//                BaseDialog.Builder<BaseDialog.Builder<*>>(this)
+//                    .setContentView(R.layout.custom_dialog)
+//                    .setAnimStyle(AnimAction.ANIM_SCALE) //.setText(id, "我是预设置的文本")
+//                    .setOnClickListener(R.id.btn_dialog_custom_ok, object : BaseDialog.OnClickListener<Button> {
+//                        override fun onClick(dialog: BaseDialog?, view: Button) {
+//                            dialog?.dismiss()
+//                        }
+//                    })
+//                    .setOnCreateListener(object : BaseDialog.OnCreateListener {
+//
+//                        override fun onCreate(dialog: BaseDialog?) {
+//                            toast("Dialog 创建了")
+//                        }
+//                    })
+//                    .addOnShowListener(object : BaseDialog.OnShowListener {
+//
+//                        override fun onShow(dialog: BaseDialog?) {
+//                            toast("Dialog 显示了")
+//                        }
+//                    })
+//                    .addOnCancelListener(object : BaseDialog.OnCancelListener {
+//
+//                        override fun onCancel(dialog: BaseDialog?) {
+//                            toast("Dialog 取消了")
+//                        }
+//                    })
+//                    .addOnDismissListener(object : BaseDialog.OnDismissListener {
+//
+//                        override fun onDismiss(dialog: BaseDialog?) {
+//                            toast("Dialog 销毁了")
+//                        }
+//                    })
+//                    .setOnKeyListener(object : BaseDialog.OnKeyListener {
+//
+//                        override fun onKey(dialog: BaseDialog?, event: KeyEvent?): Boolean {
+//                            toast("按键代码：" + event?.keyCode)
+//                            return false
+//                        }
+//                    })
+//                    .show()
 
             }
             R.id.btn_dialog_multi -> {

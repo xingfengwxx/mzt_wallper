@@ -1,7 +1,17 @@
-apply plugin : 'com.android.application'
-apply plugin : 'android-aspectjx'
-apply plugin : 'kotlin-kapt'
-apply plugin : 'kotlin-parcelize'
+//apply plugin : 'com.android.application'
+//apply plugin : 'android-aspectjx'
+//apply plugin : 'kotlin-kapt'
+//apply plugin : 'kotlin-parcelize'
+//apply plugin: 'com.google.gms.google-services'
+//apply from : '../common.gradle'
+
+plugins {
+    id 'com.android.application'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
+    id 'io.github.wurensen.android-aspectjx'
+}
 apply from : '../common.gradle'
 
 // Android 代码规范文档：https://github.com/getActivity/AndroidCodeStandard
@@ -45,7 +55,7 @@ android {
 
         debug {
             // 给包名添加后缀
-            applicationIdSuffix '.debug'
+            applicationIdSuffix ''
             // 调试模式开关
             debuggable true
             jniDebuggable true
@@ -208,10 +218,10 @@ dependencies {
     // 工具类：https://github.com/Blankj/AndroidUtilCode
     implementation 'com.blankj:utilcodex:1.31.1'
 
-    // 指示器：https://github.com/angcyo/DslTabLayout
-//    implementation 'com.github.angcyo.DslTablayout:TabLayout:3.5.5'
-//    implementation 'com.github.angcyo.DslTablayout:ViewPager1Delegate:3.5.5'
-//    implementation 'com.github.angcyo.DslTablayout:ViewPager2Delegate:3.5.5'
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.0.0')
+    implementation 'com.google.firebase:firebase-analytics'
+
 
     // 多语种：https://github.com/getActivity/MultiLanguages
     // 悬浮窗：https://github.com/getActivity/XToast

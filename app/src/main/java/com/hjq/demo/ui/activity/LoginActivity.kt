@@ -252,6 +252,9 @@ class LoginActivity : AppActivity(), UmengLogin.OnLoginListener,
             Platform.WECHAT -> {
 
             }
+            else -> {
+
+            }
         }
 
         logoView?.let {
