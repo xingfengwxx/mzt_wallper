@@ -95,6 +95,11 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
         adapter.setOnItemClickListener(this)
         viewPager2?.adapter = adapter
 
+        val index = getInt(INTENT_KEY_IN_IMAGE_INDEX)
+        if (index < images.size) {
+            viewPager2?.setCurrentItem(index, false)
+        }
+
         if (images.size != 1) {
             if (images.size < 10) {
                 // 如果是 10 张以内的图片，那么就显示圆圈指示器
@@ -103,12 +108,10 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
             } else {
                 // 如果超过 10 张图片，那么就显示文字指示器
                 textIndicatorView?.visibility = View.VISIBLE
+                textIndicatorView?.text = (index + 1).toString() + "/" + adapter.getCount()
                 viewPager2?.registerOnPageChangeCallback(mPageChangeCallback)
             }
-            val index = getInt(INTENT_KEY_IN_IMAGE_INDEX)
-            if (index < images.size) {
-                viewPager2?.setCurrentItem(index, false)
-            }
+
         }
     }
 
