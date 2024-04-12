@@ -4,6 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.StringUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
@@ -29,7 +30,8 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * email : 1099420259@qq.com
  * description : 爱壁纸-手机
  */
-class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
+class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener,
+    BaseAdapter.OnItemClickListener {
 
     companion object {
         fun newInstance(): PhoneFragment {
@@ -67,19 +69,25 @@ class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAd
     override fun initData() {
 
     }
+
     override fun onRefresh(refreshLayout: RefreshLayout) {
         adapter?.clearData()
         requestData()
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        PhotoListActivity.start(requireContext(), adapter?.getItem(position)?.id!!)
+        PhotoListActivity.start(
+            requireContext(),
+            StringUtils.getString(R.string.home_nav_index),
+            position,
+            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>
+        )
     }
 
     private fun requestData() {
         EasyHttp.get(this)
             .api(AibiziCategoryApi())
-            .request(object : OnHttpListener<HttpData<AibiziCategoryApi.Category>?>{
+            .request(object : OnHttpListener<HttpData<AibiziCategoryApi.Category>?> {
                 override fun onSucceed(result: HttpData<AibiziCategoryApi.Category>?) {
                     adapter?.setData(result?.getData()?.category)
                     refreshLayout?.finishRefresh()

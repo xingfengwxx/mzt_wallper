@@ -3,28 +3,19 @@ package com.hjq.demo.ui.activity
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
-import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.blankj.utilcode.util.ColorUtils
-import com.blankj.utilcode.util.LogUtils
+import androidx.viewpager.widget.ViewPager
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
-import com.hjq.base.BaseAdapter
+import com.hjq.base.FragmentPagerAdapter
+import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.aop.Log
 import com.hjq.demo.app.AppActivity
-import com.hjq.demo.extension.dp2px
-import com.hjq.demo.http.api.AibiziPhoneListApi
-import com.hjq.demo.http.model.HttpData
-import com.hjq.demo.other.LineItemDecoration
-import com.hjq.demo.ui.adapter.PhotoAdapter
-import com.hjq.http.EasyHttp
-import com.hjq.http.listener.OnHttpListener
-import com.hjq.widget.layout.WrapRecyclerView
-import com.scwang.smart.refresh.layout.SmartRefreshLayout
-import com.scwang.smart.refresh.layout.api.RefreshLayout
-import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener
+import com.hjq.demo.app.AppFragment
+import com.hjq.demo.http.api.AibiziCategoryApi
+import com.hjq.demo.ui.adapter.TabAdapter
+import com.hjq.demo.ui.fragment.PhotoListFragment
 
 /**
  * author : 王星星
@@ -32,15 +23,16 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener
  * email : 1099420259@qq.com
  * description : 照片列表
  */
-class PhotoListActivity : AppActivity(), OnRefreshLoadMoreListener, BaseAdapter.OnItemClickListener {
+class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnPageChangeListener {
 
     companion object {
-        private const val ID: String = "id"
 
         @Log
-        fun start(context: Context, id: String) {
+        fun start(context: Context, title: String, index: Int, category: ArrayList<AibiziCategoryApi.Bean>) {
             val intent = Intent(context, PhotoListActivity::class.java)
-            intent.putExtra(ID, id)
+            intent.putExtra(Const.ParamKey.TITLE, title)
+            intent.putExtra(Const.ParamKey.INDEX, index)
+            intent.putParcelableArrayListExtra(Const.ParamKey.CATEGORY, category)
             if (context !is Activity) {
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
@@ -49,98 +41,69 @@ class PhotoListActivity : AppActivity(), OnRefreshLoadMoreListener, BaseAdapter.
     }
 
     private val toolbar: TitleBar? by lazy { findViewById(R.id.title_bar) }
-    private val refreshLayout: SmartRefreshLayout? by lazy { findViewById<SmartRefreshLayout>(R.id.refresh_layout) }
-    private val recyclerView: WrapRecyclerView? by lazy { findViewById<WrapRecyclerView>(R.id.recycler_view) }
+    private val tabView: RecyclerView? by lazy { findViewById<RecyclerView>(R.id.tab_view) }
+    private val viewPager: ViewPager? by lazy { findViewById<ViewPager>(R.id.view_pager) }
 
-    private var adapter: PhotoAdapter? = null
+    private var tabAdapter: TabAdapter? = null
+    private var pagerAdapter: FragmentPagerAdapter<AppFragment<*>>? = null
 
-    private var id: String? = ""
-    private var skip = 0
+    private var index = 0
+    private var categoryList: ArrayList<AibiziCategoryApi.Bean>? = null
 
     override fun getLayoutId(): Int {
         return R.layout.photo_list_activity
     }
 
     override fun initView() {
+        title = intent.getStringExtra(Const.ParamKey.TITLE)
+        index = intent.getIntExtra(Const.ParamKey.INDEX, 0)
+        categoryList = intent.getParcelableArrayListExtra(Const.ParamKey.CATEGORY)
+
         // 给这个 ToolBar 设置顶部内边距，才能和 TitleBar 进行对齐
         ImmersionBar.setTitleBar(this, toolbar)
 
-        adapter = PhotoAdapter(this)
-        adapter?.setOnItemClickListener(this)
-
-        recyclerView?.apply {
-            adapter = this@PhotoListActivity.adapter
-            layoutManager = LinearLayoutManager(this@PhotoListActivity)
-            addItemDecoration(LineItemDecoration(this@PhotoListActivity,  LinearLayoutManager.VERTICAL, dp2px(10f), ColorUtils.getColor(R.color.common_window_background_color)))
+        pagerAdapter = FragmentPagerAdapter(this)
+        tabAdapter = TabAdapter(this, fixed = false)
+        categoryList?.forEach {
+            pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id))
+            tabAdapter?.addItem(it.name)
         }
 
-        refreshLayout?.setOnRefreshLoadMoreListener(this)
+        viewPager?.apply {
+            adapter = pagerAdapter
+            offscreenPageLimit = 1
+            currentItem = index
+            addOnPageChangeListener(this@PhotoListActivity)
+        }
 
+        tabView?.adapter = tabAdapter
+
+        tabAdapter?.apply {
+            setSelectedPosition(index)
+            setOnTabListener(this@PhotoListActivity)
+        }
     }
 
     override fun initData() {
-        id = intent.getStringExtra(ID)
-        refreshLayout?.autoRefresh()
+
     }
 
-    override fun onRefresh(refreshLayout: RefreshLayout) {
-        adapter?.clearData()
-        requestDataFirst()
+
+    override fun onTabSelected(recyclerView: RecyclerView?, position: Int): Boolean {
+        viewPager?.currentItem = position
+        return true
     }
 
-    override fun onLoadMore(refreshLayout: RefreshLayout) {
-        requestDataMore()
+    override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
+
     }
 
-    override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        toast(adapter?.getItem(position))
+    override fun onPageSelected(position: Int) {
+        tabAdapter?.setSelectedPosition(position)
     }
 
-    private fun requestDataFirst() {
-        EasyHttp.get(this)
-            .api(AibiziPhoneListApi().apply {
-                setId(id!!)
-                setSkip(skip)
-            })
-            .request(object : OnHttpListener<HttpData<AibiziPhoneListApi.Vertical>> {
-                override fun onSucceed(result: HttpData<AibiziPhoneListApi.Vertical>?) {
-                    adapter?.setData(result?.getData()?.vertical)
-                    refreshLayout?.finishRefresh()
+    override fun onPageScrollStateChanged(state: Int) {
 
-                    skip += 20
-                }
-
-                override fun onFail(e: Exception?) {
-                    LogUtils.e(e)
-                }
-
-            })
     }
 
-    private fun requestDataMore() {
-        EasyHttp.get(this)
-            .api(AibiziPhoneListApi().apply {
-                setId(id!!)
-                setSkip(skip)
-            })
-            .request(object : OnHttpListener<HttpData<AibiziPhoneListApi.Vertical>> {
-                override fun onSucceed(result: HttpData<AibiziPhoneListApi.Vertical>?) {
-                    refreshLayout?.finishLoadMore()
-
-                    adapter?.apply {
-                        addData(result?.getData()?.vertical)
-                        val isLastPage = result?.getData()?.vertical?.size!! < 20
-                        setLastPage(isLastPage)
-                        this@PhotoListActivity.refreshLayout?.setNoMoreData(isLastPage)
-                    }
-
-                    skip += 20
-                }
-
-                override fun onFail(e: Exception?) {
-                    LogUtils.e(e)
-                }
-
-            })
-    }
 }

@@ -11,20 +11,23 @@
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:leftIcon="@null"
         app:title="标题" />
 
-    <com.scwang.smart.refresh.layout.SmartRefreshLayout
-        android:id="@+id/refresh_layout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:itemCount="2"
+        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/tab_item_design"
+        tools:spanCount="2" />
+
+    <com.hjq.widget.layout.NestedViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srlEnablePreviewInEditMode="false">
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <com.hjq.widget.layout.WrapRecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listCount="10"
-            tools:listitem="@layout/picker_item" />
-    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
 </LinearLayout>

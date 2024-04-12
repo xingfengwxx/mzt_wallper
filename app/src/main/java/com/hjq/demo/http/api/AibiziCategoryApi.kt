@@ -1,8 +1,10 @@
 package com.hjq.demo.http.api
 
+import android.os.Parcelable
 import com.hjq.http.config.IRequestApi
 import com.google.gson.annotations.SerializedName
 import com.hjq.http.config.IRequestServer
+import kotlinx.parcelize.Parcelize
 
 
 /**
@@ -17,11 +19,13 @@ class AibiziCategoryApi : IRequestServer, IRequestApi {
 
     override fun getApi(): String = "v1/wallpaper/category"
 
+    @Parcelize
     data class Category(
         @SerializedName("category")
         val category: MutableList<Bean>,
-    )
+    ) : Parcelable
 
+    @Parcelize
     data class Bean(
         @SerializedName("atime")
         val atime: Double,
@@ -30,11 +34,11 @@ class AibiziCategoryApi : IRequestServer, IRequestApi {
         @SerializedName("cover")
         val cover: String,
         @SerializedName("cover_temp")
-        val coverTemp: String,
+        val coverTemp: String?,
         @SerializedName("ename")
         val ename: String,
         @SerializedName("filter")
-        val filter: List<Any>,
+        val filter: List<String>,
         @SerializedName("icover")
         val icover: String,
         @SerializedName("id")
@@ -51,5 +55,5 @@ class AibiziCategoryApi : IRequestServer, IRequestApi {
         val sn: Int,
         @SerializedName("type")
         val type: Int
-    )
+    ) : Parcelable
 }
