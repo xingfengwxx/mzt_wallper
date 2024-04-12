@@ -33,7 +33,7 @@ class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPhoneListApi
 
             ivPhoto?.let {
                 GlideApp.with(it)
-                    .load(bean.thumb)
+                    .load(bean.img)
                     .transform(RoundedCorners2(dp2px(16f), true))
                     .into(it)
             }

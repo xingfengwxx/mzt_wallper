@@ -15,6 +15,7 @@ import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziPhoneListApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.LineItemDecoration
+import com.hjq.demo.ui.activity.ImagePreviewActivity
 import com.hjq.demo.ui.activity.PhotoListActivity
 import com.hjq.demo.ui.adapter.PhotoAdapter
 import com.hjq.http.EasyHttp
@@ -108,7 +109,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        toast(adapter?.getItem(position))
+        val images = mutableListOf<String?>()
+        adapter?.getData()?.forEach {
+            images.add(it.img)
+        }
+        ImagePreviewActivity.start(getAttachActivity()!!, images, position)
     }
 
     private fun requestData(isFirstPage: Boolean) {
