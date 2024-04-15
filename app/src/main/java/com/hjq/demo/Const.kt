@@ -8,6 +8,8 @@ package com.hjq.demo
  */
 object Const {
 
+    const val DIR = "mzt_wallpaper"
+
     object ParamKey {
         // Intent传参KEY
         const val TITLE = "title"

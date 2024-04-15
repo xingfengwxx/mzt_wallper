@@ -3,19 +3,35 @@ package com.hjq.demo.ui.activity
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
+import com.blankj.utilcode.util.ImageUtils
+import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.PathUtils
+import com.blankj.utilcode.util.TimeUtils
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.request.target.CustomTarget
+import com.bumptech.glide.request.transition.Transition
 import com.gyf.immersionbar.BarHide
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.base.BaseAdapter
 import com.hjq.demo.R
 import com.hjq.demo.aop.Log
+import com.hjq.demo.aop.Permissions
 import com.hjq.demo.app.AppActivity
+import com.hjq.demo.http.glide.GlideApp
 import com.hjq.demo.ui.adapter.ImagePreviewAdapter
+import com.hjq.permissions.Permission
+import com.hjq.widget.view.FloatActionButton
 import me.relex.circleindicator.CircleIndicator3
+import java.io.File
 import java.util.*
 
 /**
@@ -77,12 +93,17 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
     /** 文本指示器 */
     private val textIndicatorView: TextView? by lazy { findViewById(R.id.tv_image_preview_indicator) }
 
+    private val fabDownload: FloatActionButton? by lazy { findViewById(R.id.fab_download) }
+
+    private var curIndex = 0
+
     override fun getLayoutId(): Int {
         return R.layout.image_preview_activity
     }
 
     override fun initView() {
         viewPager2?.offscreenPageLimit = 3
+
     }
 
     override fun initData() {
@@ -96,6 +117,7 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
         viewPager2?.adapter = adapter
 
         val index = getInt(INTENT_KEY_IN_IMAGE_INDEX)
+        curIndex = index
         if (index < images.size) {
             viewPager2?.setCurrentItem(index, false)
         }
@@ -111,7 +133,10 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
                 textIndicatorView?.text = (index + 1).toString() + "/" + adapter.getCount()
                 viewPager2?.registerOnPageChangeCallback(mPageChangeCallback)
             }
+        }
 
+        fabDownload?.setOnClickListener {
+            downloadImg(images[curIndex]!!)
         }
     }
 
@@ -152,6 +177,31 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
         override fun onPageSelected(position: Int) {
             super.onPageSelected(position)
             textIndicatorView?.text = (position + 1).toString() + "/" + adapter.getCount()
+            curIndex = position
         }
+    }
+
+    @Permissions(Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE)
+    private fun downloadImg(imageUrl: String) {
+        GlideApp.with(this)
+            .asBitmap()
+            .load(imageUrl)
+            .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.DATA))
+            .into(object : CustomTarget<Bitmap>() {
+                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
+                    val fileName = "IMG_${TimeUtils.millis2String(System.currentTimeMillis(), "yyyyMMdd_hhmmssSSS")}.jpg"
+                    var imgFile = File("${PathUtils.getExternalAppPicturesPath()}/$fileName")
+                    ImageUtils.save(resource, imgFile, Bitmap.CompressFormat.JPEG)
+
+                    sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(imgFile)))
+                    LogUtils.i("保存文件成功：${imgFile.absolutePath}")
+
+                    toast("保存图片成功")
+                }
+
+                override fun onLoadCleared(placeholder: Drawable?) {
+                    // Do nothing
+                }
+            })
     }
 }
