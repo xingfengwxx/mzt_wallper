@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import com.hjq.demo.R
 import com.hjq.demo.app.AppAdapter
+import com.hjq.demo.bean.AibiziPicBean
 import com.hjq.demo.extension.dp2px
-import com.hjq.demo.http.api.AibiziPhoneListApi
 import com.hjq.demo.http.glide.GlideApp
 import com.hjq.demo.other.RoundedCorners2
 
@@ -17,7 +17,7 @@ import com.hjq.demo.other.RoundedCorners2
  * email : 1099420259@qq.com
  * description : 
  */
-class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPhoneListApi.Bean>(context) {
+class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPicBean>(context) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder()

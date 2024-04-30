@@ -8,6 +8,7 @@ import com.blankj.utilcode.util.StringUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
+import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.TitleBarFragment
@@ -80,7 +81,8 @@ class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener,
             requireContext(),
             StringUtils.getString(R.string.home_nav_index),
             position,
-            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>
+            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
+            Const.AibiziCategory.TYPE_PHONE
         )
     }
 

@@ -9,9 +9,11 @@ import com.blankj.utilcode.util.LogUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
+import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.TitleBarFragment
 import com.hjq.demo.extension.dp2px
+import com.hjq.demo.http.api.AibiziComputerListApi
 import com.hjq.demo.http.api.AibiziPhoneListApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.LineItemDecoration
@@ -35,11 +37,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     BaseAdapter.OnItemClickListener {
 
     companion object {
-        const val ID: String = "id"
 
-        fun newInstance(id: String) = PhotoListFragment().apply {
+        fun newInstance(id: String, type: Int) = PhotoListFragment().apply {
             arguments = Bundle().apply {
-                putString(ID, id)
+                putString(Const.ParamKey.ID, id)
+                putInt(Const.ParamKey.TYPE, type)
             }
         }
     }
@@ -52,6 +54,7 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
     private var id: String? = ""
     private var skip = 0
+    private var type: Int = Const.AibiziCategory.TYPE_PHONE
 
     override fun getLayoutId(): Int {
         return R.layout.photo_list_fragment
@@ -59,7 +62,8 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
     override fun initView() {
         arguments?.let {
-            id = it.getString(ID)
+            id = it.getString(Const.ParamKey.ID)
+            type = it.getInt(Const.ParamKey.TYPE)
         }
 
         // 给这个 ToolBar 设置顶部内边距，才能和 TitleBar 进行对齐
@@ -97,7 +101,6 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
         return true
     }
 
-
     override fun onRefresh(refreshLayout: RefreshLayout) {
         skip = 0
         adapter?.clearData()
@@ -117,6 +120,14 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     }
 
     private fun requestData(isFirstPage: Boolean) {
+        if (type == Const.AibiziCategory.TYPE_PHONE) {
+            getPhoneData(isFirstPage)
+        } else {
+            getComputerData(isFirstPage)
+        }
+    }
+
+    private fun getPhoneData(isFirstPage: Boolean) {
         EasyHttp.get(this)
             .api(AibiziPhoneListApi().apply {
                 setId(id!!)
@@ -133,6 +144,38 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
                         adapter?.apply {
                             addData(result?.getData()?.vertical)
                             val isLastPage = result?.getData()?.vertical?.size!! < 20
+                            setLastPage(isLastPage)
+                            this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
+                        }
+                    }
+
+                    skip += 20
+                }
+
+                override fun onFail(e: Exception?) {
+                    LogUtils.e(e)
+                }
+
+            })
+    }
+
+    private fun getComputerData(isFirstPage: Boolean) {
+        EasyHttp.get(this)
+            .api(AibiziComputerListApi().apply {
+                setId(id!!)
+                setSkip(skip)
+            })
+            .request(object : OnHttpListener<HttpData<AibiziComputerListApi.Wallpaper>> {
+                override fun onSucceed(result: HttpData<AibiziComputerListApi.Wallpaper>?) {
+                    if (isFirstPage) {
+                        adapter?.setData(result?.getData()?.wallpaper)
+                        refreshLayout?.finishRefresh()
+                    } else {
+                        refreshLayout?.finishLoadMore()
+
+                        adapter?.apply {
+                            addData(result?.getData()?.wallpaper)
+                            val isLastPage = result?.getData()?.wallpaper?.size!! < 20
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
                         }

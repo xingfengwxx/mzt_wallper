@@ -146,6 +146,7 @@ class App : Application() {
 //                    headers.put("deviceOaid", UmengClient.getDeviceOaid())
                     headers.put("versionName", AppConfig.getVersionName())
                     headers.put("versionCode", AppConfig.getVersionCode().toString())
+                    headers.put("User-Agent", "(picasso,170,windows)")
                 }
                 .into()
 

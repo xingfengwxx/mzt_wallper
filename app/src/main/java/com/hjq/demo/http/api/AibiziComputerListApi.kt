@@ -12,18 +12,18 @@ import com.hjq.http.config.IRequestServer
  * email : 1099420259@qq.com
  * description :
  */
-class AibiziPhoneListApi : IRequestServer, IRequestApi {
+class AibiziComputerListApi : IRequestServer, IRequestApi {
 
     override fun getHost(): String = "http://service.aibizhi.adesk.com/"
 
     override fun getApi(): String {
-        return "v1/vertical/category/$id/vertical"
+        return "v1/wallpaper/category/$id/wallpaper"
     }
 
     @HttpIgnore
     private var id: String? = null
 
-    fun setId(id: String): AibiziPhoneListApi {
+    fun setId(id: String): AibiziComputerListApi {
         this.id = id
         return this
     }
@@ -34,9 +34,9 @@ class AibiziPhoneListApi : IRequestServer, IRequestApi {
         this.skip = skip
     }
 
-    data class Vertical(
-        @SerializedName("vertical")
-        val vertical: MutableList<AibiziPicBean>,
+    data class Wallpaper(
+        @SerializedName("wallpaper")
+        val wallpaper: MutableList<AibiziPicBean>,
     )
 
 }

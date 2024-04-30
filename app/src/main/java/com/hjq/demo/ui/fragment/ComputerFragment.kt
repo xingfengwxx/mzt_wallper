@@ -4,9 +4,11 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.StringUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
+import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.TitleBarFragment
@@ -14,6 +16,7 @@ import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziCategoryApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.GridSpaceDecoration
+import com.hjq.demo.ui.activity.PhotoListActivity
 import com.hjq.demo.ui.adapter.PhoneCategoryAdapter
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.OnHttpListener
@@ -26,7 +29,7 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * author : 王星星
  * date : 2024/4/9 18:13
  * email : 1099420259@qq.com
- * description : 爱壁纸-手机
+ * description : 爱壁纸-电脑
  */
 class ComputerFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
 
@@ -70,7 +73,13 @@ class ComputerFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, Bas
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        toast(adapter?.getItem(position))
+        PhotoListActivity.start(
+            requireContext(),
+            StringUtils.getString(R.string.home_nav_found),
+            position,
+            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
+            Const.AibiziCategory.TYPE_COMPUTER,
+        )
     }
 
     private fun requestData() {

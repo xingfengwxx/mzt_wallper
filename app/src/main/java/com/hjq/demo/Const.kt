@@ -8,12 +8,21 @@ package com.hjq.demo
  */
 object Const {
 
-    const val DIR = "mzt_wallpaper"
+    object Config {
+        const val DIR = "mzt_wallpaper"
+    }
 
     object ParamKey {
         // Intent传参KEY
+        const val ID = "id"
+        const val TYPE = "type"
         const val TITLE = "title"
         const val INDEX = "index"
         const val CATEGORY = "category"
+    }
+
+    object AibiziCategory {
+        const val TYPE_PHONE = 0
+        const val TYPE_COMPUTER = 1
     }
 }
