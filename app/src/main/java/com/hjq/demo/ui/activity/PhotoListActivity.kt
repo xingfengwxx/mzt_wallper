@@ -69,10 +69,16 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
         pagerAdapter = FragmentPagerAdapter(this)
         tabAdapter = TabAdapter(this, fixed = false)
         categoryList?.forEach {
-            if (type == Const.WallpaperType.TYPE_PHONE) {
-                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_PHONE))
-            } else if (type == Const.WallpaperType.TYPE_COMPUTER) {
-                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_COMPUTER))
+            when (type) {
+                Const.WallpaperType.TYPE_PHONE -> {
+                    pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_PHONE))
+                }
+                Const.WallpaperType.TYPE_COMPUTER -> {
+                    pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_COMPUTER))
+                }
+                Const.WallpaperType.TYPE_360 -> {
+                    pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_360))
+                }
             }
             tabAdapter?.addItem(it.name)
         }

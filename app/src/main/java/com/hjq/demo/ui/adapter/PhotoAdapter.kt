@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import com.hjq.demo.R
 import com.hjq.demo.app.AppAdapter
-import com.hjq.demo.bean.AibiziPicBean
+import com.hjq.demo.bean.PicBean
 import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.glide.GlideApp
 import com.hjq.demo.other.RoundedCorners2
@@ -17,7 +17,7 @@ import com.hjq.demo.other.RoundedCorners2
  * email : 1099420259@qq.com
  * description : 
  */
-class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPicBean>(context) {
+class PhotoAdapter constructor(context: Context) : AppAdapter<PicBean>(context) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder()
@@ -33,7 +33,7 @@ class PhotoAdapter constructor(context: Context) : AppAdapter<AibiziPicBean>(con
 
             ivPhoto?.let {
                 GlideApp.with(it)
-                    .load(bean.img)
+                    .load(bean.imgUrl)
                     .transform(RoundedCorners2(dp2px(16f), true))
                     .into(it)
             }

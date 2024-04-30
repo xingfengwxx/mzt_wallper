@@ -28,8 +28,8 @@ class Pic360ListApi : IRequestServer, IRequestApi {
         this.start = skip
     }
 
-    private var cid: Int = 0
-    fun setCid(cid: Int) {
+    private var cid: String = ""
+    fun setCid(cid: String) {
         this.cid = cid
     }
 

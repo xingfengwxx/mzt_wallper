@@ -12,9 +12,11 @@ import com.hjq.base.BaseAdapter
 import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.TitleBarFragment
+import com.hjq.demo.bean.PicBean
 import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziComputerListApi
 import com.hjq.demo.http.api.AibiziPhoneListApi
+import com.hjq.demo.http.api.Pic360ListApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.LineItemDecoration
 import com.hjq.demo.ui.activity.ImagePreviewActivity
@@ -114,16 +116,22 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
         val images = mutableListOf<String?>()
         adapter?.getData()?.forEach {
-            images.add(it.img)
+            images.add(it.imgUrl)
         }
         ImagePreviewActivity.start(getAttachActivity()!!, images, position)
     }
 
     private fun requestData(isFirstPage: Boolean) {
-        if (type == Const.WallpaperType.TYPE_PHONE) {
-            getPhoneData(isFirstPage)
-        } else {
-            getComputerData(isFirstPage)
+        when (type) {
+            Const.WallpaperType.TYPE_PHONE -> {
+                getPhoneData(isFirstPage)
+            }
+            Const.WallpaperType.TYPE_COMPUTER -> {
+                getComputerData(isFirstPage)
+            }
+            Const.WallpaperType.TYPE_360 -> {
+                get360Data(isFirstPage)
+            }
         }
     }
 
@@ -135,14 +143,20 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
             })
             .request(object : OnHttpListener<HttpData<AibiziPhoneListApi.Vertical>> {
                 override fun onSucceed(result: HttpData<AibiziPhoneListApi.Vertical>?) {
+                    val picList = mutableListOf<PicBean>()
+                    result?.getData()?.vertical?.forEach {
+                        val bean = PicBean(it.img)
+                        picList.add(bean)
+                    }
+
                     if (isFirstPage) {
-                        adapter?.setData(result?.getData()?.vertical)
+                        adapter?.setData(picList)
                         refreshLayout?.finishRefresh()
                     } else {
                         refreshLayout?.finishLoadMore()
 
                         adapter?.apply {
-                            addData(result?.getData()?.vertical)
+                            addData(picList)
                             val isLastPage = result?.getData()?.vertical?.size!! < 20
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
@@ -167,15 +181,59 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
             })
             .request(object : OnHttpListener<HttpData<AibiziComputerListApi.Wallpaper>> {
                 override fun onSucceed(result: HttpData<AibiziComputerListApi.Wallpaper>?) {
+                    val picList = mutableListOf<PicBean>()
+                    result?.getData()?.wallpaper?.forEach {
+                        val bean = PicBean(it.img)
+                        picList.add(bean)
+                    }
+
                     if (isFirstPage) {
-                        adapter?.setData(result?.getData()?.wallpaper)
+                        adapter?.setData(picList)
                         refreshLayout?.finishRefresh()
                     } else {
                         refreshLayout?.finishLoadMore()
 
                         adapter?.apply {
-                            addData(result?.getData()?.wallpaper)
+                            addData(picList)
                             val isLastPage = result?.getData()?.wallpaper?.size!! < 20
+                            setLastPage(isLastPage)
+                            this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
+                        }
+                    }
+
+                    skip += 20
+                }
+
+                override fun onFail(e: Exception?) {
+                    LogUtils.e(e)
+                }
+
+            })
+    }
+
+    private fun get360Data(isFirstPage: Boolean) {
+        EasyHttp.get(this)
+            .api(Pic360ListApi().apply {
+                setCid(id!!)
+                setStart(skip)
+            })
+            .request(object : OnHttpListener<HttpData<MutableList<Pic360ListApi.Bean>>> {
+                override fun onSucceed(result: HttpData<MutableList<Pic360ListApi.Bean>>?) {
+                    val picList = mutableListOf<PicBean>()
+                    result?.getData()?.forEach {
+                        val bean = PicBean(it.url)
+                        picList.add(bean)
+                    }
+
+                    if (isFirstPage) {
+                        adapter?.setData(picList)
+                        refreshLayout?.finishRefresh()
+                    } else {
+                        refreshLayout?.finishLoadMore()
+
+                        adapter?.apply {
+                            addData(picList)
+                            val isLastPage = result?.getData()?.size!! < 20
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
                         }
