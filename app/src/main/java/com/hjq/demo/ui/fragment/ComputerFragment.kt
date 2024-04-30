@@ -12,6 +12,7 @@ import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.TitleBarFragment
+import com.hjq.demo.bean.CategoryBean
 import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziCategoryApi
 import com.hjq.demo.http.model.HttpData
@@ -73,11 +74,17 @@ class ComputerFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, Bas
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
+        val categoryList = mutableListOf<CategoryBean>()
+        adapter?.getData()?.forEach {
+            val bean = CategoryBean(it.id, it.name)
+            categoryList.add(bean)
+        }
+
         PhotoListActivity.start(
             requireContext(),
             StringUtils.getString(R.string.home_nav_found),
             position,
-            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
+            categoryList as ArrayList<CategoryBean>,
             Const.WallpaperType.TYPE_COMPUTER,
         )
     }

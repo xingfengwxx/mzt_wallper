@@ -13,7 +13,7 @@ import com.hjq.demo.R
 import com.hjq.demo.aop.Log
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.AppFragment
-import com.hjq.demo.http.api.AibiziCategoryApi
+import com.hjq.demo.bean.CategoryBean
 import com.hjq.demo.ui.adapter.TabAdapter
 import com.hjq.demo.ui.fragment.PhotoListFragment
 
@@ -28,7 +28,7 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     companion object {
 
         @Log
-        fun start(context: Context, title: String, index: Int, category: ArrayList<AibiziCategoryApi.Bean>, type: Int) {
+        fun start(context: Context, title: String, index: Int, category: ArrayList<CategoryBean>, type: Int) {
             val intent = Intent(context, PhotoListActivity::class.java)
             intent.putExtra(Const.ParamKey.TITLE, title)
             intent.putExtra(Const.ParamKey.INDEX, index)
@@ -49,7 +49,7 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     private var pagerAdapter: FragmentPagerAdapter<AppFragment<*>>? = null
 
     private var index = 0
-    private var categoryList: ArrayList<AibiziCategoryApi.Bean>? = null
+    private var categoryList: ArrayList<CategoryBean>? = null
 
     private var type = Const.WallpaperType.TYPE_PHONE
 
