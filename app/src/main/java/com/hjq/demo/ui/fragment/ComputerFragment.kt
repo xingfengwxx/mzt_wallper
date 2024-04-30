@@ -78,7 +78,7 @@ class ComputerFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, Bas
             StringUtils.getString(R.string.home_nav_found),
             position,
             adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
-            Const.AibiziCategory.TYPE_COMPUTER,
+            Const.WallpaperType.TYPE_COMPUTER,
         )
     }
 

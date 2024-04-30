@@ -51,7 +51,7 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     private var index = 0
     private var categoryList: ArrayList<AibiziCategoryApi.Bean>? = null
 
-    private var type = Const.AibiziCategory.TYPE_PHONE
+    private var type = Const.WallpaperType.TYPE_PHONE
 
     override fun getLayoutId(): Int {
         return R.layout.photo_list_activity
@@ -60,7 +60,7 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     override fun initView() {
         title = intent.getStringExtra(Const.ParamKey.TITLE)
         index = intent.getIntExtra(Const.ParamKey.INDEX, 0)
-        type = intent.getIntExtra(Const.ParamKey.TYPE, Const.AibiziCategory.TYPE_PHONE)
+        type = intent.getIntExtra(Const.ParamKey.TYPE, Const.WallpaperType.TYPE_PHONE)
         categoryList = intent.getParcelableArrayListExtra(Const.ParamKey.CATEGORY)
 
         // 给这个 ToolBar 设置顶部内边距，才能和 TitleBar 进行对齐
@@ -69,10 +69,10 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
         pagerAdapter = FragmentPagerAdapter(this)
         tabAdapter = TabAdapter(this, fixed = false)
         categoryList?.forEach {
-            if (type == Const.AibiziCategory.TYPE_PHONE) {
-                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.AibiziCategory.TYPE_PHONE))
-            } else {
-                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.AibiziCategory.TYPE_COMPUTER))
+            if (type == Const.WallpaperType.TYPE_PHONE) {
+                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_PHONE))
+            } else if (type == Const.WallpaperType.TYPE_COMPUTER) {
+                pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_COMPUTER))
             }
             tabAdapter?.addItem(it.name)
         }

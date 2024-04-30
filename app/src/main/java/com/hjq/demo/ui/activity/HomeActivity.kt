@@ -68,7 +68,7 @@ class HomeActivity : AppActivity(), NavigationAdapter.OnNavigationListener {
         pagerAdapter = FragmentPagerAdapter<AppFragment<*>>(this).apply {
             addFragment(PhoneFragment.newInstance())
             addFragment(ComputerFragment.newInstance())
-            addFragment(Img360Fragment.newInstance())
+            addFragment(Pic360Fragment.newInstance())
             addFragment(PixabayFragment.newInstance())
             viewPager?.adapter = this
         }

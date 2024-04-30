@@ -82,7 +82,7 @@ class PhoneFragment : TitleBarFragment<AppActivity>(), OnRefreshListener,
             StringUtils.getString(R.string.home_nav_index),
             position,
             adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
-            Const.AibiziCategory.TYPE_PHONE
+            Const.WallpaperType.TYPE_PHONE
         )
     }
 

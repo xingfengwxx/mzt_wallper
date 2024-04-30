@@ -4,16 +4,20 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.StringUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
+import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.app.TitleBarFragment
 import com.hjq.demo.extension.dp2px
+import com.hjq.demo.http.api.AibiziCategoryApi
 import com.hjq.demo.http.api.Img360CategoryApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.GridSpaceDecoration
+import com.hjq.demo.ui.activity.PhotoListActivity
 import com.hjq.demo.ui.adapter.Img360CategoryAdapter
 import com.hjq.http.EasyHttp
 import com.hjq.http.listener.OnHttpListener
@@ -28,11 +32,11 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * email : 1099420259@qq.com
  * description : 360
  */
-class Img360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
+class Pic360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener {
 
     companion object {
-        fun newInstance(): Img360Fragment {
-            return Img360Fragment()
+        fun newInstance(): Pic360Fragment {
+            return Pic360Fragment()
         }
     }
 
@@ -55,7 +59,7 @@ class Img360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseA
         adapter?.setOnItemClickListener(this)
 
         recyclerView?.apply {
-            adapter = this@Img360Fragment.adapter
+            adapter = this@Pic360Fragment.adapter
             layoutManager = GridLayoutManager(getAttachActivity(), 3)
             addItemDecoration(GridSpaceDecoration(dp2px(8f)))
         }
@@ -72,7 +76,13 @@ class Img360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseA
     }
 
     override fun onItemClick(recyclerView: RecyclerView?, itemView: View?, position: Int) {
-        toast(adapter?.getItem(position))
+        PhotoListActivity.start(
+            requireContext(),
+            StringUtils.getString(R.string.home_nav_found),
+            position,
+            adapter?.getData() as ArrayList<AibiziCategoryApi.Bean>,
+            Const.WallpaperType.TYPE_360,
+        )
     }
 
     private fun requestData() {

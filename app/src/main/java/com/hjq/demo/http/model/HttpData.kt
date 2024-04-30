@@ -22,6 +22,10 @@ open class HttpData<T> {
     @SerializedName(value = "data", alternate = ["res"])
     private val data: T? = null
 
+    /** 数据总数 */
+    @SerializedName(value = "total")
+    private val total: Int = 0
+
     fun getCode(): Int {
         return code
     }

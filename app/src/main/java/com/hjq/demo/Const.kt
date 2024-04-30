@@ -21,8 +21,10 @@ object Const {
         const val CATEGORY = "category"
     }
 
-    object AibiziCategory {
+    object WallpaperType {
         const val TYPE_PHONE = 0
         const val TYPE_COMPUTER = 1
+        const val TYPE_360 = 2
+        const val TYPE_PIXABAY = 3
     }
 }
