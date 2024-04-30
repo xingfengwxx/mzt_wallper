@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:289846405327:android:034a0cf0513f6f81d5afba",
+        "android_client_info": {
+          "package_name": "com.wangxingxing.wallpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWoz4eYwBtKLwtJtRWmXklHPMksvzBmB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:289846405327:android:0da4880cc2cc38efd5afba",
         "android_client_info": {
           "package_name": "com.wangxingxing.wallper"
