@@ -34,7 +34,7 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener
 /**
  * author : 王星星
  * date : Const.Config.PAGE_SIZE24/4/11 17:33
- * email : 10994Const.Config.PAGE_SIZE259@qq.com
+ * email : 1099420259@qq.com
  * description :
  */
 class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMoreListener,
@@ -268,11 +268,16 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     }
 
     private fun getPixabayData(isFirstPage: Boolean, category: String) {
-        EasyHttp.get(this)
-            .api(PixabayListApi().apply {
-                setPageNum(pageNum)
+        val pixabayApi = PixabayListApi().apply {
+            setPageNum(pageNum)
+            if (id == "0") {
+                setKeyword(category)
+            } else {
                 setCategory(category)
-            })
+            }
+        }
+        EasyHttp.get(this)
+            .api(pixabayApi)
             .request(object : OnHttpListener<HttpData<MutableList<PixabayListApi.Bean>>> {
                 override fun onSucceed(result: HttpData<MutableList<PixabayListApi.Bean>>?) {
                     val picList = mutableListOf<PicBean>()

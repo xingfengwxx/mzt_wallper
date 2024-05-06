@@ -1,5 +1,41 @@
 [
   {
+    "id": 0,
+    "name": "beautiful model"
+  },
+  {
+    "id": 0,
+    "name": "landscape"
+  },
+  {
+    "id": 0,
+    "name": "design"
+  },
+  {
+    "id": 0,
+    "name": "star"
+  },
+  {
+    "id": 0,
+    "name": "art"
+  },
+  {
+    "id": 0,
+    "name": "man"
+  },
+  {
+    "id": 0,
+    "name": "woman"
+  },
+  {
+    "id": 0,
+    "name": "city"
+  },
+  {
+    "id": 0,
+    "name": "animal"
+  },
+  {
     "id": 1,
     "name": "backgrounds"
   },

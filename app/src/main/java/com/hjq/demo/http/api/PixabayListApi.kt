@@ -15,12 +15,12 @@ import com.hjq.language.MultiLanguages
  * email : 1099420259@qq.com
  * description : API地址：https://pixabay.com/api/docs/
  *                       https://www.dianbanjiu.com/post/pixabay_api/
- *              https://pixabay.com/api/?key=43740221-f004bfa831543598cb352bf86&q=yellow+flowers&image_type=photo
+ * 搜索：https://pixabay.com/api/?per_page=20&safesearch=false&editors_choice=true&page=1&lang=en&key=43740221-f004bfa831543598cb352bf86&image_type=photo&q=beautiful model
+ * 分类：
  */
 class PixabayListApi : IRequestServer, IRequestApi {
 
     override fun getHost(): String = "https://pixabay.com/"
-
 
     override fun getApi(): String = "api/"
 
@@ -32,7 +32,7 @@ class PixabayListApi : IRequestServer, IRequestApi {
     @HttpRename("per_page")
     private val PAGE_SIZE = Const.Config.PAGE_SIZE
 
-    private val safesearch = true
+    private val safesearch = false
 
     private val editors_choice = true
 
@@ -41,6 +41,12 @@ class PixabayListApi : IRequestServer, IRequestApi {
     private var category = "backgrounds"
     fun setCategory(category: String) {
         this.category = category
+    }
+
+    @HttpRename("q")
+    private var keyword = ""
+    fun setKeyword(keyword: String) {
+        this.keyword = keyword
     }
 
     @HttpRename("page")
