@@ -17,6 +17,7 @@ import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziComputerListApi
 import com.hjq.demo.http.api.AibiziPhoneListApi
 import com.hjq.demo.http.api.Pic360ListApi
+import com.hjq.demo.http.api.PixabayListApi
 import com.hjq.demo.http.model.HttpData
 import com.hjq.demo.other.LineItemDecoration
 import com.hjq.demo.ui.activity.ImagePreviewActivity
@@ -31,8 +32,8 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshLoadMoreListener
 
 /**
  * author : 王星星
- * date : 2024/4/11 17:33
- * email : 1099420259@qq.com
+ * date : Const.Config.PAGE_SIZE24/4/11 17:33
+ * email : 10994Const.Config.PAGE_SIZE259@qq.com
  * description :
  */
 class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMoreListener,
@@ -40,10 +41,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
     companion object {
 
-        fun newInstance(id: String, type: Int) = PhotoListFragment().apply {
+        fun newInstance(id: String, type: Int, keyword: String? = "") = PhotoListFragment().apply {
             arguments = Bundle().apply {
                 putString(Const.ParamKey.ID, id)
                 putInt(Const.ParamKey.TYPE, type)
+                putString(Const.ParamKey.KEYWORD, keyword)
             }
         }
     }
@@ -57,6 +59,9 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     private var id: String? = ""
     private var skip = 0
     private var type: Int = Const.WallpaperType.TYPE_PHONE
+    private var keyword: String? = ""
+    
+    private var pageNum = 1
 
     override fun getLayoutId(): Int {
         return R.layout.photo_list_fragment
@@ -66,6 +71,7 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
         arguments?.let {
             id = it.getString(Const.ParamKey.ID)
             type = it.getInt(Const.ParamKey.TYPE)
+            keyword = it.getString(Const.ParamKey.KEYWORD)
         }
 
         // 给这个 ToolBar 设置顶部内边距，才能和 TitleBar 进行对齐
@@ -132,6 +138,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
             Const.WallpaperType.TYPE_360 -> {
                 get360Data(isFirstPage)
             }
+            Const.WallpaperType.TYPE_PIXABAY -> {
+                keyword?.let {
+                    getPixabayData(isFirstPage, it)
+                }
+            }
         }
     }
 
@@ -157,13 +168,13 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
                         adapter?.apply {
                             addData(picList)
-                            val isLastPage = result?.getData()?.vertical?.size!! < 20
+                            val isLastPage = result?.getData()?.vertical?.size!! < Const.Config.PAGE_SIZE
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
                         }
                     }
 
-                    skip += 20
+                    skip += Const.Config.PAGE_SIZE
                 }
 
                 override fun onFail(e: Exception?) {
@@ -195,13 +206,13 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
                         adapter?.apply {
                             addData(picList)
-                            val isLastPage = result?.getData()?.wallpaper?.size!! < 20
+                            val isLastPage = result?.getData()?.wallpaper?.size!! < Const.Config.PAGE_SIZE
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
                         }
                     }
 
-                    skip += 20
+                    skip += Const.Config.PAGE_SIZE
                 }
 
                 override fun onFail(e: Exception?) {
@@ -233,13 +244,51 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
                         adapter?.apply {
                             addData(picList)
-                            val isLastPage = result?.getData()?.size!! < 20
+                            val isLastPage = result?.getData()?.size!! < Const.Config.PAGE_SIZE
                             setLastPage(isLastPage)
                             this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
                         }
                     }
 
-                    skip += 20
+                    skip += Const.Config.PAGE_SIZE
+                }
+
+                override fun onFail(e: Exception?) {
+                    LogUtils.e(e)
+                }
+
+            })
+    }
+
+    private fun getPixabayData(isFirstPage: Boolean, keyword: String) {
+        EasyHttp.get(this)
+            .api(PixabayListApi().apply {
+                setKeyword(keyword)
+                setPageNum(pageNum)
+            })
+            .request(object : OnHttpListener<HttpData<MutableList<PixabayListApi.Bean>>> {
+                override fun onSucceed(result: HttpData<MutableList<PixabayListApi.Bean>>?) {
+                    val picList = mutableListOf<PicBean>()
+                    result?.getData()?.forEach {
+                        val bean = PicBean(it.largeImageURL)
+                        picList.add(bean)
+                    }
+
+                    if (isFirstPage) {
+                        adapter?.setData(picList)
+                        refreshLayout?.finishRefresh()
+                    } else {
+                        refreshLayout?.finishLoadMore()
+
+                        adapter?.apply {
+                            addData(picList)
+                            val isLastPage = result?.getData()?.size!! < Const.Config.PAGE_SIZE
+                            setLastPage(isLastPage)
+                            this@PhotoListFragment.refreshLayout?.setNoMoreData(isLastPage)
+                        }
+                    }
+
+                    pageNum++
                 }
 
                 override fun onFail(e: Exception?) {

@@ -27,6 +27,7 @@ import com.hjq.http.config.IRequestApi
 import com.hjq.http.model.HttpHeaders
 import com.hjq.http.model.HttpParams
 import com.hjq.http.ssl.HttpSslFactory
+import com.hjq.language.MultiLanguages
 import com.hjq.toast.ToastUtils
 import com.hjq.umeng.UmengClient
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
@@ -52,6 +53,11 @@ class App : Application() {
         Utils.init(this)
         initLog()
         initSdk(this)
+    }
+
+    override fun attachBaseContext(base: Context?) {
+        // 绑定语种
+        super.attachBaseContext(MultiLanguages.attach(base))
     }
 
     override fun onLowMemory() {
@@ -178,6 +184,9 @@ class App : Application() {
                     }
                 })
             }
+
+            // 初始化语种切换框架
+            MultiLanguages.init(application)
         }
 
          fun initLog() {

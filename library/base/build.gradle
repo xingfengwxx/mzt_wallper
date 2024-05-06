@@ -18,3 +18,8 @@ android {
         }
     }
 }
+
+dependencies {
+    // 语种切换框架：https://github.com/getActivity/MultiLanguages
+    api 'com.github.getActivity:MultiLanguages:9.3'
+}

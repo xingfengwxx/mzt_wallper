@@ -84,7 +84,7 @@ class Pic360Fragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseA
 
         PhotoListActivity.start(
             requireContext(),
-            StringUtils.getString(R.string.home_nav_found),
+            StringUtils.getString(R.string.home_nav_message),
             position,
             categoryList as ArrayList<CategoryBean>,
             Const.WallpaperType.TYPE_360,

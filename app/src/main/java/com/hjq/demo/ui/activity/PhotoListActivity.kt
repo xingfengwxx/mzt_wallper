@@ -26,7 +26,6 @@ import com.hjq.demo.ui.fragment.PhotoListFragment
 class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnPageChangeListener {
 
     companion object {
-
         @Log
         fun start(context: Context, title: String, index: Int, category: ArrayList<CategoryBean>, type: Int) {
             val intent = Intent(context, PhotoListActivity::class.java)
@@ -79,6 +78,9 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
                 Const.WallpaperType.TYPE_360 -> {
                     pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_360))
                 }
+                Const.WallpaperType.TYPE_PIXABAY -> {
+                    pagerAdapter?.addFragment(PhotoListFragment.newInstance(it.id, Const.WallpaperType.TYPE_PIXABAY, it.name))
+                }
             }
             tabAdapter?.addItem(it.name)
         }
@@ -99,8 +101,7 @@ class PhotoListActivity : AppActivity(), TabAdapter.OnTabListener, ViewPager.OnP
     }
 
     override fun initData() {
-//        BeautifulWallpaper
-//        beautiful-wallpaper-wxx
+
     }
 
 

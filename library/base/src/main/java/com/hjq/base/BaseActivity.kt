@@ -14,6 +14,7 @@ import androidx.lifecycle.Lifecycle
 import com.hjq.base.action.*
 import java.util.*
 import kotlin.math.pow
+import com.hjq.language.MultiLanguages
 
 /**
  *    author : Android 轮子哥
@@ -36,6 +37,11 @@ abstract class BaseActivity : AppCompatActivity(), ActivityAction,
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         initActivity()
+    }
+
+    override fun attachBaseContext(newBase: Context?) {
+        // 绑定语种
+        super.attachBaseContext(MultiLanguages.attach(newBase))
     }
 
     protected open fun initActivity() {

@@ -19,12 +19,15 @@ open class HttpData<T> {
     private val msg: String? = null
 
     /** 数据 */
-    @SerializedName(value = "data", alternate = ["res"])
+    @SerializedName(value = "data", alternate = ["res", "hits"])
     private val data: T? = null
 
     /** 数据总数 */
     @SerializedName(value = "total")
     private val total: Int = 0
+
+    @SerializedName(value = "totalHits")
+    private val totalHits = 0
 
     fun getCode(): Int {
         return code

@@ -10,6 +10,8 @@ object Const {
 
     object Config {
         const val DIR = "mzt_wallpaper"
+        const val PAGE_SIZE = 20
+        const val PIXABAY_API_KEY = "43740221-f004bfa831543598cb352bf86"
     }
 
     object ParamKey {
@@ -19,6 +21,7 @@ object Const {
         const val TITLE = "title"
         const val INDEX = "index"
         const val CATEGORY = "category"
+        const val KEYWORD = "keyword"
     }
 
     object WallpaperType {
