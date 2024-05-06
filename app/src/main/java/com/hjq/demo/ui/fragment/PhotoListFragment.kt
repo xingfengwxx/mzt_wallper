@@ -13,6 +13,7 @@ import com.hjq.demo.Const
 import com.hjq.demo.R
 import com.hjq.demo.app.TitleBarFragment
 import com.hjq.demo.bean.PicBean
+import com.hjq.demo.extension.doLazyLoad
 import com.hjq.demo.extension.dp2px
 import com.hjq.demo.http.api.AibiziComputerListApi
 import com.hjq.demo.http.api.AibiziPhoneListApi
@@ -67,6 +68,13 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
         return R.layout.photo_list_fragment
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        doLazyLoad {
+            requestData(true)
+        }
+    }
+
     override fun initView() {
         arguments?.let {
             id = it.getString(Const.ParamKey.ID)
@@ -94,7 +102,6 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
         }
 
         refreshLayout?.setOnRefreshLoadMoreListener(this)
-        refreshLayout?.autoRefresh()
     }
 
     override fun initData() {}
