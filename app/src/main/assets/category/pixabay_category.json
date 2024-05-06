@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "backgrounds"
+  },
+  {
+    "id": 2,
+    "name": "fashion"
+  },
+  {
+    "id": 3,
+    "name": "nature"
+  },
+  {
+    "id": 4,
+    "name": "science"
+  },
+  {
+    "id": 5,
+    "name": "education"
+  },
+  {
+    "id": 6,
+    "name": "feelings"
+  },
+  {
+    "id": 7,
+    "name": "health"
+  },
+  {
+    "id": 8,
+    "name": "people"
+  },
+  {
+    "id": 9,
+    "name": "religion"
+  },
+  {
+    "id": 10,
+    "name": "places"
+  },
+  {
+    "id": 11,
+    "name": "animals"
+  },
+  {
+    "id": 12,
+    "name": "industry"
+  },
+  {
+    "id": 13,
+    "name": "backgrounds"
+  },
+  {
+    "id": 14,
+    "name": "computer"
+  },
+  {
+    "id": 15,
+    "name": "food"
+  },
+  {
+    "id": 16,
+    "name": "sports"
+  },
+  {
+    "id": 17,
+    "name": "transportation"
+  },
+  {
+    "id": 18,
+    "name": "travel"
+  },
+  {
+    "id": 19,
+    "name": "buildings"
+  },
+  {
+    "id": 20,
+    "name": "business"
+  },
+  {
+    "id": 21,
+    "name": "music"
+  }
+]

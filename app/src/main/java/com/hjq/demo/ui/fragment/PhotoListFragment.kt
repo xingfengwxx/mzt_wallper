@@ -41,11 +41,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
 
     companion object {
 
-        fun newInstance(id: String, type: Int, keyword: String? = "") = PhotoListFragment().apply {
+        fun newInstance(id: String, type: Int, category: String? = "") = PhotoListFragment().apply {
             arguments = Bundle().apply {
                 putString(Const.ParamKey.ID, id)
                 putInt(Const.ParamKey.TYPE, type)
-                putString(Const.ParamKey.KEYWORD, keyword)
+                putString(Const.ParamKey.CATEGORY, category)
             }
         }
     }
@@ -59,7 +59,7 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
     private var id: String? = ""
     private var skip = 0
     private var type: Int = Const.WallpaperType.TYPE_PHONE
-    private var keyword: String? = ""
+    private var category: String? = ""
     
     private var pageNum = 1
 
@@ -71,7 +71,7 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
         arguments?.let {
             id = it.getString(Const.ParamKey.ID)
             type = it.getInt(Const.ParamKey.TYPE)
-            keyword = it.getString(Const.ParamKey.KEYWORD)
+            category = it.getString(Const.ParamKey.CATEGORY)
         }
 
         // 给这个 ToolBar 设置顶部内边距，才能和 TitleBar 进行对齐
@@ -139,7 +139,7 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
                 get360Data(isFirstPage)
             }
             Const.WallpaperType.TYPE_PIXABAY -> {
-                keyword?.let {
+                category?.let {
                     getPixabayData(isFirstPage, it)
                 }
             }
@@ -260,11 +260,11 @@ class PhotoListFragment : TitleBarFragment<PhotoListActivity>(), OnRefreshLoadMo
             })
     }
 
-    private fun getPixabayData(isFirstPage: Boolean, keyword: String) {
+    private fun getPixabayData(isFirstPage: Boolean, category: String) {
         EasyHttp.get(this)
             .api(PixabayListApi().apply {
-                setKeyword(keyword)
                 setPageNum(pageNum)
+                setCategory(category)
             })
             .request(object : OnHttpListener<HttpData<MutableList<PixabayListApi.Bean>>> {
                 override fun onSucceed(result: HttpData<MutableList<PixabayListApi.Bean>>?) {

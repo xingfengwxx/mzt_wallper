@@ -38,10 +38,9 @@ class PixabayListApi : IRequestServer, IRequestApi {
 
     private val lang = MultiLanguages.getAppLanguage(App.instance)
 
-    @HttpRename("q")
-    private var keyword: String = ""
-    fun setKeyword(keyword: String) {
-        this.keyword = keyword
+    private var category = "backgrounds"
+    fun setCategory(category: String) {
+        this.category = category
     }
 
     @HttpRename("page")
