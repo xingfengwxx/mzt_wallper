@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Piękne tapety ze zdjęciami</string>
+    <string name="app_name_en">Piękna Tapeta</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">Ładowanie…</string>
+
+    <string name="common_unknown_error">nieznany błąd</string>
+
+    <string name="common_confirm">Jasne</string>
+    <string name="common_cancel">Anulować</string>
+
+    <string name="common_year">Rok</string>
+    <string name="common_month">księżyc</string>
+    <string name="common_day">Dzień</string>
+
+    <string name="common_hour">godzina</string>
+    <string name="common_minute">punkt</string>
+    <string name="common_second">Drugi</string>
+
+    <string name="common_crash_hint">Aplikacja napotkała drobny wypadek i jest uruchamiana ponownie.</string>
+
+    <string name="common_network_error">Bieżąca sieć jest niedostępna. Sprawdź ustawienia sieci</string>
+
+    <string name="common_video_error_not_support">Ten film nie nadaje się do odtwarzania na tym urządzeniu</string>
+    <string name="common_video_error_unknown">Ten film nie może być odtworzony</string>
+    <string name="common_video_error_supplement">Typ błędu: %d, kod błędu: %d</string>
+
+    <string name="common_phone_input_hint">Proszę wpisać numer telefonu</string>
+    <string name="common_phone_input_error">Numer telefonu komórkowego został wprowadzony nieprawidłowo</string>
+
+    <string name="common_password_input_error">Proszę wpisać hasło</string>
+    <string name="common_password_input_unlike">Obydwa wprowadzone hasła są niespójne. Wprowadź je ponownie.</string>
+
+    <string name="common_code_input_hint">proszę wpisać kod weryfikacyjny</string>
+    <string name="common_code_send">Wyślij kod weryfikacyjny</string>
+    <string name="common_code_send_hint">Kod weryfikacyjny został wysłany. Sprawdź go dokładnie</string>
+    <string name="common_code_error_hint">Błąd kodu weryfikacyjnego. Sprawdź wprowadzone dane</string>
+
+    <string name="common_step_next">Następny krok</string>
+    <string name="common_step_complete">Skończyć</string>
+    <string name="common_step_commit">składać</string>
+
+    <string name="common_permission_alert">Przypomnienie o autoryzacji</string>
+    <string name="common_permission_fail_1">Autoryzacja nie powiodła się. Proszę poprawnie udzielić pozwolenia</string>
+    <string name="common_permission_fail_2">Nie udało się uzyskać pozwolenia. Przyznaj je ręcznie</string>
+    <string name="common_permission_fail_3">Nie udało się uzyskać pozwolenia, przyznaj %s ręcznie</string>
+    <string name="common_permission_fail_4">Zezwolenie na pozycjonowanie w tle nie zostało udzielone, wybierz „Zawsze zezwalaj”</string>
+    <string name="common_permission_goto">Przejdź do Autoryzacji</string>
+
+    <string name="common_permission_calendar">Uprawnienia kalendarza</string>
+    <string name="common_permission_camera">Uprawnienia aparatu</string>
+    <string name="common_permission_contacts">Uprawnienia do książki adresowej</string>
+    <string name="common_permission_location">Uprawnienia dotyczące lokalizacji</string>
+    <string name="common_permission_location_background">Uprawnienia do pozycjonowania w tle</string>
+    <string name="common_permission_microphone">Uprawnienia mikrofonu</string>
+    <string name="common_permission_phone">Uprawnienia telefonu</string>
+    <string name="common_permission_call_log">Uprawnienia do nagrywania połączeń</string>
+    <string name="common_permission_sensors">Uprawnienia czujnika ciała</string>
+    <string name="common_permission_activity_recognition">Pozwolenie na fitness</string>
+    <string name="common_permission_sms">Uprawnienia do SMS-ów</string>
+    <string name="common_permission_storage">Uprawnienia do przechowywania</string>
+
+    <string name="common_permission_install">Zainstaluj uprawnienia aplikacji</string>
+    <string name="common_permission_notification">Uprawnienia paska powiadomień</string>
+    <string name="common_permission_window">Uprawnienia pływającego okna</string>
+    <string name="common_permission_setting">Uprawnienia do ustawień systemowych</string>
+
+    <string name="common_network_hint">Obecnie nie ma połączenia sieciowego. Sprawdź ustawienia sieciowe</string>
+    <string name="common_no_more_data">Brak danych</string>
+
+    <string name="common_web_ssl_error_title">Aktualny certyfikat bezpieczeństwa witryny wygasł lub jest niegodny zaufania\nCzy chcesz kontynuować przeglądanie\?</string>
+    <string name="common_web_ssl_error_allow">Przeglądaj dalej</string>
+    <string name="common_web_ssl_error_reject">wróć do ostatniej strony</string>
+
+    <string name="common_web_location_permission_title">Obecna witryna internetowa musi uzyskać informacje o Twojej lokalizacji geograficznej</string>
+    <string name="common_web_location_permission_allow">Dotacja</string>
+    <string name="common_web_location_permission_reject">odrzucić</string>
+
+    <string name="common_web_call_phone_title">Bieżący numer %s</string>
+    <string name="common_web_call_phone_allow">Wybierz</string>
+    <string name="common_web_call_phone_reject">Anulować</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">Ładowanie…</string>
+
+    <string name="http_unknown_error">Błąd żądania, nieznany błąd</string>
+    <string name="http_token_error">Logowanie nie powiodło się. Proszę zalogować się ponownie</string>
+    <string name="http_data_explain_error">Wyjątek podczas analizowania danych. Proszę czekać.</string>
+    <string name="http_server_out_time">Upłynął limit czasu żądania serwera. Spróbuj ponownie później</string>
+    <string name="http_network_error">Żądanie nie powiodło się. Sprawdź ustawienia sieciowe</string>
+    <string name="http_response_error">Serwer odpowiedział nieprawidłowo. Spróbuj ponownie później.</string>
+    <string name="http_server_error">Nieprawidłowość połączenia z serwerem. Spróbuj ponownie później</string>
+    <string name="http_request_cancel">Żądanie zostało przerwane. Spróbuj ponownie</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Pusty</string>
+    <string name="status_layout_error_request">Błąd żądania. Spróbuj ponownie</string>
+    <string name="status_layout_error_network">Błąd sieci. Spróbuj ponownie</string>
+    <string name="status_layout_retry">Spróbować ponownie</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">proszę wybrać region</string>
+    <string name="address_hint">proszę wybrać</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Proszę wybrać datę</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Proszę wybrać godzinę</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">Znaleziono nową wersję</string>
+
+    <string name="update_content">Aktualizuj zawartość</string>
+
+    <string name="update_no">Do zobaczenia następnym razem</string>
+    <string name="update_yes">natychmiast zaktualizuj</string>
+
+    <string name="update_permission_hint">Aby móc normalnie pobierać aktualizacje, musisz udzielić pozwolenia.</string>
+
+    <string name="update_status_start">ściąganie</string>
+    <string name="update_status_running">Pobieranie %d%%</string>
+    <string name="update_status_successful">Pobieranie zostało zakończone. Kliknij, aby zainstalować</string>
+    <string name="update_status_failed">Pobieranie nie powiodło się. Kliknij, aby spróbować ponownie</string>
+
+    <string name="update_no_update">Aktualnie najnowsza wersja</string>
+
+    <string name="update_notification_channel_id">aktualizacja</string>
+    <string name="update_notification_channel_name">Powiadomienie o aktualizacji</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">dzielić się z…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Krąg przyjaciół</string>
+    <string name="share_platform_qq">Pytanie</string>
+    <string name="share_platform_qzone">Przestrzeń QQ</string>
+    <string name="share_platform_link">skopiuj link</string>
+
+    <string name="share_platform_copy_hint">Skopiowane do schowka</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Proszę podać hasło płatności</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Należy wybrać co najmniej %d elementów</string>
+    <string name="select_max_hint">Można wybrać maksymalnie %d elementów</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Weryfikacja tożsamości</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Naciśnij ponownie, aby wyjść</string>
+    <string name="home_nav_index">komórka</string>
+    <string name="home_nav_found">komputer</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">rejestr</string>
+    <string name="login_forget">zapomnieć hasła\?</string>
+    <string name="login_text">Zaloguj sie</string>
+
+    <string name="login_other">Inne metody logowania</string>
+
+    <!-- 注册 -->
+    <string name="register_title">rejestr</string>
+    <string name="register_hint">Numer telefonu komórkowego służy wyłącznie do logowania i ochrony bezpieczeństwa konta</string>
+    <string name="register_password_hint1">Ustaw hasło logowania składające się z 6–18 cyfr</string>
+    <string name="register_password_hint2">Proszę wpisz swoje hasło ponownie</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">organizować coś</string>
+
+    <string name="setting_language_switchover">zmiana języka</string>
+    <string name="setting_language_simple">Chiński uproszczony</string>
+    <string name="setting_language_complex">tradycyjne chińskie</string>
+    <string name="setting_update">Sprawdź aktualizacje</string>
+
+    <string name="setting_password">Zmień hasło</string>
+    <string name="setting_phone">Zmodyfikuj telefon komórkowy</string>
+
+    <string name="setting_auto">automatyczne logowanie</string>
+    <string name="setting_cache">Opróżnij pamięć podręczną</string>
+
+    <string name="setting_agreement">umowa o ochronie prywatności</string>
+    <string name="setting_about">o nas</string>
+
+    <string name="setting_exit">Wyloguj się</string>
+
+    <!-- 关于 -->
+    <string name="about_title">o nas</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Koło Brata</string>
+
+    <string name="about_copyright">Prawa autorskie © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">zapomnij hasła</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Ustawianie hasła logowania</string>
+    <string name="password_reset_phone_hint1">Ustaw hasło logowania składające się z 6–18 cyfr</string>
+    <string name="password_reset_phone_hint2">Wprowadź ponownie hasło</string>
+    <string name="password_reset_input_error">Obydwa wprowadzone hasła są niespójne. Wprowadź je ponownie.</string>
+    <string name="password_reset_success">Pomyślnie zmodyfikowano</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Ustaw numer telefonu komórkowego</string>
+    <string name="phone_reset_change_hint">Następnym razem użyj nowego numeru telefonu komórkowego, aby się zalogować.</string>
+    <string name="phone_reset_commit">Zwiąż teraz</string>
+
+    <string name="phone_reset_commit_succeed">Wiązanie powiodło się</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">informacje osobiste</string>
+    <string name="personal_data_head">awatara</string>
+
+    <string name="personal_data_id">Identyfikator użytkownika</string>
+    <string name="personal_data_name">Przezwisko</string>
+    <string name="personal_data_name_hint">Ustaw pseudonim</string>
+
+    <string name="personal_data_address">obszar</string>
+    <string name="personal_data_address_hint">proszę wybrać</string>
+
+    <string name="personal_data_phone">numer telefonu</string>
+    <string name="personal_data_phone_hint">Zwiąż teraz</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Strona się ładuje...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Wybór obrazu</string>
+    <string name="image_select_all">Wszystkie zdjęcia</string>
+
+    <string name="image_select_total">Łącznie %d zdjęć</string>
+
+    <string name="image_select_max_hint">Tym razem można wybrać maksymalnie %d zdjęć</string>
+
+    <string name="image_select_error">Nie można wybrać, obraz został usunięty</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Przycinanie nie powiodło się Bieżący telefon nie obsługuje przycinania zdjęć.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Wybór wideo</string>
+    <string name="video_select_all">Wszystkie filmy</string>
+
+    <string name="video_select_total">Razem %d</string>
+
+    <string name="video_select_max_hint">Tym razem można wybrać maksymalnie %d filmów</string>
+
+    <string name="video_select_error">Nie można wybrać. Film został usunięty</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Nie można uruchomić aparatu</string>
+    <string name="camera_image_error">Zły adres docelowy</string>
+
+</resources>

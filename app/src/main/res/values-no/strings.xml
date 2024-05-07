@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Vakre bilder tapet</string>
+    <string name="app_name_en">Vakkert bakgrunnsbilde</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">laster inn …</string>
+
+    <string name="common_unknown_error">ukjent feil</string>
+
+    <string name="common_confirm">Sikker</string>
+    <string name="common_cancel">Avbryt</string>
+
+    <string name="common_year">År</string>
+    <string name="common_month">måne</string>
+    <string name="common_day">Dag</string>
+
+    <string name="common_hour">time</string>
+    <string name="common_minute">punkt</string>
+    <string name="common_second">Sekund</string>
+
+    <string name="common_crash_hint">Applikasjonen har opplevd en mindre ulykke og blir startet på nytt.</string>
+
+    <string name="common_network_error">Det gjeldende nettverket er utilgjengelig, sjekk nettverksinnstillingene</string>
+
+    <string name="common_video_error_not_support">Denne videoen er ikke egnet for avspilling på denne enheten</string>
+    <string name="common_video_error_unknown">Denne videoen kan ikke spilles av</string>
+    <string name="common_video_error_supplement">Feiltype: %d, feilkode: %d</string>
+
+    <string name="common_phone_input_hint">Vennligst skriv inn telefonnummeret</string>
+    <string name="common_phone_input_error">Mobilnummeret er angitt feil</string>
+
+    <string name="common_password_input_error">Skriv inn passord</string>
+    <string name="common_password_input_unlike">De to passordinntastingene er inkonsekvente, vennligst skriv inn på nytt.</string>
+
+    <string name="common_code_input_hint">vennligst skriv inn bekreftelseskoden</string>
+    <string name="common_code_send">Send bekreftelseskoden</string>
+    <string name="common_code_send_hint">Bekreftelseskoden er sendt, vennligst sjekk den nøye</string>
+    <string name="common_code_error_hint">Bekreftelseskodefeil, vennligst sjekk inndataene dine</string>
+
+    <string name="common_step_next">Neste steg</string>
+    <string name="common_step_complete">Bli ferdig</string>
+    <string name="common_step_commit">sende inn</string>
+
+    <string name="common_permission_alert">Påminnelse om autorisasjon</string>
+    <string name="common_permission_fail_1">Autorisasjonen mislyktes, vennligst gi tillatelsen på riktig måte</string>
+    <string name="common_permission_fail_2">Kunne ikke få tillatelse, vennligst gi tillatelse manuelt</string>
+    <string name="common_permission_fail_3">Kunne ikke få tillatelse, vennligst gi %s manuelt</string>
+    <string name="common_permission_fail_4">Tillatelse til bakgrunnsposisjonering er ikke gitt, velg \"Tillat alltid\"</string>
+    <string name="common_permission_goto">Gå til Autorisasjon</string>
+
+    <string name="common_permission_calendar">Kalendertillatelser</string>
+    <string name="common_permission_camera">Kameratillatelser</string>
+    <string name="common_permission_contacts">Adresseboktillatelser</string>
+    <string name="common_permission_location">Plasseringstillatelser</string>
+    <string name="common_permission_location_background">Bakgrunnsposisjoneringstillatelser</string>
+    <string name="common_permission_microphone">Mikrofontillatelser</string>
+    <string name="common_permission_phone">Telefontillatelser</string>
+    <string name="common_permission_call_log">Tillatelser for samtaleregistrering</string>
+    <string name="common_permission_sensors">Kroppssensortillatelser</string>
+    <string name="common_permission_activity_recognition">Treningstillatelse</string>
+    <string name="common_permission_sms">SMS-tillatelser</string>
+    <string name="common_permission_storage">Lagringstillatelser</string>
+
+    <string name="common_permission_install">Installer apptillatelser</string>
+    <string name="common_permission_notification">Tillatelser for varslingslinjen</string>
+    <string name="common_permission_window">Tillatelser for flytende vindu</string>
+    <string name="common_permission_setting">Systeminnstillinger tillatelser</string>
+
+    <string name="common_network_hint">Det er for øyeblikket ingen nettverkstilkobling, vennligst sjekk nettverksinnstillingene</string>
+    <string name="common_no_more_data">Ingen flere data</string>
+
+    <string name="common_web_ssl_error_title">Det gjeldende sikkerhetssertifikatet for nettstedet er utløpt eller er upålitelig\nVil du fortsette å surfe\?</string>
+    <string name="common_web_ssl_error_allow">Fortsett å surfe</string>
+    <string name="common_web_ssl_error_reject">gå tilbake til siste side</string>
+
+    <string name="common_web_location_permission_title">Den nåværende nettsiden må finne din geografiske plassering</string>
+    <string name="common_web_location_permission_allow">Stipend</string>
+    <string name="common_web_location_permission_reject">avvise</string>
+
+    <string name="common_web_call_phone_title">Nåværende nummer %s</string>
+    <string name="common_web_call_phone_allow">slå</string>
+    <string name="common_web_call_phone_reject">Avbryt</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">laster inn …</string>
+
+    <string name="http_unknown_error">Forespørselsfeil, ukjent feil</string>
+    <string name="http_token_error">Pålogging mislyktes, vennligst logg på igjen</string>
+    <string name="http_data_explain_error">Unntak for dataparsing. Vent litt.</string>
+    <string name="http_server_out_time">Serverforespørsel ble tidsavbrutt. Prøv igjen senere</string>
+    <string name="http_network_error">Forespørselen mislyktes. Kontroller nettverksinnstillingene</string>
+    <string name="http_response_error">Serveren svarte unormalt, prøv igjen senere.</string>
+    <string name="http_server_error">Unormal servertilkobling. Prøv igjen senere</string>
+    <string name="http_request_cancel">Forespørselen ble avbrutt. prøv igjen</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Tømme</string>
+    <string name="status_layout_error_request">Forespørselsfeil. Prøv igjen</string>
+    <string name="status_layout_error_network">Nettverksfeil, prøv igjen</string>
+    <string name="status_layout_retry">Prøv på nytt</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">velg regionen</string>
+    <string name="address_hint">Vennligst velg</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Velg en dato</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Vennligst velg et tidspunkt</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">ny versjon funnet</string>
+
+    <string name="update_content">Oppdater innhold</string>
+
+    <string name="update_no">Ser deg neste gang</string>
+    <string name="update_yes">oppdater umiddelbart</string>
+
+    <string name="update_permission_hint">Du må gi tillatelse før du kan laste ned oppdateringer normalt.</string>
+
+    <string name="update_status_start">nedlasting</string>
+    <string name="update_status_running">Laster ned %d%%</string>
+    <string name="update_status_successful">Nedlastingen er fullført, klikk for å installere</string>
+    <string name="update_status_failed">Nedlasting mislyktes. Klikk for å prøve igjen</string>
+
+    <string name="update_no_update">Foreløpig siste versjon</string>
+
+    <string name="update_notification_channel_id">Oppdater</string>
+    <string name="update_notification_channel_name">Oppgraderingsvarsel</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">del til...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Vennesirkel</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ plass</string>
+    <string name="share_platform_link">kopier link</string>
+
+    <string name="share_platform_copy_hint">Kopiert til utklippstavlen</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Vennligst skriv inn betalingspassord</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Minst %d elementer må velges</string>
+    <string name="select_max_hint">Høyst %d elementer kan velges</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Identitetsbekreftelse</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Trykk igjen for å avslutte</string>
+    <string name="home_nav_index">mobiltelefon</string>
+    <string name="home_nav_found">datamaskin</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">registrere</string>
+    <string name="login_forget">glemt passordet\?</string>
+    <string name="login_text">Logg Inn</string>
+
+    <string name="login_other">Andre påloggingsmetoder</string>
+
+    <!-- 注册 -->
+    <string name="register_title">registrere</string>
+    <string name="register_hint">Mobilnummer brukes kun til å logge på og beskytte kontosikkerheten</string>
+    <string name="register_password_hint1">Angi et 6–18 sifret påloggingspassord</string>
+    <string name="register_password_hint2">Vennligst skriv inn passordet ditt på nytt</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">sette opp</string>
+
+    <string name="setting_language_switchover">språkbytte</string>
+    <string name="setting_language_simple">Forenklet kinesisk</string>
+    <string name="setting_language_complex">tradisjonell kinesisk</string>
+    <string name="setting_update">Se etter oppdateringer</string>
+
+    <string name="setting_password">Bytt passord</string>
+    <string name="setting_phone">Endre mobiltelefon</string>
+
+    <string name="setting_auto">automatisk innlogging</string>
+    <string name="setting_cache">Tømme hurtigbufferen</string>
+
+    <string name="setting_agreement">personvernavtale</string>
+    <string name="setting_about">om oss</string>
+
+    <string name="setting_exit">Logg ut</string>
+
+    <!-- 关于 -->
+    <string name="about_title">om oss</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Brother hjul</string>
+
+    <string name="about_copyright">Copyright © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">glem passordet</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Sette inn påloggingspassord</string>
+    <string name="password_reset_phone_hint1">Angi et 6–18 sifret påloggingspassord</string>
+    <string name="password_reset_phone_hint2">Skriv inn passord på nytt</string>
+    <string name="password_reset_input_error">De to passordinngangene er inkonsekvente, vennligst skriv inn på nytt.</string>
+    <string name="password_reset_success">Endret</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Angi mobilnummer</string>
+    <string name="phone_reset_change_hint">Vennligst bruk ditt nye mobilnummer for å logge på neste gang.</string>
+    <string name="phone_reset_commit">Bind nå</string>
+
+    <string name="phone_reset_commit_succeed">Binding vellykket</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">personlig informasjon</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">bruker-ID</string>
+    <string name="personal_data_name">Kallenavn</string>
+    <string name="personal_data_name_hint">Angi kallenavn</string>
+
+    <string name="personal_data_address">område</string>
+    <string name="personal_data_address_hint">Vennligst velg</string>
+
+    <string name="personal_data_phone">telefonnummer</string>
+    <string name="personal_data_phone_hint">Bind nå</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Siden lastes inn...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Bildevalg</string>
+    <string name="image_select_all">Alle bilder</string>
+
+    <string name="image_select_total">Totalt %d bilder</string>
+
+    <string name="image_select_max_hint">Maksimalt %d bilder kan velges denne gangen</string>
+
+    <string name="image_select_error">Kan ikke velge, bildet er slettet</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Beskjæring mislyktes Gjeldende telefon støtter ikke beskjæring av bilder.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Videovalg</string>
+    <string name="video_select_all">Alle videoer</string>
+
+    <string name="video_select_total">Totalt %d</string>
+
+    <string name="video_select_max_hint">Høyst %d videoer kan velges denne gangen</string>
+
+    <string name="video_select_error">Kan ikke velge, videoen er slettet</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Kan ikke starte kameraet</string>
+    <string name="camera_image_error">Feil destinasjonsadresse</string>
+
+</resources>

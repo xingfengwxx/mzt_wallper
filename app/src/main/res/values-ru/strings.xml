@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Красивые картинки обои</string>
+    <string name="app_name_en">КрасиваяОбои</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">загрузка…</string>
+
+    <string name="common_unknown_error">неизвестная ошибка</string>
+
+    <string name="common_confirm">Конечно</string>
+    <string name="common_cancel">Отмена</string>
+
+    <string name="common_year">Год</string>
+    <string name="common_month">луна</string>
+    <string name="common_day">День</string>
+
+    <string name="common_hour">час</string>
+    <string name="common_minute">точка</string>
+    <string name="common_second">Второй</string>
+
+    <string name="common_crash_hint">В приложении произошла небольшая ошибка, и оно перезапускается.</string>
+
+    <string name="common_network_error">Текущая сеть недоступна, проверьте настройки сети.</string>
+
+    <string name="common_video_error_not_support">Это видео не подходит для воспроизведения на этом устройстве.</string>
+    <string name="common_video_error_unknown">Это видео невозможно воспроизвести</string>
+    <string name="common_video_error_supplement">Тип ошибки: %d, код ошибки: %d</string>
+
+    <string name="common_phone_input_hint">Пожалуйста, введите номер телефона</string>
+    <string name="common_phone_input_error">Номер мобильного телефона введен неверно</string>
+
+    <string name="common_password_input_error">Пожалуйста введите пароль</string>
+    <string name="common_password_input_unlike">Два введенных пароля несовместимы, пожалуйста, введите еще раз.</string>
+
+    <string name="common_code_input_hint">пожалуйста, введите код подтверждения</string>
+    <string name="common_code_send">Отправить код подтверждения</string>
+    <string name="common_code_send_hint">Код подтверждения отправлен, проверьте его внимательно.</string>
+    <string name="common_code_error_hint">Ошибка кода подтверждения. Проверьте ввод.</string>
+
+    <string name="common_step_next">Следующий шаг</string>
+    <string name="common_step_complete">Заканчивать</string>
+    <string name="common_step_commit">представлять на рассмотрение</string>
+
+    <string name="common_permission_alert">Напоминание об авторизации</string>
+    <string name="common_permission_fail_1">Авторизация не удалась, пожалуйста, предоставьте разрешение правильно</string>
+    <string name="common_permission_fail_2">Не удалось получить разрешение. Предоставьте разрешение вручную.</string>
+    <string name="common_permission_fail_3">Не удалось получить разрешение. Предоставьте %s вручную.</string>
+    <string name="common_permission_fail_4">Разрешение на фоновое позиционирование не предоставлено, выберите «Всегда разрешать».</string>
+    <string name="common_permission_goto">Перейти к авторизации</string>
+
+    <string name="common_permission_calendar">Разрешения календаря</string>
+    <string name="common_permission_camera">Разрешения камеры</string>
+    <string name="common_permission_contacts">Разрешения адресной книги</string>
+    <string name="common_permission_location">Разрешения на определение местоположения</string>
+    <string name="common_permission_location_background">Разрешения на фоновое позиционирование</string>
+    <string name="common_permission_microphone">Разрешения для микрофона</string>
+    <string name="common_permission_phone">Разрешения телефона</string>
+    <string name="common_permission_call_log">Разрешения на запись звонков</string>
+    <string name="common_permission_sensors">Разрешения датчика тела</string>
+    <string name="common_permission_activity_recognition">Разрешение на фитнес</string>
+    <string name="common_permission_sms">Разрешения на СМС</string>
+    <string name="common_permission_storage">Разрешения на хранение</string>
+
+    <string name="common_permission_install">Установить разрешения приложения</string>
+    <string name="common_permission_notification">Разрешения панели уведомлений</string>
+    <string name="common_permission_window">Разрешения плавающего окна</string>
+    <string name="common_permission_setting">Разрешения системных настроек</string>
+
+    <string name="common_network_hint">В настоящее время нет сетевого подключения, проверьте настройки сети.</string>
+    <string name="common_no_more_data">Больше нет данных</string>
+
+    <string name="common_web_ssl_error_title">Срок действия текущего сертификата безопасности веб-сайта истек или он ненадежен.\nПродолжить просмотр\?</string>
+    <string name="common_web_ssl_error_allow">Продолжить просмотр</string>
+    <string name="common_web_ssl_error_reject">вернуться на последнюю страницу</string>
+
+    <string name="common_web_location_permission_title">Текущему веб-сайту необходимо получить ваше географическое местоположение.</string>
+    <string name="common_web_location_permission_allow">Грант</string>
+    <string name="common_web_location_permission_reject">отклонять</string>
+
+    <string name="common_web_call_phone_title">Текущий номер %s</string>
+    <string name="common_web_call_phone_allow">набирать номер</string>
+    <string name="common_web_call_phone_reject">Отмена</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">загрузка…</string>
+
+    <string name="http_unknown_error">Ошибка запроса, неизвестная ошибка</string>
+    <string name="http_token_error">Не удалось войти, пожалуйста, войдите снова</string>
+    <string name="http_data_explain_error">Исключение синтаксического анализа данных, пожалуйста, подождите.</string>
+    <string name="http_server_out_time">Время запроса сервера истекло. Повторите попытку позже.</string>
+    <string name="http_network_error">Не удалось выполнить запрос. Проверьте настройки сети.</string>
+    <string name="http_response_error">Сервер ответил ненормально. Повторите попытку позже.</string>
+    <string name="http_server_error">Неисправность соединения с сервером. Повторите попытку позже.</string>
+    <string name="http_request_cancel">Запрос был прерван, попробуйте еще раз</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Пустой</string>
+    <string name="status_layout_error_request">Ошибка запроса, попробуйте еще раз</string>
+    <string name="status_layout_error_network">Ошибка сети, попробуйте еще раз</string>
+    <string name="status_layout_retry">Повторить попытку</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">пожалуйста, выберите регион</string>
+    <string name="address_hint">пожалуйста, выбери</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Пожалуйста, выберите дату</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Пожалуйста, выберите время</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">найдена новая версия</string>
+
+    <string name="update_content">Обновить контент</string>
+
+    <string name="update_no">Увидимся в следующий раз</string>
+    <string name="update_yes">обновить немедленно</string>
+
+    <string name="update_permission_hint">Прежде чем вы сможете нормально загружать обновления, вам необходимо предоставить разрешение.</string>
+
+    <string name="update_status_start">загрузка</string>
+    <string name="update_status_running">Загрузка %d%%</string>
+    <string name="update_status_successful">Загрузка завершена, нажмите, чтобы установить</string>
+    <string name="update_status_failed">Не удалось загрузить. Нажмите, чтобы повторить попытку.</string>
+
+    <string name="update_no_update">На данный момент последняя версия</string>
+
+    <string name="update_notification_channel_id">обновлять</string>
+    <string name="update_notification_channel_name">Уведомление об обновлении</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">Поделиться с…</string>
+
+    <string name="share_platform_wechat">Вичат</string>
+    <string name="share_platform_moment">Круг друзей</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ-пространство</string>
+    <string name="share_platform_link">копировать ссылку</string>
+
+    <string name="share_platform_copy_hint">Скопировано в буфер обмена</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Пожалуйста, введите платежный пароль</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Должно быть выбрано хотя бы %d элементов</string>
+    <string name="select_max_hint">Можно выбрать не более %d элементов</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Проверка личности</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Нажмите еще раз, чтобы выйти</string>
+    <string name="home_nav_index">сотовый телефон</string>
+    <string name="home_nav_found">компьютер</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">регистр</string>
+    <string name="login_forget">забыл пароль\?</string>
+    <string name="login_text">Авторизоваться</string>
+
+    <string name="login_other">Другие способы входа</string>
+
+    <!-- 注册 -->
+    <string name="register_title">регистр</string>
+    <string name="register_hint">Номер мобильного телефона используется только для входа в систему и защиты безопасности учетной записи.</string>
+    <string name="register_password_hint1">Установите пароль для входа из 6–18 цифр.</string>
+    <string name="register_password_hint2">Пожалуйста, введите свой пароль еще раз</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">настраивать</string>
+
+    <string name="setting_language_switchover">переключатель языка</string>
+    <string name="setting_language_simple">Упрощенный китайский</string>
+    <string name="setting_language_complex">традиционный китайский</string>
+    <string name="setting_update">Проверьте наличие обновлений</string>
+
+    <string name="setting_password">изменить пароль</string>
+    <string name="setting_phone">Изменить мобильный телефон</string>
+
+    <string name="setting_auto">автоматическая авторизация</string>
+    <string name="setting_cache">Очистить кэш</string>
+
+    <string name="setting_agreement">соглашение о конфиденциальности</string>
+    <string name="setting_about">о нас</string>
+
+    <string name="setting_exit">выход</string>
+
+    <!-- 关于 -->
+    <string name="about_title">о нас</string>
+    <string name="about_author"><font color="#85b84f">Андроид</font> Брат Колесо</string>
+
+    <string name="about_copyright">© 2018 – 2021.</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">забыть пароль</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Установка пароля для входа</string>
+    <string name="password_reset_phone_hint1">Установите пароль для входа из 6–18 цифр.</string>
+    <string name="password_reset_phone_hint2">Повторно введите пароль</string>
+    <string name="password_reset_input_error">Два введенных пароля несовместимы, пожалуйста, введите еще раз.</string>
+    <string name="password_reset_success">Успешно изменено</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Установить номер мобильного телефона</string>
+    <string name="phone_reset_change_hint">Пожалуйста, используйте свой новый номер мобильного телефона для входа в следующий раз.</string>
+    <string name="phone_reset_commit">Привязать сейчас</string>
+
+    <string name="phone_reset_commit_succeed">Привязка прошла успешно</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">персональная информация</string>
+    <string name="personal_data_head">аватар</string>
+
+    <string name="personal_data_id">ID пользователя</string>
+    <string name="personal_data_name">Ник имя</string>
+    <string name="personal_data_name_hint">Установить никнейм</string>
+
+    <string name="personal_data_address">область</string>
+    <string name="personal_data_address_hint">пожалуйста, выбери</string>
+
+    <string name="personal_data_phone">номер телефона</string>
+    <string name="personal_data_phone_hint">Привязать сейчас</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Страница загружается...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Выбор изображения</string>
+    <string name="image_select_all">Все фотографии</string>
+
+    <string name="image_select_total">Всего %d фотографий</string>
+
+    <string name="image_select_max_hint">На этот раз можно выбрать не более %d изображений</string>
+
+    <string name="image_select_error">Невозможно выбрать, изображение удалено.</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Ошибка обрезки. Текущий телефон не поддерживает обрезку изображений.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Подборка видео</string>
+    <string name="video_select_all">Все видео</string>
+
+    <string name="video_select_total">Всего %d</string>
+
+    <string name="video_select_max_hint">На этот раз можно выбрать не более %d видео</string>
+
+    <string name="video_select_error">Невозможно выбрать, видео удалено.</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Невозможно запустить камеру</string>
+    <string name="camera_image_error">Неправильный адрес назначения</string>
+
+</resources>

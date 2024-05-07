@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Belaj bildoj tapeto</string>
+    <string name="app_name_en">Bela Murpapero</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">ŝarĝante…</string>
+
+    <string name="common_unknown_error">nekonata eraro</string>
+
+    <string name="common_confirm">Certe</string>
+    <string name="common_cancel">Nuligi</string>
+
+    <string name="common_year">Jaro</string>
+    <string name="common_month">luno</string>
+    <string name="common_day">Tago</string>
+
+    <string name="common_hour">horo</string>
+    <string name="common_minute">punkto</string>
+    <string name="common_second">Due</string>
+
+    <string name="common_crash_hint">La aplikaĵo renkontis negravan akcidenton kaj estas rekomencita.</string>
+
+    <string name="common_network_error">La nuna reto ne disponeblas, bonvolu kontroli la retajn agordojn</string>
+
+    <string name="common_video_error_not_support">Ĉi tiu video ne taŭgas por reproduktado sur ĉi tiu aparato</string>
+    <string name="common_video_error_unknown">Ĉi tiu video ne estas reludata</string>
+    <string name="common_video_error_supplement">Tipo de eraro: %d, erarkodo: %d</string>
+
+    <string name="common_phone_input_hint">Bonvolu enigi la telefonnumeron</string>
+    <string name="common_phone_input_error">Poŝtelefonnumero enmetita malĝuste</string>
+
+    <string name="common_password_input_error">Bonvolu enigi pasvorton</string>
+    <string name="common_password_input_unlike">La du pasvortaj enigaĵoj malkongruas, bonvolu reenigi.</string>
+
+    <string name="common_code_input_hint">bonvolu enigi konfirmkodon</string>
+    <string name="common_code_send">Sendu la konfirmkodon</string>
+    <string name="common_code_send_hint">Konfirmkodo estas sendita, bonvolu kontroli ĝin atente</string>
+    <string name="common_code_error_hint">Eraro pri kontrola kodo, bonvolu kontroli vian enigon</string>
+
+    <string name="common_step_next">Sekva paŝo</string>
+    <string name="common_step_complete">Finu</string>
+    <string name="common_step_commit">submeti</string>
+
+    <string name="common_permission_alert">Memorigilo pri rajtigo</string>
+    <string name="common_permission_fail_1">Rajtigo malsukcesis, bonvolu doni permeson ĝuste</string>
+    <string name="common_permission_fail_2">Malsukcesis akiri permeson, bonvolu doni permeson permane</string>
+    <string name="common_permission_fail_3">Malsukcesis akiri permeson, bonvolu doni %s permane</string>
+    <string name="common_permission_fail_4">Fona poziciiga permeso ne estas donita, bonvolu elekti \"Ĉiam permesi\"</string>
+    <string name="common_permission_goto">Iru al Rajtigo</string>
+
+    <string name="common_permission_calendar">Kalendaraj permesoj</string>
+    <string name="common_permission_camera">Fotilaj permesoj</string>
+    <string name="common_permission_contacts">Permesoj pri adreslibro</string>
+    <string name="common_permission_location">Lokaj permesoj</string>
+    <string name="common_permission_location_background">Fona poziciiga permesoj</string>
+    <string name="common_permission_microphone">Mikrofonaj permesoj</string>
+    <string name="common_permission_phone">Telefonaj permesoj</string>
+    <string name="common_permission_call_log">Voku rekordajn permesojn</string>
+    <string name="common_permission_sensors">Permesoj pri korpaj sensiloj</string>
+    <string name="common_permission_activity_recognition">Taŭgeca permeso</string>
+    <string name="common_permission_sms">SMS-permesoj</string>
+    <string name="common_permission_storage">Permesoj pri konservado</string>
+
+    <string name="common_permission_install">Instali aplikajn permesojn</string>
+    <string name="common_permission_notification">Permesoj pri sciiga trinkejo</string>
+    <string name="common_permission_window">Permesoj de ŝveba fenestro</string>
+    <string name="common_permission_setting">Permesoj pri sistemaj agordoj</string>
+
+    <string name="common_network_hint">Nuntempe ne ekzistas retkonekto, bonvolu kontroli la retajn agordojn</string>
+    <string name="common_no_more_data">Ne plu datumoj</string>
+
+    <string name="common_web_ssl_error_title">La nuna retejo-sekureca atestilo eksvalidiĝis aŭ estas nefidinda\nĈu vi volas daŭrigi foliumi\?</string>
+    <string name="common_web_ssl_error_allow">Daŭrigu foliumi</string>
+    <string name="common_web_ssl_error_reject">reiru al la lasta paĝo</string>
+
+    <string name="common_web_location_permission_title">La nuna retejo bezonas akiri vian geografian lokon</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">malakcepti</string>
+
+    <string name="common_web_call_phone_title">Nuna numero %s</string>
+    <string name="common_web_call_phone_allow">dial</string>
+    <string name="common_web_call_phone_reject">Nuligi</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">ŝarĝante…</string>
+
+    <string name="http_unknown_error">Peta eraro, nekonata eraro</string>
+    <string name="http_token_error">Ensaluto malsukcesis, bonvolu ensaluti denove</string>
+    <string name="http_data_explain_error">Escepto pri analizado de datumoj, bonvolu atendi.</string>
+    <string name="http_server_out_time">Servila peto finiĝis, bonvolu provi denove poste</string>
+    <string name="http_network_error">Peto malsukcesis, bonvolu kontroli retajn agordojn</string>
+    <string name="http_response_error">La servilo respondis nenormale, bonvolu provi denove poste.</string>
+    <string name="http_server_error">Servila konekto anomalio, bonvolu provi denove poste</string>
+    <string name="http_request_cancel">La peto estis interrompita, bonvolu provi denove</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Malplena</string>
+    <string name="status_layout_error_request">Peti eraron, bonvolu provi denove</string>
+    <string name="status_layout_error_network">Reta eraro, bonvolu provi denove</string>
+    <string name="status_layout_retry">Reprovi</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">bonvolu elekti la regionon</string>
+    <string name="address_hint">bonvolu elekti</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Bonvolu elekti daton</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Bonvolu elekti tempon</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">nova versio trovita</string>
+
+    <string name="update_content">Ĝisdatigi enhavon</string>
+
+    <string name="update_no">Vidi vin venontfoje</string>
+    <string name="update_yes">ĝisdatigi tuj</string>
+
+    <string name="update_permission_hint">Vi devas doni permeson antaŭ ol vi povas elŝuti ĝisdatigojn normale.</string>
+
+    <string name="update_status_start">elŝuto</string>
+    <string name="update_status_running">Elŝutante %d%%</string>
+    <string name="update_status_successful">Elŝuto finiĝis, alklaku por instali</string>
+    <string name="update_status_failed">Elŝuto malsukcesis, alklaku por provi denove</string>
+
+    <string name="update_no_update">Nuntempe la plej nova versio</string>
+
+    <string name="update_notification_channel_id">ĝisdatigo</string>
+    <string name="update_notification_channel_name">Altgradiga sciigo</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">dividi al...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Rondo de amikoj</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ-spaco</string>
+    <string name="share_platform_link">kopiu Ligon</string>
+
+    <string name="share_platform_copy_hint">Kopiita al tondujo</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Bonvolu enigi pagpasvorton</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Almenaŭ %d eroj devas esti elektitaj</string>
+    <string name="select_max_hint">Maksimume %d eroj povas esti elektitaj</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Konfirmo de identeco</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Premu denove por eliri</string>
+    <string name="home_nav_index">Poŝtelefono</string>
+    <string name="home_nav_found">komputilo</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">registri</string>
+    <string name="login_forget">ĉu forgesu la pasvorton\?</string>
+    <string name="login_text">Ensaluti</string>
+
+    <string name="login_other">Aliaj ensalutmetodoj</string>
+
+    <!-- 注册 -->
+    <string name="register_title">registri</string>
+    <string name="register_hint">Poŝtelefona numero estas uzata nur por ensaluti kaj protekti kontan sekurecon</string>
+    <string name="register_password_hint1">Agordu 6–18-ciferan ensalutpasvorton</string>
+    <string name="register_password_hint2">Bonvolu enigi vian pasvorton denove</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">agordi</string>
+
+    <string name="setting_language_switchover">lingvoŝaltilo</string>
+    <string name="setting_language_simple">Simpligita ĉino</string>
+    <string name="setting_language_complex">tradicia ĉino</string>
+    <string name="setting_update">Kontrolu ĝisdatigojn</string>
+
+    <string name="setting_password">ŝanĝi Pasvorton</string>
+    <string name="setting_phone">Modifi poŝtelefonon</string>
+
+    <string name="setting_auto">aŭtomata ensaluto</string>
+    <string name="setting_cache">Malplenigu la kaŝmemoron</string>
+
+    <string name="setting_agreement">privateco interkonsento</string>
+    <string name="setting_about">pri ni</string>
+
+    <string name="setting_exit">elsaluti</string>
+
+    <!-- 关于 -->
+    <string name="about_title">pri ni</string>
+    <string name="about_author"><font color="#85b84f">Androido</font> Frato Rado</string>
+
+    <string name="about_copyright">Kopirajto © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">forgesu la pasvorton</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Agordi ensalutpasvorton</string>
+    <string name="password_reset_phone_hint1">Agordu 6–18-ciferan ensalutpasvorton</string>
+    <string name="password_reset_phone_hint2">Retajpu pasvorton</string>
+    <string name="password_reset_input_error">La du pasvortaj enigaĵoj estas malkonsekvencaj, bonvolu reenigi.</string>
+    <string name="password_reset_success">Sukcese modifita</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Agordu poŝtelefonan numeron</string>
+    <string name="phone_reset_change_hint">Bonvolu uzi vian novan poŝtelefonnumeron por ensaluti venontfoje.</string>
+    <string name="phone_reset_commit">Ligu nun</string>
+
+    <string name="phone_reset_commit_succeed">Ligado sukcesa</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Personaj informoj</string>
+    <string name="personal_data_head">avataro</string>
+
+    <string name="personal_data_id">Uzanto ID</string>
+    <string name="personal_data_name">Alnomo</string>
+    <string name="personal_data_name_hint">Agordu kromnomon</string>
+
+    <string name="personal_data_address">areo</string>
+    <string name="personal_data_address_hint">bonvolu elekti</string>
+
+    <string name="personal_data_phone">telefonnumero</string>
+    <string name="personal_data_phone_hint">Ligu nun</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">La paĝo ŝarĝas...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Elekto de bildoj</string>
+    <string name="image_select_all">Ĉiuj bildoj</string>
+
+    <string name="image_select_total">Entute %d fotoj</string>
+
+    <string name="image_select_max_hint">Maksimume %d bildoj povas esti elektitaj ĉi-foje</string>
+
+    <string name="image_select_error">Ne eblas elekti, la bildo estis forigita</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Tondado malsukcesis La nuna telefono ne subtenas tondadon de bildoj.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Elekto de video</string>
+    <string name="video_select_all">Ĉiuj filmetoj</string>
+
+    <string name="video_select_total">Entute %d</string>
+
+    <string name="video_select_max_hint">Maksimume %d filmetoj povas esti elektitaj ĉi-foje</string>
+
+    <string name="video_select_error">Ne eblas elekti, la video estis forigita</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Ne eblas lanĉi fotilon</string>
+    <string name="camera_image_error">Malĝusta cela adreso</string>
+
+</resources>

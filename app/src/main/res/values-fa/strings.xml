@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">والپیپر تصاویر زیبا</string>
+    <string name="app_name_en">والپیپر زیبا</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">بارگذاری…</string>
+
+    <string name="common_unknown_error">اشتباه ناشناخته</string>
+
+    <string name="common_confirm">مطمئن</string>
+    <string name="common_cancel">لغو کنید</string>
+
+    <string name="common_year">سال</string>
+    <string name="common_month">ماه</string>
+    <string name="common_day">روز</string>
+
+    <string name="common_hour">ساعت</string>
+    <string name="common_minute">نقطه</string>
+    <string name="common_second">دومین</string>
+
+    <string name="common_crash_hint">برنامه با یک تصادف جزئی مواجه شد و در حال راه اندازی مجدد است.</string>
+
+    <string name="common_network_error">شبکه فعلی در دسترس نیست، لطفا تنظیمات شبکه را بررسی کنید</string>
+
+    <string name="common_video_error_not_support">این ویدیو برای پخش در این دستگاه مناسب نیست</string>
+    <string name="common_video_error_unknown">این ویدیو قابل پخش نیست</string>
+    <string name="common_video_error_supplement">نوع خطا: %d، کد خطا: %d</string>
+
+    <string name="common_phone_input_hint">لطفا شماره تلفن را وارد کنید</string>
+    <string name="common_phone_input_error">شماره تلفن همراه اشتباه وارد شده است</string>
+
+    <string name="common_password_input_error">لطفا رمز عبور را وارد کنید</string>
+    <string name="common_password_input_unlike">دو ورودی رمز عبور متناقض هستند، لطفاً دوباره وارد کنید.</string>
+
+    <string name="common_code_input_hint">لطفا کد تایید را وارد کنید</string>
+    <string name="common_code_send">کد تایید را ارسال کنید</string>
+    <string name="common_code_send_hint">کد تأیید ارسال شده است، لطفاً آن را به دقت بررسی کنید</string>
+    <string name="common_code_error_hint">خطای کد تأیید، لطفاً ورودی خود را بررسی کنید</string>
+
+    <string name="common_step_next">گام بعدی</string>
+    <string name="common_step_complete">پایان</string>
+    <string name="common_step_commit">ارسال</string>
+
+    <string name="common_permission_alert">یادآوری مجوز</string>
+    <string name="common_permission_fail_1">مجوز انجام نشد، لطفاً به درستی مجوز بدهید</string>
+    <string name="common_permission_fail_2">دریافت مجوز انجام نشد، لطفاً به صورت دستی مجوز بدهید</string>
+    <string name="common_permission_fail_3">دریافت مجوز انجام نشد، لطفاً %s را به صورت دستی اعطا کنید</string>
+    <string name="common_permission_fail_4">مجوز موقعیت یابی پس زمینه داده نشده است، لطفاً «همیشه مجاز باشد» را انتخاب کنید</string>
+    <string name="common_permission_goto">به مجوز مراجعه کنید</string>
+
+    <string name="common_permission_calendar">مجوزهای تقویم</string>
+    <string name="common_permission_camera">مجوزهای دوربین</string>
+    <string name="common_permission_contacts">مجوزهای دفترچه آدرس</string>
+    <string name="common_permission_location">مجوزهای مکان</string>
+    <string name="common_permission_location_background">مجوزهای موقعیت یابی پس زمینه</string>
+    <string name="common_permission_microphone">مجوزهای میکروفون</string>
+    <string name="common_permission_phone">مجوزهای تلفن</string>
+    <string name="common_permission_call_log">مجوزهای ضبط تماس</string>
+    <string name="common_permission_sensors">مجوزهای حسگر بدن</string>
+    <string name="common_permission_activity_recognition">مجوز تناسب اندام</string>
+    <string name="common_permission_sms">مجوزهای پیامک</string>
+    <string name="common_permission_storage">مجوزهای ذخیره سازی</string>
+
+    <string name="common_permission_install">مجوزهای برنامه را نصب کنید</string>
+    <string name="common_permission_notification">مجوزهای نوار اعلان</string>
+    <string name="common_permission_window">مجوزهای پنجره شناور</string>
+    <string name="common_permission_setting">مجوزهای تنظیمات سیستم</string>
+
+    <string name="common_network_hint">در حال حاضر هیچ اتصال شبکه ای وجود ندارد، لطفا تنظیمات شبکه را بررسی کنید</string>
+    <string name="common_no_more_data">دیگر داده ای وجود ندارد</string>
+
+    <string name="common_web_ssl_error_title">گواهی امنیتی وب سایت فعلی منقضی شده است یا غیرقابل اعتماد است\nآیا می خواهید به مرور ادامه دهید؟</string>
+    <string name="common_web_ssl_error_allow">به مرور ادامه دهید</string>
+    <string name="common_web_ssl_error_reject">به صفحه آخر برگرد</string>
+
+    <string name="common_web_location_permission_title">وب سایت فعلی باید موقعیت جغرافیایی شما را بدست آورد</string>
+    <string name="common_web_location_permission_allow">اعطا کردن</string>
+    <string name="common_web_location_permission_reject">رد کردن</string>
+
+    <string name="common_web_call_phone_title">عدد فعلی %s</string>
+    <string name="common_web_call_phone_allow">شماره گیری کنید</string>
+    <string name="common_web_call_phone_reject">لغو کنید</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">بارگذاری…</string>
+
+    <string name="http_unknown_error">خطای درخواست، خطای ناشناخته</string>
+    <string name="http_token_error">ورود ناموفق بود، لطفا دوباره وارد شوید</string>
+    <string name="http_data_explain_error">استثنا تجزیه داده، لطفاً صبر کنید.</string>
+    <string name="http_server_out_time">زمان درخواست سرور تمام شد، لطفاً بعداً دوباره امتحان کنید</string>
+    <string name="http_network_error">درخواست ناموفق بود، لطفا تنظیمات شبکه را بررسی کنید</string>
+    <string name="http_response_error">سرور غیر عادی پاسخ داد، لطفاً بعداً دوباره امتحان کنید.</string>
+    <string name="http_server_error">اختلال در اتصال سرور، لطفاً بعداً دوباره امتحان کنید</string>
+    <string name="http_request_cancel">درخواست قطع شد، لطفا دوباره امتحان کنید</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">خالی</string>
+    <string name="status_layout_error_request">خطای درخواست، لطفا دوباره امتحان کنید</string>
+    <string name="status_layout_error_network">خطای شبکه، لطفا دوباره امتحان کنید</string>
+    <string name="status_layout_retry">دوباره امتحان کنید</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">لطفا منطقه را انتخاب کنید</string>
+    <string name="address_hint">لطفا انتخاب کنید</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">لطفا تاریخ را انتخاب کنید</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">لطفا زمانی را انتخاب کنید</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">نسخه جدید پیدا شد</string>
+
+    <string name="update_content">به روز رسانی محتوا</string>
+
+    <string name="update_no">بعدا می بینمت</string>
+    <string name="update_yes">فورا به روز رسانی کنید</string>
+
+    <string name="update_permission_hint">قبل از اینکه بتوانید به‌روزرسانی‌ها را به طور معمول دانلود کنید، باید مجوز بدهید.</string>
+
+    <string name="update_status_start">دانلود کردن</string>
+    <string name="update_status_running">در حال دانلود %d%%</string>
+    <string name="update_status_successful">دانلود کامل شد، برای نصب کلیک کنید</string>
+    <string name="update_status_failed">دانلود انجام نشد، برای امتحان مجدد کلیک کنید</string>
+
+    <string name="update_no_update">در حال حاضر آخرین نسخه</string>
+
+    <string name="update_notification_channel_id">به روز رسانی</string>
+    <string name="update_notification_channel_name">اعلان ارتقا</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">به اشتراک گذاشتن برای…</string>
+
+    <string name="share_platform_wechat">وی چت</string>
+    <string name="share_platform_moment">دایره دوستان</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">فضای QQ</string>
+    <string name="share_platform_link">لینک را کپی کنید</string>
+
+    <string name="share_platform_copy_hint">در کلیپ بورد کپی شد</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">لطفا رمز پرداخت را وارد کنید</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">حداقل %d مورد باید انتخاب شود</string>
+    <string name="select_max_hint">حداکثر %d مورد را می توان انتخاب کرد</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">تایید هویت</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">برای خروج دوباره فشار دهید</string>
+    <string name="home_nav_index">تلفن همراه</string>
+    <string name="home_nav_found">کامپیوتر</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">پیکسابای</string>
+
+    <!-- 登录 -->
+    <string name="login_register">ثبت نام</string>
+    <string name="login_forget">رمز عبور را فراموش کرده اید؟</string>
+    <string name="login_text">وارد شدن</string>
+
+    <string name="login_other">سایر روش های ورود</string>
+
+    <!-- 注册 -->
+    <string name="register_title">ثبت نام</string>
+    <string name="register_hint">شماره تلفن همراه فقط برای ورود به سیستم و محافظت از امنیت حساب استفاده می شود</string>
+    <string name="register_password_hint1">یک رمز ورود 6 تا 18 رقمی تنظیم کنید</string>
+    <string name="register_password_hint2">لطفا رمز عبور خود را دوباره وارد کنید</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">برپایی</string>
+
+    <string name="setting_language_switchover">سوئیچ زبان</string>
+    <string name="setting_language_simple">چینی ساده شده</string>
+    <string name="setting_language_complex">چینی سنتی</string>
+    <string name="setting_update">به روز رسانی را بررسی کنید</string>
+
+    <string name="setting_password">تغییر رمز عبور</string>
+    <string name="setting_phone">تلفن همراه را اصلاح کنید</string>
+
+    <string name="setting_auto">ورود خودکار</string>
+    <string name="setting_cache">کش را خالی کنید</string>
+
+    <string name="setting_agreement">قرارداد حفظ حریم خصوصی</string>
+    <string name="setting_about">درباره ما</string>
+
+    <string name="setting_exit">خروج از سیستم</string>
+
+    <!-- 关于 -->
+    <string name="about_title">درباره ما</string>
+    <string name="about_author"><font color="#85b84f">اندروید</font> برادر چرخ</string>
+
+    <string name="about_copyright">حق چاپ © 2018 - 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">رمز عبور را فراموش کنید</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">تنظیم رمز ورود به سیستم</string>
+    <string name="password_reset_phone_hint1">یک رمز ورود 6 تا 18 رقمی تنظیم کنید</string>
+    <string name="password_reset_phone_hint2">رمز عبور را دوباره وارد کنید</string>
+    <string name="password_reset_input_error">دو ورودی رمز عبور متناقض هستند، لطفاً دوباره وارد کنید.</string>
+    <string name="password_reset_success">با موفقیت اصلاح شد</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">تنظیم شماره موبایل</string>
+    <string name="phone_reset_change_hint">لطفاً از شماره تلفن همراه جدید خود برای ورود به سیستم دفعه بعد استفاده کنید.</string>
+    <string name="phone_reset_commit">اکنون ببندید</string>
+
+    <string name="phone_reset_commit_succeed">صحافی با موفقیت انجام شد</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">اطلاعات شخصی</string>
+    <string name="personal_data_head">آواتار</string>
+
+    <string name="personal_data_id">شناسه کاربر</string>
+    <string name="personal_data_name">نام مستعار</string>
+    <string name="personal_data_name_hint">نام مستعار را تنظیم کنید</string>
+
+    <string name="personal_data_address">حوزه</string>
+    <string name="personal_data_address_hint">لطفا انتخاب کنید</string>
+
+    <string name="personal_data_phone">شماره تلفن</string>
+    <string name="personal_data_phone_hint">اکنون ببندید</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">صفحه در حال بارگذاری است...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">انتخاب تصویر</string>
+    <string name="image_select_all">همه تصاویر</string>
+
+    <string name="image_select_total">کل %d عکس</string>
+
+    <string name="image_select_max_hint">این بار حداکثر %d تصویر را می توان انتخاب کرد</string>
+
+    <string name="image_select_error">انتخاب نشد، تصویر حذف شده است</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">برش انجام نشد تلفن فعلی از برش تصاویر پشتیبانی نمی کند.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">انتخاب ویدیو</string>
+    <string name="video_select_all">همه ویدیوها</string>
+
+    <string name="video_select_total">کل %d</string>
+
+    <string name="video_select_max_hint">این بار حداکثر %d ویدیو قابل انتخاب است</string>
+
+    <string name="video_select_error">انتخاب نشد، ویدیو حذف شده است</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">دوربین راه اندازی نشد</string>
+    <string name="camera_image_error">آدرس مقصد اشتباه است</string>
+
+</resources>

@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Gražių paveikslėlių tapetai</string>
+    <string name="app_name_en">Gražūs tapetai</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">įkeliama…</string>
+
+    <string name="common_unknown_error">nežinoma klaida</string>
+
+    <string name="common_confirm">Žinoma</string>
+    <string name="common_cancel">Atšaukti</string>
+
+    <string name="common_year">Metai</string>
+    <string name="common_month">mėnulis</string>
+    <string name="common_day">Diena</string>
+
+    <string name="common_hour">valandą</string>
+    <string name="common_minute">tašką</string>
+    <string name="common_second">Antra</string>
+
+    <string name="common_crash_hint">Programoje įvyko nedidelė avarija ir ji paleidžiama iš naujo.</string>
+
+    <string name="common_network_error">Dabartinis tinklas nepasiekiamas, patikrinkite tinklo nustatymus</string>
+
+    <string name="common_video_error_not_support">Šis vaizdo įrašas netinka atkurti šiame įrenginyje</string>
+    <string name="common_video_error_unknown">Šio vaizdo įrašo paleisti negalima</string>
+    <string name="common_video_error_supplement">Klaidos tipas: %d, klaidos kodas: %d</string>
+
+    <string name="common_phone_input_hint">Įveskite telefono numerį</string>
+    <string name="common_phone_input_error">Neteisingai įvestas mobiliojo telefono numeris</string>
+
+    <string name="common_password_input_error">Įveskite slaptažodį</string>
+    <string name="common_password_input_unlike">Du slaptažodžių įvesties duomenys nesutampa, įveskite dar kartą.</string>
+
+    <string name="common_code_input_hint">įveskite patvirtinimo kodą</string>
+    <string name="common_code_send">Atsiųskite patvirtinimo kodą</string>
+    <string name="common_code_send_hint">Patvirtinimo kodas išsiųstas, atidžiai patikrinkite</string>
+    <string name="common_code_error_hint">Patvirtinimo kodo klaida, patikrinkite įvestą informaciją</string>
+
+    <string name="common_step_next">Kitas žingsnis</string>
+    <string name="common_step_complete">Baigti</string>
+    <string name="common_step_commit">Pateikti</string>
+
+    <string name="common_permission_alert">Autorizacijos priminimas</string>
+    <string name="common_permission_fail_1">Autorizacija nepavyko, suteikite leidimą teisingai</string>
+    <string name="common_permission_fail_2">Nepavyko gauti leidimo, suteikite leidimą rankiniu būdu</string>
+    <string name="common_permission_fail_3">Nepavyko gauti leidimo, suteikite %s rankiniu būdu</string>
+    <string name="common_permission_fail_4">Fone padėties nustatymo leidimas nesuteikiamas, pasirinkite „Visada leisti“</string>
+    <string name="common_permission_goto">Eikite į Autorizacija</string>
+
+    <string name="common_permission_calendar">Kalendoriaus leidimai</string>
+    <string name="common_permission_camera">Fotoaparato leidimai</string>
+    <string name="common_permission_contacts">Adresų knygos leidimai</string>
+    <string name="common_permission_location">Vietos leidimai</string>
+    <string name="common_permission_location_background">Fono padėties nustatymo leidimai</string>
+    <string name="common_permission_microphone">Mikrofono leidimai</string>
+    <string name="common_permission_phone">Telefono leidimai</string>
+    <string name="common_permission_call_log">Skambučių įrašų leidimai</string>
+    <string name="common_permission_sensors">Kūno jutiklio leidimai</string>
+    <string name="common_permission_activity_recognition">Fitneso leidimas</string>
+    <string name="common_permission_sms">SMS leidimai</string>
+    <string name="common_permission_storage">Saugyklos leidimai</string>
+
+    <string name="common_permission_install">Įdiegti programos leidimus</string>
+    <string name="common_permission_notification">Pranešimų juostos leidimai</string>
+    <string name="common_permission_window">Slankiojo lango leidimai</string>
+    <string name="common_permission_setting">Sistemos nustatymų leidimai</string>
+
+    <string name="common_network_hint">Šiuo metu nėra tinklo ryšio, patikrinkite tinklo nustatymus</string>
+    <string name="common_no_more_data">Daugiau duomenų nėra</string>
+
+    <string name="common_web_ssl_error_title">Dabartinis svetainės saugos sertifikatas baigėsi arba yra nepatikimas\nAr norite toliau naršyti\?</string>
+    <string name="common_web_ssl_error_allow">Tęsti naršymą</string>
+    <string name="common_web_ssl_error_reject">grįžti į paskutinį puslapį</string>
+
+    <string name="common_web_location_permission_title">Dabartinė svetainė turi gauti jūsų geografinę vietą</string>
+    <string name="common_web_location_permission_allow">Suteikti</string>
+    <string name="common_web_location_permission_reject">atmesti</string>
+
+    <string name="common_web_call_phone_title">Dabartinis numeris %s</string>
+    <string name="common_web_call_phone_allow">rinkti</string>
+    <string name="common_web_call_phone_reject">Atšaukti</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">įkeliama…</string>
+
+    <string name="http_unknown_error">Užklausos klaida, nežinoma klaida</string>
+    <string name="http_token_error">Prisijungti nepavyko, prisijunkite dar kartą</string>
+    <string name="http_data_explain_error">Duomenų analizės išimtis, palaukite.</string>
+    <string name="http_server_out_time">Baigėsi serverio užklausos skirtasis laikas, bandykite dar kartą vėliau</string>
+    <string name="http_network_error">Užklausa nepavyko, patikrinkite tinklo nustatymus</string>
+    <string name="http_response_error">Serveris atsakė neįprastai, bandykite dar kartą vėliau.</string>
+    <string name="http_server_error">Serverio ryšio sutrikimas, bandykite dar kartą vėliau</string>
+    <string name="http_request_cancel">Užklausa buvo pertraukta, bandykite dar kartą</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Tuščia</string>
+    <string name="status_layout_error_request">Užklausos klaida, bandykite dar kartą</string>
+    <string name="status_layout_error_network">Tinklo klaida, bandykite dar kartą</string>
+    <string name="status_layout_retry">Bandykite dar kartą</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">prašome pasirinkti regioną</string>
+    <string name="address_hint">Prašome pasirinkti</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Pasirinkite datą</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Pasirinkite laiką</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">rasta nauja versija</string>
+
+    <string name="update_content">Atnaujinkite turinį</string>
+
+    <string name="update_no">Pasimatysim kitą kartą</string>
+    <string name="update_yes">nedelsiant atnaujinti</string>
+
+    <string name="update_permission_hint">Kad galėtumėte įprastai atsisiųsti naujinimus, turite suteikti leidimą.</string>
+
+    <string name="update_status_start">atsisiuntimas</string>
+    <string name="update_status_running">Atsisiunčiama %d%%</string>
+    <string name="update_status_successful">Atsisiuntimas baigtas, spustelėkite, kad įdiegtumėte</string>
+    <string name="update_status_failed">Atsisiuntimas nepavyko, spustelėkite ir bandykite dar kartą</string>
+
+    <string name="update_no_update">Šiuo metu naujausia versija</string>
+
+    <string name="update_notification_channel_id">atnaujinti</string>
+    <string name="update_notification_channel_name">Pranešimas apie atnaujinimą</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">dalintis su…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Draugų ratas</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ erdvė</string>
+    <string name="share_platform_link">nukopijuoti nuorodą</string>
+
+    <string name="share_platform_copy_hint">Nukopijuota į mainų sritį</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Įveskite mokėjimo slaptažodį</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Turi būti pasirinkta bent %d elemento</string>
+    <string name="select_max_hint">Galima pasirinkti daugiausia %d elementų</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Tapatybės patvirtinimas</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Norėdami išeiti, paspauskite dar kartą</string>
+    <string name="home_nav_index">Mobilusis telefonas</string>
+    <string name="home_nav_found">kompiuteris</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">Registruotis</string>
+    <string name="login_forget">pamiršti slaptažodį\?</string>
+    <string name="login_text">Prisijungti</string>
+
+    <string name="login_other">Kiti prisijungimo būdai</string>
+
+    <!-- 注册 -->
+    <string name="register_title">Registruotis</string>
+    <string name="register_hint">Mobiliojo telefono numeris naudojamas tik prisijungimui ir paskyros saugumui apsaugoti</string>
+    <string name="register_password_hint1">Nustatykite 6–18 skaitmenų prisijungimo slaptažodį</string>
+    <string name="register_password_hint2">Dar kartą įveskite slaptažodį</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">nustatyti</string>
+
+    <string name="setting_language_switchover">kalbos jungiklis</string>
+    <string name="setting_language_simple">Supaprastinta kinų kalba</string>
+    <string name="setting_language_complex">tradicinis kinietiškas</string>
+    <string name="setting_update">Tikrinti, ar yra atnaujinimų</string>
+
+    <string name="setting_password">pakeisti slaptažodį</string>
+    <string name="setting_phone">Modifikuoti mobilųjį telefoną</string>
+
+    <string name="setting_auto">automatinis prisijungimas</string>
+    <string name="setting_cache">Ištuštinkite talpyklą</string>
+
+    <string name="setting_agreement">privatumo sutartis</string>
+    <string name="setting_about">apie mus</string>
+
+    <string name="setting_exit">Atsijungti</string>
+
+    <!-- 关于 -->
+    <string name="about_title">apie mus</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Brolis Ratas</string>
+
+    <string name="about_copyright">Autorių teisės © 2018–2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">pamiršti slaptažodį</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Prisijungimo slaptažodžio nustatymas</string>
+    <string name="password_reset_phone_hint1">Nustatykite 6–18 skaitmenų prisijungimo slaptažodį</string>
+    <string name="password_reset_phone_hint2">Pakartokite slaptažodį</string>
+    <string name="password_reset_input_error">Du slaptažodžių įvesties duomenys nesutampa, įveskite dar kartą.</string>
+    <string name="password_reset_success">Sėkmingai pakeista</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Nustatyti mobiliojo telefono numerį</string>
+    <string name="phone_reset_change_hint">Kitą kartą prisijungdami naudokite savo naują mobiliojo telefono numerį.</string>
+    <string name="phone_reset_commit">Susieti dabar</string>
+
+    <string name="phone_reset_commit_succeed">Įrišimas sėkmingas</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Asmeninė informacija</string>
+    <string name="personal_data_head">avataras</string>
+
+    <string name="personal_data_id">Vartotojo ID</string>
+    <string name="personal_data_name">Slapyvardis</string>
+    <string name="personal_data_name_hint">Nustatyti slapyvardį</string>
+
+    <string name="personal_data_address">plotas</string>
+    <string name="personal_data_address_hint">Prašome pasirinkti</string>
+
+    <string name="personal_data_phone">telefono numeris</string>
+    <string name="personal_data_phone_hint">Susieti dabar</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Puslapis įkeliamas...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Paveikslėlio pasirinkimas</string>
+    <string name="image_select_all">Visos nuotraukos</string>
+
+    <string name="image_select_total">Iš viso %d nuotraukos</string>
+
+    <string name="image_select_max_hint">Šį kartą galima pasirinkti daugiausia %d nuotraukų</string>
+
+    <string name="image_select_error">Nepavyko pasirinkti, vaizdas buvo ištrintas</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Apkarpyti nepavyko Dabartinis telefonas nepalaiko nuotraukų apkarpymo.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Vaizdo įrašų pasirinkimas</string>
+    <string name="video_select_all">Visi vaizdo įrašai</string>
+
+    <string name="video_select_total">Iš viso %d</string>
+
+    <string name="video_select_max_hint">Šį kartą galima pasirinkti daugiausia %d vaizdo įrašų</string>
+
+    <string name="video_select_error">Nepavyko pasirinkti, vaizdo įrašas buvo ištrintas</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Nepavyko paleisti fotoaparato</string>
+    <string name="camera_image_error">Neteisingas paskirties adresas</string>
+
+</resources>

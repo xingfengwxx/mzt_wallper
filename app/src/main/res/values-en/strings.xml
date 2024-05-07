@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Beautiful Wallpaper</string>
+    <string name="app_name_en">BeautifulWallpaper</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">loading…</string>
+
+    <string name="common_unknown_error">unknown mistake</string>
+
+    <string name="common_confirm">Sure</string>
+    <string name="common_cancel">Cancel</string>
+
+    <string name="common_year">Year</string>
+    <string name="common_month">moon</string>
+    <string name="common_day">Day</string>
+
+    <string name="common_hour">hour</string>
+    <string name="common_minute">point</string>
+    <string name="common_second">Second</string>
+
+    <string name="common_crash_hint">The application encountered a minor error and is restarting</string>
+
+    <string name="common_network_error">The current network is unavailable, please check the network settings</string>
+
+    <string name="common_video_error_not_support">This video is not suitable for this device</string>
+    <string name="common_video_error_unknown">This video cannot be played</string>
+    <string name="common_video_error_supplement">Error type: %d, Error code: %d</string>
+
+    <string name="common_phone_input_hint">Please enter the phone number</string>
+    <string name="common_phone_input_error">The phone number you entered is incorrect</string>
+
+    <string name="common_password_input_error">Please enter your password</string>
+    <string name="common_password_input_unlike">The two passwords you entered do not match. Please re-enter the password.</string>
+
+    <string name="common_code_input_hint">please enter verification code</string>
+    <string name="common_code_send">Send the verification code</string>
+    <string name="common_code_send_hint">The verification code has been sent, please check it</string>
+    <string name="common_code_error_hint">The verification code is wrong, please check your input</string>
+
+    <string name="common_step_next">Next step</string>
+    <string name="common_step_complete">Finish</string>
+    <string name="common_step_commit">submit</string>
+
+    <string name="common_permission_alert">Authorization reminder</string>
+    <string name="common_permission_fail_1">Authorization failed, please grant permissions correctly</string>
+    <string name="common_permission_fail_2">Failed to obtain permission, please grant permission manually</string>
+    <string name="common_permission_fail_3">Failed to obtain permission, please manually grant %s</string>
+    <string name="common_permission_fail_4">Background location permission is not granted, please select \"Always allow\"</string>
+    <string name="common_permission_goto">Go to Authorization</string>
+
+    <string name="common_permission_calendar">Calendar permissions</string>
+    <string name="common_permission_camera">Camera permissions</string>
+    <string name="common_permission_contacts">Contacts permissions</string>
+    <string name="common_permission_location">Location Permissions</string>
+    <string name="common_permission_location_background">Background location permission</string>
+    <string name="common_permission_microphone">Microphone permissions</string>
+    <string name="common_permission_phone">Phone permissions</string>
+    <string name="common_permission_call_log">Call log permissions</string>
+    <string name="common_permission_sensors">Body sensor permissions</string>
+    <string name="common_permission_activity_recognition">Fitness and exercise permissions</string>
+    <string name="common_permission_sms">SMS permissions</string>
+    <string name="common_permission_storage">Storage permissions</string>
+
+    <string name="common_permission_install">Install app permissions</string>
+    <string name="common_permission_notification">Notification bar permissions</string>
+    <string name="common_permission_window">Floating window permissions</string>
+    <string name="common_permission_setting">System Settings Permissions</string>
+
+    <string name="common_network_hint">There is currently no network connection, please check your network settings</string>
+    <string name="common_no_more_data">No more data</string>
+
+    <string name="common_web_ssl_error_title">The current website security certificate has expired or is untrustworthy\nDo you want to continue browsing\?</string>
+    <string name="common_web_ssl_error_allow">Continue browsing</string>
+    <string name="common_web_ssl_error_reject">go back to the last page</string>
+
+    <string name="common_web_location_permission_title">The current website needs to obtain your geographic location</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">reject</string>
+
+    <string name="common_web_call_phone_title">Current number %s</string>
+    <string name="common_web_call_phone_allow">Call</string>
+    <string name="common_web_call_phone_reject">Cancel</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">loading…</string>
+
+    <string name="http_unknown_error">Request error, unknown error</string>
+    <string name="http_token_error">Login failed, please log in again</string>
+    <string name="http_data_explain_error">Data parsing exception, please wait</string>
+    <string name="http_server_out_time">The server request timed out, please try again later</string>
+    <string name="http_network_error">Request failed, please check network settings</string>
+    <string name="http_response_error">The server responded abnormally. Please try again later.</string>
+    <string name="http_server_error">Server connection abnormality, please try again later</string>
+    <string name="http_request_cancel">The request was interrupted, please try again</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Empty</string>
+    <string name="status_layout_error_request">Request error, please try again</string>
+    <string name="status_layout_error_network">Network error, please try again</string>
+    <string name="status_layout_retry">Retry</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">please select the region</string>
+    <string name="address_hint">please choose</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Please select date</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Please select a time</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">New version found</string>
+
+    <string name="update_content">Update history</string>
+
+    <string name="update_no">Until next time</string>
+    <string name="update_yes">update immediately</string>
+
+    <string name="update_permission_hint">You must grant permission before you can download updates normally.</string>
+
+    <string name="update_status_start">downloading</string>
+    <string name="update_status_running">Downloading %d%%</string>
+    <string name="update_status_successful">After downloading, click Install</string>
+    <string name="update_status_failed">Download failed, click Retry</string>
+
+    <string name="update_no_update">Currently the latest version</string>
+
+    <string name="update_notification_channel_id">update</string>
+    <string name="update_notification_channel_name">Upgrade notification</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">share to…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Circle of friends</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ Space</string>
+    <string name="share_platform_link">copy Link</string>
+
+    <string name="share_platform_copy_hint">Copied to clipboard</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Please enter your payment password</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">At least %d items must be selected</string>
+    <string name="select_max_hint">You can select at most %d items</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Identity verification</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Press again to exit</string>
+    <string name="home_nav_index">cell phone</string>
+    <string name="home_nav_found">computer</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">register</string>
+    <string name="login_forget">forget the password\?</string>
+    <string name="login_text">Log in</string>
+
+    <string name="login_other">Other login methods</string>
+
+    <!-- 注册 -->
+    <string name="register_title">register</string>
+    <string name="register_hint">Mobile phone number is only used for login and account security protection</string>
+    <string name="register_password_hint1">Set a 6–18 digit login password</string>
+    <string name="register_password_hint2">Please enter your password again</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">set up</string>
+
+    <string name="setting_language_switchover">Language Switching</string>
+    <string name="setting_language_simple">Simplified Chinese</string>
+    <string name="setting_language_complex">traditional Chinese</string>
+    <string name="setting_update">Check for updates</string>
+
+    <string name="setting_password">change Password</string>
+    <string name="setting_phone">Modify mobile phone</string>
+
+    <string name="setting_auto">auto login</string>
+    <string name="setting_cache">Empty the cache</string>
+
+    <string name="setting_agreement">Privacy Policy</string>
+    <string name="setting_about">about Us</string>
+
+    <string name="setting_exit">sign out</string>
+
+    <!-- 关于 -->
+    <string name="about_title">about Us</string>
+    <string name="about_author"><font color="#85b84f">Android</font>Wheel Brother</string>
+
+    <string name="about_copyright">Copyright © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">forget the password</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Setting login password</string>
+    <string name="password_reset_phone_hint1">Set a 6-18 digit login password</string>
+    <string name="password_reset_phone_hint2">Re-enter password</string>
+    <string name="password_reset_input_error">The two passwords you entered do not match. Please re-enter the password.</string>
+    <string name="password_reset_success">Successfully modified</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Set phone number</string>
+    <string name="phone_reset_change_hint">Please use your new mobile phone number to log in next time.</string>
+    <string name="phone_reset_commit">Bind Now</string>
+
+    <string name="phone_reset_commit_succeed">Binding successful</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">personal information</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">User ID</string>
+    <string name="personal_data_name">Nick name</string>
+    <string name="personal_data_name_hint">Set Nickname</string>
+
+    <string name="personal_data_address">area</string>
+    <string name="personal_data_address_hint">please choose</string>
+
+    <string name="personal_data_phone">phone number</string>
+    <string name="personal_data_phone_hint">Bind Now</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Loading page...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Image selection</string>
+    <string name="image_select_all">All images</string>
+
+    <string name="image_select_total">Total %d</string>
+
+    <string name="image_select_max_hint">You can only select %d pictures at most this time</string>
+
+    <string name="image_select_error">Unable to select, the image has been deleted</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Cropping failed. The current phone does not support cropping images.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Video Selection</string>
+    <string name="video_select_all">All Videos</string>
+
+    <string name="video_select_total">%d in total</string>
+
+    <string name="video_select_max_hint">You can only select %d videos at most at this time</string>
+
+    <string name="video_select_error">Unable to select, the video has been deleted</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Unable to start the camera</string>
+    <string name="camera_image_error">Destination address error</string>
+
+</resources>

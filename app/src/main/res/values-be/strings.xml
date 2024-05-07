@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Прыгожыя шпалеры з малюнкамі</string>
+    <string name="app_name_en">Прыгожыя шпалеры</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">загрузка...</string>
+
+    <string name="common_unknown_error">невядомая памылка</string>
+
+    <string name="common_confirm">Вядома</string>
+    <string name="common_cancel">Адмяніць</string>
+
+    <string name="common_year">год</string>
+    <string name="common_month">месяц</string>
+    <string name="common_day">Дзень</string>
+
+    <string name="common_hour">гадзіну</string>
+    <string name="common_minute">кропка</string>
+    <string name="common_second">Па-другое</string>
+
+    <string name="common_crash_hint">Праграма сутыкнулася з нязначнай аварыяй і перазапускаецца.</string>
+
+    <string name="common_network_error">Бягучая сетка недаступная, праверце налады сеткі</string>
+
+    <string name="common_video_error_not_support">Гэта відэа не падыходзіць для прайгравання на гэтай прыладзе</string>
+    <string name="common_video_error_unknown">Гэта відэа немагчыма прайграць</string>
+    <string name="common_video_error_supplement">Тып памылкі: %d, код памылкі: %d</string>
+
+    <string name="common_phone_input_hint">Калі ласка, увядзіце нумар тэлефона</string>
+    <string name="common_phone_input_error">Нумар мабільнага тэлефона ўведзены няправільна</string>
+
+    <string name="common_password_input_error">Калі ласка, увядзіце пароль</string>
+    <string name="common_password_input_unlike">Два ўведзеныя паролі несумяшчальныя, калі ласка, увядзіце яшчэ раз.</string>
+
+    <string name="common_code_input_hint">калі ласка, увядзіце праверачны код</string>
+    <string name="common_code_send">Адправіць код спраўджання</string>
+    <string name="common_code_send_hint">Праверачны код быў адпраўлены, уважліва праверце яго</string>
+    <string name="common_code_error_hint">Памылка праверачнага кода, калі ласка, праверце свой увод</string>
+
+    <string name="common_step_next">Наступны крок</string>
+    <string name="common_step_complete">Скончыць</string>
+    <string name="common_step_commit">прадставіць</string>
+
+    <string name="common_permission_alert">Напамін аб аўтарызацыі</string>
+    <string name="common_permission_fail_1">Аўтарызацыя не атрымалася, дайце дазвол правільна</string>
+    <string name="common_permission_fail_2">Не ўдалося атрымаць дазвол, дайце дазвол уручную</string>
+    <string name="common_permission_fail_3">Не ўдалося атрымаць дазвол, дайце %s уручную</string>
+    <string name="common_permission_fail_4">Дазвол на размяшчэнне ў фонавым рэжыме не даецца, выберыце \"Заўсёды дазваляць\"</string>
+    <string name="common_permission_goto">Перайсці да Аўтарызацыя</string>
+
+    <string name="common_permission_calendar">Дазволы календара</string>
+    <string name="common_permission_camera">Дазволы камеры</string>
+    <string name="common_permission_contacts">Дазволы адраснай кнігі</string>
+    <string name="common_permission_location">Дазволы на вызначэнне месцазнаходжання</string>
+    <string name="common_permission_location_background">Дазволы на размяшчэнне ў фонавым рэжыме</string>
+    <string name="common_permission_microphone">Дазволы для мікрафона</string>
+    <string name="common_permission_phone">Дазволы на тэлефон</string>
+    <string name="common_permission_call_log">Дазвол на запіс званкоў</string>
+    <string name="common_permission_sensors">Дазволы датчыка цела</string>
+    <string name="common_permission_activity_recognition">Дазвол на фітнес</string>
+    <string name="common_permission_sms">Дазволы на SMS</string>
+    <string name="common_permission_storage">Дазволы на захоўванне</string>
+
+    <string name="common_permission_install">Дазволы ўстаноўкі праграмы</string>
+    <string name="common_permission_notification">Дазволы панэлі апавяшчэнняў</string>
+    <string name="common_permission_window">Дазволы плаваючага акна</string>
+    <string name="common_permission_setting">Дазволы сістэмных налад</string>
+
+    <string name="common_network_hint">Зараз няма падключэння да сеткі, праверце налады сеткі</string>
+    <string name="common_no_more_data">Няма больш дадзеных</string>
+
+    <string name="common_web_ssl_error_title">Тэрмін дзеяння бягучага сертыфіката бяспекі вэб-сайта скончыўся або ён не заслугоўвае даверу\nВы хочаце працягнуць прагляд\?</string>
+    <string name="common_web_ssl_error_allow">Працягвайце прагляд</string>
+    <string name="common_web_ssl_error_reject">вярнуцца на апошнюю старонку</string>
+
+    <string name="common_web_location_permission_title">Бягучы вэб-сайт павінен атрымаць ваша геаграфічнае месцазнаходжанне</string>
+    <string name="common_web_location_permission_allow">Грант</string>
+    <string name="common_web_location_permission_reject">адхіліць</string>
+
+    <string name="common_web_call_phone_title">Бягучы нумар %s</string>
+    <string name="common_web_call_phone_allow">дыял</string>
+    <string name="common_web_call_phone_reject">Адмяніць</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">загрузка...</string>
+
+    <string name="http_unknown_error">Памылка запыту, невядомая памылка</string>
+    <string name="http_token_error">Памылка ўваходу, увайдзіце яшчэ раз</string>
+    <string name="http_data_explain_error">Выключэнне аналізу даных, пачакайце.</string>
+    <string name="http_server_out_time">Час чакання запыту сервера скончыўся, паўтарыце спробу пазней</string>
+    <string name="http_network_error">Запыт не атрымаўся, праверце налады сеткі</string>
+    <string name="http_response_error">Сервер адказаў ненармальна, паўтарыце спробу пазней.</string>
+    <string name="http_server_error">Памылка злучэння з серверам, паўтарыце спробу пазней</string>
+    <string name="http_request_cancel">Запыт быў перапынены, паспрабуйце яшчэ раз</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Пусты</string>
+    <string name="status_layout_error_request">Памылка запыту, паспрабуйце яшчэ раз</string>
+    <string name="status_layout_error_network">Памылка сеткі, паспрабуйце яшчэ раз</string>
+    <string name="status_layout_retry">Паўтарыць</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">калі ласка, абярыце рэгіён</string>
+    <string name="address_hint">калі ласка, абярыце</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Выберыце дату</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Выберыце час</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">новая версія знойдзена</string>
+
+    <string name="update_content">Абнаўленне кантэнту</string>
+
+    <string name="update_no">Убачымся ў наступны раз</string>
+    <string name="update_yes">неадкладна абнавіць</string>
+
+    <string name="update_permission_hint">Вы павінны спачатку даць дазвол, перш чым вы зможаце спампоўваць абнаўленні ў звычайным рэжыме.</string>
+
+    <string name="update_status_start">загрузка</string>
+    <string name="update_status_running">Спампоўка %d%%</string>
+    <string name="update_status_successful">Спампоўка завершана, націсніце, каб усталяваць</string>
+    <string name="update_status_failed">Памылка спампоўкі, націсніце, каб паўтарыць спробу</string>
+
+    <string name="update_no_update">У цяперашні час апошняя версія</string>
+
+    <string name="update_notification_channel_id">абнаўленне</string>
+    <string name="update_notification_channel_name">Апавяшчэнне аб абнаўленні</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">падзяліцца з...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Кола сяброў</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">Прастора QQ</string>
+    <string name="share_platform_link">скапіяваць спасылку</string>
+
+    <string name="share_platform_copy_hint">Скапіравана ў буфер абмену</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Калі ласка, увядзіце плацежны пароль</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Неабходна выбраць мінімум %d элементаў</string>
+    <string name="select_max_hint">Можна выбраць максімум %d элементаў</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Праверка асобы</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Націсніце яшчэ раз, каб выйсці</string>
+    <string name="home_nav_index">мабільны тэлефон</string>
+    <string name="home_nav_found">кампутар</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">зарэгістравацца</string>
+    <string name="login_forget">забылі пароль\?</string>
+    <string name="login_text">Увайсці</string>
+
+    <string name="login_other">Іншыя метады ўваходу</string>
+
+    <!-- 注册 -->
+    <string name="register_title">зарэгістравацца</string>
+    <string name="register_hint">Нумар мабільнага тэлефона выкарыстоўваецца толькі для ўваходу і абароны ўліковага запісу</string>
+    <string name="register_password_hint1">Усталюйце 6–18-значны пароль для ўваходу</string>
+    <string name="register_password_hint2">Увядзіце пароль яшчэ раз</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">усталяваць</string>
+
+    <string name="setting_language_switchover">пераключэнне мовы</string>
+    <string name="setting_language_simple">Спрошчаны кітайскі</string>
+    <string name="setting_language_complex">традыцыйная кітайская</string>
+    <string name="setting_update">Праверце наяўнасць абнаўленняў</string>
+
+    <string name="setting_password">змяніць пароль</string>
+    <string name="setting_phone">Змяніць мабільны тэлефон</string>
+
+    <string name="setting_auto">аўтаматычны ўваход</string>
+    <string name="setting_cache">Ачысціце кэш</string>
+
+    <string name="setting_agreement">пагадненне аб прыватнасці</string>
+    <string name="setting_about">пра нас</string>
+
+    <string name="setting_exit">выйсці</string>
+
+    <!-- 关于 -->
+    <string name="about_title">пра нас</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Брат Кола</string>
+
+    <string name="about_copyright">Аўтарскае права © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">забыцца пароль</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Ўстаноўка пароля для ўваходу</string>
+    <string name="password_reset_phone_hint1">Усталюйце 6–18-значны пароль для ўваходу</string>
+    <string name="password_reset_phone_hint2">Увядзіце пароль паўторна</string>
+    <string name="password_reset_input_error">Два ўведзеныя паролі несумяшчальныя, калі ласка, увядзіце яшчэ раз.</string>
+    <string name="password_reset_success">Паспяхова зменена</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Усталюйце мабільны нумар</string>
+    <string name="phone_reset_change_hint">Калі ласка, выкарыстоўвайце свой новы нумар мабільнага тэлефона для ўваходу ў наступны раз.</string>
+    <string name="phone_reset_commit">Звязаць зараз</string>
+
+    <string name="phone_reset_commit_succeed">Прывязка паспяховая</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Асабістая інфармацыя</string>
+    <string name="personal_data_head">аватар</string>
+
+    <string name="personal_data_id">Ідэнтыфікатар карыстальніка</string>
+    <string name="personal_data_name">Мянушка</string>
+    <string name="personal_data_name_hint">Усталюйце нік</string>
+
+    <string name="personal_data_address">вобласці</string>
+    <string name="personal_data_address_hint">калі ласка, абярыце</string>
+
+    <string name="personal_data_phone">нумар тэлефона</string>
+    <string name="personal_data_phone_hint">Звязаць зараз</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Старонка загружаецца...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Выбар карцінкі</string>
+    <string name="image_select_all">Усе карцінкі</string>
+
+    <string name="image_select_total">Усяго %d фота</string>
+
+    <string name="image_select_max_hint">На гэты раз можна выбраць максімум %d малюнкаў</string>
+
+    <string name="image_select_error">Немагчыма выбраць, выява была выдалена</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Не ўдалося абрэзаць выявы.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Падборка відэа</string>
+    <string name="video_select_all">Усе відэа</string>
+
+    <string name="video_select_total">Усяго %d</string>
+
+    <string name="video_select_max_hint">На гэты раз можна выбраць максімум %d відэа</string>
+
+    <string name="video_select_error">Немагчыма выбраць, відэа было выдалена</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Немагчыма запусціць камеру</string>
+    <string name="camera_image_error">Няправільны адрас прызначэння</string>
+
+</resources>

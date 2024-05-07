@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">美しい写真の壁紙</string>
+    <string name="app_name_en">美しい壁紙</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">読み込み中…</string>
+
+    <string name="common_unknown_error">未知の間違い</string>
+
+    <string name="common_confirm">もちろん</string>
+    <string name="common_cancel">キャンセル</string>
+
+    <string name="common_year">年</string>
+    <string name="common_month">月</string>
+    <string name="common_day">日</string>
+
+    <string name="common_hour">時間</string>
+    <string name="common_minute">ポイント</string>
+    <string name="common_second">2番</string>
+
+    <string name="common_crash_hint">アプリケーションで軽微な事故が発生したため、再起動されています。</string>
+
+    <string name="common_network_error">現在のネットワークは利用できません。ネットワーク設定を確認してください。</string>
+
+    <string name="common_video_error_not_support">このビデオはこのデバイスでの再生には適していません</string>
+    <string name="common_video_error_unknown">このビデオは再生できません</string>
+    <string name="common_video_error_supplement">エラーの種類: %d、エラー コード: %d</string>
+
+    <string name="common_phone_input_hint">電話番号を入力してください</string>
+    <string name="common_phone_input_error">携帯電話番号が間違って入力されました</string>
+
+    <string name="common_password_input_error">パスワードを入力してください</string>
+    <string name="common_password_input_unlike">2 つのパスワード入力が矛盾しています。再入力してください。</string>
+
+    <string name="common_code_input_hint">確認コードを入力してください</string>
+    <string name="common_code_send">確認コードを送信する</string>
+    <string name="common_code_send_hint">確認コードが送信されました。よく確認してください</string>
+    <string name="common_code_error_hint">確認コードエラー。入力を確認してください</string>
+
+    <string name="common_step_next">次のステップ</string>
+    <string name="common_step_complete">仕上げる</string>
+    <string name="common_step_commit">提出する</string>
+
+    <string name="common_permission_alert">承認リマインダー</string>
+    <string name="common_permission_fail_1">認証に失敗しました。正しく許可を与えてください</string>
+    <string name="common_permission_fail_2">許可を取得できませんでした。手動で許可を付与してください</string>
+    <string name="common_permission_fail_3">権限を取得できませんでした。%s を手動で付与してください</string>
+    <string name="common_permission_fail_4">バックグラウンド位置決めの許可が与えられていません。「常に許可」を選択してください。</string>
+    <string name="common_permission_goto">承認に移動</string>
+
+    <string name="common_permission_calendar">カレンダーの権限</string>
+    <string name="common_permission_camera">カメラの許可</string>
+    <string name="common_permission_contacts">アドレス帳の権限</string>
+    <string name="common_permission_location">位置情報の許可</string>
+    <string name="common_permission_location_background">バックグラウンドでの配置権限</string>
+    <string name="common_permission_microphone">マイクの許可</string>
+    <string name="common_permission_phone">電話の許可</string>
+    <string name="common_permission_call_log">通話記録の許可</string>
+    <string name="common_permission_sensors">ボディセンサーの許可</string>
+    <string name="common_permission_activity_recognition">フィットネス許可</string>
+    <string name="common_permission_sms">SMS 権限</string>
+    <string name="common_permission_storage">ストレージのアクセス許可</string>
+
+    <string name="common_permission_install">アプリのインストール権限</string>
+    <string name="common_permission_notification">通知バーの権限</string>
+    <string name="common_permission_window">フローティングウィンドウの権限</string>
+    <string name="common_permission_setting">システム設定の権限</string>
+
+    <string name="common_network_hint">現在ネットワーク接続がありません。ネットワーク設定を確認してください。</string>
+    <string name="common_no_more_data">もうデータはありません</string>
+
+    <string name="common_web_ssl_error_title">現在の Web サイトのセキュリティ証明書の有効期限が切れているか、信頼できません\n閲覧を続けますか\?</string>
+    <string name="common_web_ssl_error_allow">閲覧を続ける</string>
+    <string name="common_web_ssl_error_reject">最後のページに戻る</string>
+
+    <string name="common_web_location_permission_title">現在の Web サイトでは地理的位置を取得する必要があります</string>
+    <string name="common_web_location_permission_allow">付与</string>
+    <string name="common_web_location_permission_reject">拒否する</string>
+
+    <string name="common_web_call_phone_title">現在の番号 %s</string>
+    <string name="common_web_call_phone_allow">ダイヤル</string>
+    <string name="common_web_call_phone_reject">キャンセル</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">読み込み中…</string>
+
+    <string name="http_unknown_error">リクエストエラー、不明エラー</string>
+    <string name="http_token_error">ログインに失敗しました。再度ログインしてください</string>
+    <string name="http_data_explain_error">データ解析例外。お待ちください。</string>
+    <string name="http_server_out_time">サーバーリクエストがタイムアウトしました。後でもう一度お試しください。</string>
+    <string name="http_network_error">リクエストが失敗しました。ネットワーク設定を確認してください</string>
+    <string name="http_response_error">サーバーが異常応答しました。後でもう一度試してください。</string>
+    <string name="http_server_error">サーバー接続異常。後でもう一度お試しください。</string>
+    <string name="http_request_cancel">リクエストは中断されました。もう一度お試しください</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">空の</string>
+    <string name="status_layout_error_request">リクエストエラー。もう一度お試しください</string>
+    <string name="status_layout_error_network">ネットワークエラー。もう一度お試しください</string>
+    <string name="status_layout_retry">リトライ</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">地域を選択してください</string>
+    <string name="address_hint">選んでください</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">日付を選択してください</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">時間を選択してください</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">新しいバージョンが見つかりました</string>
+
+    <string name="update_content">更新内容</string>
+
+    <string name="update_no">次回会いましょう</string>
+    <string name="update_yes">すぐに更新する</string>
+
+    <string name="update_permission_hint">更新を通常どおりダウンロードするには、許可を与える必要があります。</string>
+
+    <string name="update_status_start">ダウンロード</string>
+    <string name="update_status_running">%d%%をダウンロード中</string>
+    <string name="update_status_successful">ダウンロードが完了しました。クリックしてインストールします</string>
+    <string name="update_status_failed">ダウンロードに失敗しました。クリックして再試行してください</string>
+
+    <string name="update_no_update">現在の最新バージョン</string>
+
+    <string name="update_notification_channel_id">アップデート</string>
+    <string name="update_notification_channel_name">アップグレードの通知</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">共有先…</string>
+
+    <string name="share_platform_wechat">微信</string>
+    <string name="share_platform_moment">友達の輪</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQスペース</string>
+    <string name="share_platform_link">リンクをコピーする</string>
+
+    <string name="share_platform_copy_hint">クリップボードにコピーされました</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">支払いパスワードを入力してください</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">少なくとも %d 個の項目を選択する必要があります</string>
+    <string name="select_max_hint">最大 %d 個の項目を選択できます</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">本人確認</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">もう一度押すと終了します</string>
+    <string name="home_nav_index">携帯電話</string>
+    <string name="home_nav_found">コンピューター</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">登録する</string>
+    <string name="login_forget">パスワードを忘れましたか\?</string>
+    <string name="login_text">ログイン</string>
+
+    <string name="login_other">その他のログイン方法</string>
+
+    <!-- 注册 -->
+    <string name="register_title">登録する</string>
+    <string name="register_hint">携帯電話番号は、ログインとアカウントのセキュリティを保護するためにのみ使用されます</string>
+    <string name="register_password_hint1">6～18桁のログインパスワードを設定します。</string>
+    <string name="register_password_hint2">もう一度パスワードを入力してください</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">設定</string>
+
+    <string name="setting_language_switchover">言語スイッチ</string>
+    <string name="setting_language_simple">簡体字中国語</string>
+    <string name="setting_language_complex">繁体字中国語</string>
+    <string name="setting_update">アップデートを確認</string>
+
+    <string name="setting_password">パスワードを変更する</string>
+    <string name="setting_phone">携帯電話を改造する</string>
+
+    <string name="setting_auto">自動ログイン</string>
+    <string name="setting_cache">キャッシュを空にしてください</string>
+
+    <string name="setting_agreement">プライバシー規約</string>
+    <string name="setting_about">私たちについて</string>
+
+    <string name="setting_exit">サインアウト</string>
+
+    <!-- 关于 -->
+    <string name="about_title">私たちについて</string>
+    <string name="about_author"><font color="#85b84f">アンドロイド</font> ブラザーホイール</string>
+
+    <string name="about_copyright">著作権 © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">パスワードを忘れる</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">ログインパスワードの設定</string>
+    <string name="password_reset_phone_hint1">6～18桁のログインパスワードを設定します。</string>
+    <string name="password_reset_phone_hint2">パスワード再入力</string>
+    <string name="password_reset_input_error">2 つのパスワード入力が矛盾しています。再入力してください。</string>
+    <string name="password_reset_success">正常に変更されました</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">携帯電話番号を設定する</string>
+    <string name="phone_reset_change_hint">次回ログイン時は新しい携帯電話番号をご使用ください。</string>
+    <string name="phone_reset_commit">今すぐバインド</string>
+
+    <string name="phone_reset_commit_succeed">バインド成功</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">個人情報</string>
+    <string name="personal_data_head">アバター</string>
+
+    <string name="personal_data_id">ユーザーID</string>
+    <string name="personal_data_name">ニックネーム</string>
+    <string name="personal_data_name_hint">ニックネームを設定する</string>
+
+    <string name="personal_data_address">エリア</string>
+    <string name="personal_data_address_hint">選んでください</string>
+
+    <string name="personal_data_phone">電話番号</string>
+    <string name="personal_data_phone_hint">今すぐバインド</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">ページを読み込んでいます...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">画像の選択</string>
+    <string name="image_select_all">すべての写真</string>
+
+    <string name="image_select_total">合計 %d 写真</string>
+
+    <string name="image_select_max_hint">今回は最大 %d 枚の写真を選択できます</string>
+
+    <string name="image_select_error">画像が削除されているため選択できません</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">トリミングに失敗しました。現在の携帯電話は写真のトリミングをサポートしていません。</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">ビデオの選択</string>
+    <string name="video_select_all">すべてのビデオ</string>
+
+    <string name="video_select_total">合計 %d</string>
+
+    <string name="video_select_max_hint">今回は最大 %d 個のビデオを選択できます</string>
+
+    <string name="video_select_error">動画が削除されているため選択できません</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">カメラを起動できません</string>
+    <string name="camera_image_error">宛先アドレスが間違っています</string>
+
+</resources>

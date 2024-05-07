@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Fons de pantalla d\'imatges precioses</string>
+    <string name="app_name_en">Bell fons de pantalla</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">carregant…</string>
+
+    <string name="common_unknown_error">error desconegut</string>
+
+    <string name="common_confirm">Segur</string>
+    <string name="common_cancel">Cancel · lar</string>
+
+    <string name="common_year">Curs</string>
+    <string name="common_month">lluna</string>
+    <string name="common_day">Dia</string>
+
+    <string name="common_hour">hores</string>
+    <string name="common_minute">punt</string>
+    <string name="common_second">Segon</string>
+
+    <string name="common_crash_hint">L\'aplicació ha tingut un accident lleu i s\'està reiniciant.</string>
+
+    <string name="common_network_error">La xarxa actual no està disponible, comproveu la configuració de la xarxa</string>
+
+    <string name="common_video_error_not_support">Aquest vídeo no és adequat per a la reproducció en aquest dispositiu</string>
+    <string name="common_video_error_unknown">Aquest vídeo no es pot reproduir</string>
+    <string name="common_video_error_supplement">Tipus d\'error: %d, codi d\'error: %d</string>
+
+    <string name="common_phone_input_hint">Introduïu el número de telèfon</string>
+    <string name="common_phone_input_error">El número de telèfon mòbil s\'ha introduït incorrectament</string>
+
+    <string name="common_password_input_error">Introduïu la contrasenya</string>
+    <string name="common_password_input_unlike">Les dues contrasenyes introduïdes són inconsistents, torneu a introduir-la.</string>
+
+    <string name="common_code_input_hint">introduïu el codi de verificació</string>
+    <string name="common_code_send">Envieu el codi de verificació</string>
+    <string name="common_code_send_hint">S\'ha enviat el codi de verificació, comproveu-lo acuradament</string>
+    <string name="common_code_error_hint">Error de codi de verificació, comproveu la vostra entrada</string>
+
+    <string name="common_step_next">Següent pas</string>
+    <string name="common_step_complete">Acabar</string>
+    <string name="common_step_commit">Presentar</string>
+
+    <string name="common_permission_alert">Recordatori d\'autorització</string>
+    <string name="common_permission_fail_1">L\'autorització ha fallat, si us plau, concediu el permís correctament</string>
+    <string name="common_permission_fail_2">No s\'ha pogut obtenir el permís, concediu-lo manualment</string>
+    <string name="common_permission_fail_3">No s\'ha pogut obtenir el permís, concediu %s manualment</string>
+    <string name="common_permission_fail_4">No es concedeix el permís de posicionament en segon pla, seleccioneu \"Permetre sempre\"</string>
+    <string name="common_permission_goto">Aneu a Autorització</string>
+
+    <string name="common_permission_calendar">Permisos de calendari</string>
+    <string name="common_permission_camera">Permisos de càmera</string>
+    <string name="common_permission_contacts">Permisos de la llibreta d\'adreces</string>
+    <string name="common_permission_location">Permisos d\'ubicació</string>
+    <string name="common_permission_location_background">Permisos de posicionament en segon pla</string>
+    <string name="common_permission_microphone">Permisos de micròfon</string>
+    <string name="common_permission_phone">Permisos telefònics</string>
+    <string name="common_permission_call_log">Permisos de registre de trucades</string>
+    <string name="common_permission_sensors">Permisos del sensor corporal</string>
+    <string name="common_permission_activity_recognition">Permís de fitness</string>
+    <string name="common_permission_sms">Permisos SMS</string>
+    <string name="common_permission_storage">Permisos d\'emmagatzematge</string>
+
+    <string name="common_permission_install">Instal·leu els permisos de l\'aplicació</string>
+    <string name="common_permission_notification">Permisos de la barra de notificacions</string>
+    <string name="common_permission_window">Permisos de finestra flotant</string>
+    <string name="common_permission_setting">Permisos de configuració del sistema</string>
+
+    <string name="common_network_hint">Actualment no hi ha connexió a la xarxa, comproveu la configuració de la xarxa</string>
+    <string name="common_no_more_data">No hi ha més dades</string>
+
+    <string name="common_web_ssl_error_title">El certificat de seguretat actual del lloc web ha caducat o no és fiable\nVols continuar navegant\?</string>
+    <string name="common_web_ssl_error_allow">Continua navegant</string>
+    <string name="common_web_ssl_error_reject">tornar a l\'última pàgina</string>
+
+    <string name="common_web_location_permission_title">El lloc web actual necessita obtenir la vostra ubicació geogràfica</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">rebutjar</string>
+
+    <string name="common_web_call_phone_title">Número actual %s</string>
+    <string name="common_web_call_phone_allow">marcar</string>
+    <string name="common_web_call_phone_reject">Cancel · lar</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">carregant…</string>
+
+    <string name="http_unknown_error">Error de sol·licitud, error desconegut</string>
+    <string name="http_token_error">No s\'ha pogut iniciar la sessió, torneu a iniciar la sessió</string>
+    <string name="http_data_explain_error">Excepció d\'anàlisi de dades, espereu.</string>
+    <string name="http_server_out_time">S\'ha esgotat el temps d\'espera de la sol·licitud del servidor, torneu-ho a provar més tard</string>
+    <string name="http_network_error">La sol·licitud ha fallat. Comproveu la configuració de la xarxa</string>
+    <string name="http_response_error">El servidor ha respost de manera anormal, si us plau, torna-ho a provar més tard.</string>
+    <string name="http_server_error">S\'ha produït una anomalia en la connexió del servidor, torneu-ho a provar més tard</string>
+    <string name="http_request_cancel">La sol·licitud s\'ha interromput, torna-ho a provar</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Buit</string>
+    <string name="status_layout_error_request">Error de sol·licitud, torneu-ho a provar</string>
+    <string name="status_layout_error_network">Error de xarxa, torneu-ho a provar</string>
+    <string name="status_layout_retry">Torna-ho a provar</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">seleccioneu la regió</string>
+    <string name="address_hint">Per favor, tria</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Seleccioneu una data</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Seleccioneu una hora</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">nova versió trobada</string>
+
+    <string name="update_content">Actualitzar contingut</string>
+
+    <string name="update_no">Ens veiem a la propera</string>
+    <string name="update_yes">actualitzar immediatament</string>
+
+    <string name="update_permission_hint">Primer heu de concedir permís abans de poder descarregar les actualitzacions amb normalitat.</string>
+
+    <string name="update_status_start">descàrrega</string>
+    <string name="update_status_running">S\'està baixant %d%%</string>
+    <string name="update_status_successful">La descàrrega s\'ha completat, feu clic per instal·lar</string>
+    <string name="update_status_failed">La baixada ha fallat, feu clic per tornar-ho a provar</string>
+
+    <string name="update_no_update">Actualment la darrera versió</string>
+
+    <string name="update_notification_channel_id">actualitzar</string>
+    <string name="update_notification_channel_name">Notificació d\'actualització</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">compartir a…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Cercle d\'amics</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">Espai QQ</string>
+    <string name="share_platform_link">copia l\'enllaç</string>
+
+    <string name="share_platform_copy_hint">S\'ha copiat al porta-retalls</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Introduïu la contrasenya de pagament</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">S\'han de seleccionar com a mínim %d elements</string>
+    <string name="select_max_hint">Es poden seleccionar com a màxim %d elements</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Verificació d\'identitat</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Premeu de nou per sortir</string>
+    <string name="home_nav_index">mòbil</string>
+    <string name="home_nav_found">ordinador</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">registrar</string>
+    <string name="login_forget">oblidar la contrasenya\?</string>
+    <string name="login_text">Iniciar Sessió</string>
+
+    <string name="login_other">Altres mètodes d\'inici de sessió</string>
+
+    <!-- 注册 -->
+    <string name="register_title">registrar</string>
+    <string name="register_hint">El número de telèfon mòbil només s\'utilitza per iniciar sessió i protegir la seguretat del compte</string>
+    <string name="register_password_hint1">Establiu una contrasenya d\'inici de sessió de 6 a 18 dígits</string>
+    <string name="register_password_hint2">Si us plau, torneu a introduir la vostra contrasenya</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">configurar</string>
+
+    <string name="setting_language_switchover">canvi d\'idioma</string>
+    <string name="setting_language_simple">Xinès simplificat</string>
+    <string name="setting_language_complex">xinés tradicional</string>
+    <string name="setting_update">Buscar actualitzacions</string>
+
+    <string name="setting_password">canviar la contrasenya</string>
+    <string name="setting_phone">Modificar el telèfon mòbil</string>
+
+    <string name="setting_auto">inici de sessió automàtic</string>
+    <string name="setting_cache">Buida la memòria cau</string>
+
+    <string name="setting_agreement">acord de privadesa</string>
+    <string name="setting_about">sobre nosaltres</string>
+
+    <string name="setting_exit">tanca sessió</string>
+
+    <!-- 关于 -->
+    <string name="about_title">sobre nosaltres</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Germà Roda</string>
+
+    <string name="about_copyright">Copyright © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">oblidar la contrasenya</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Configuració de la contrasenya d\'inici de sessió</string>
+    <string name="password_reset_phone_hint1">Establiu una contrasenya d\'inici de sessió de 6 a 18 dígits</string>
+    <string name="password_reset_phone_hint2">Torna a escriure la contrasenya</string>
+    <string name="password_reset_input_error">Les dues contrasenyes introduïdes són inconsistents, torneu a introduir-la.</string>
+    <string name="password_reset_success">S\'ha modificat correctament</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Estableix el número de mòbil</string>
+    <string name="phone_reset_change_hint">Si us plau, utilitzeu el vostre nou número de telèfon mòbil per iniciar sessió la propera vegada.</string>
+    <string name="phone_reset_commit">Enllaçar ara</string>
+
+    <string name="phone_reset_commit_succeed">Enquadernació correcta</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">informació personal</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">ID d\'usuari</string>
+    <string name="personal_data_name">Pseudònim</string>
+    <string name="personal_data_name_hint">Estableix el sobrenom</string>
+
+    <string name="personal_data_address">zona</string>
+    <string name="personal_data_address_hint">Per favor, tria</string>
+
+    <string name="personal_data_phone">número de telèfon</string>
+    <string name="personal_data_phone_hint">Enllaçar ara</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">La pàgina s\'està carregant...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Selecció de la imatge</string>
+    <string name="image_select_all">Totes les imatges</string>
+
+    <string name="image_select_total">Total de %d fotos</string>
+
+    <string name="image_select_max_hint">Aquesta vegada es poden seleccionar com a màxim %d imatges</string>
+
+    <string name="image_select_error">No es pot seleccionar, la imatge s\'ha suprimit</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">S\'ha produït un error en retallar el telèfon actual no admet retallar imatges.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Selecció de vídeo</string>
+    <string name="video_select_all">Tots els vídeos</string>
+
+    <string name="video_select_total">Total %d</string>
+
+    <string name="video_select_max_hint">Aquesta vegada es poden seleccionar com a màxim %d vídeos</string>
+
+    <string name="video_select_error">No es pot seleccionar, el vídeo s\'ha suprimit</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">No es pot iniciar la càmera</string>
+    <string name="camera_image_error">Adreça de destinació incorrecta</string>
+
+</resources>

@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Tapet cu poze frumoase</string>
+    <string name="app_name_en">Frumos Wallpaper</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">Se încarcă…</string>
+
+    <string name="common_unknown_error">greseala necunoscuta</string>
+
+    <string name="common_confirm">Sigur</string>
+    <string name="common_cancel">Anulare</string>
+
+    <string name="common_year">An</string>
+    <string name="common_month">lună</string>
+    <string name="common_day">Zi</string>
+
+    <string name="common_hour">ora</string>
+    <string name="common_minute">punct</string>
+    <string name="common_second">Al doilea</string>
+
+    <string name="common_crash_hint">Aplicația a întâmpinat un accident minor și este în curs de repornire.</string>
+
+    <string name="common_network_error">Rețeaua actuală nu este disponibilă, vă rugăm să verificați setările de rețea</string>
+
+    <string name="common_video_error_not_support">Acest videoclip nu este potrivit pentru redare pe acest dispozitiv</string>
+    <string name="common_video_error_unknown">Acest videoclip nu poate fi redat</string>
+    <string name="common_video_error_supplement">Tip de eroare: %d, cod de eroare: %d</string>
+
+    <string name="common_phone_input_hint">Vă rugăm să introduceți numărul de telefon</string>
+    <string name="common_phone_input_error">Numărul de telefon mobil a fost introdus incorect</string>
+
+    <string name="common_password_input_error">Te rog introdu parola</string>
+    <string name="common_password_input_unlike">Cele două introduceri ale parolei sunt inconsecvente, vă rugăm să reintroduceți.</string>
+
+    <string name="common_code_input_hint">vă rugăm să introduceți codul de verificare</string>
+    <string name="common_code_send">Trimite codul de verificare</string>
+    <string name="common_code_send_hint">Codul de verificare a fost trimis, vă rugăm să-l verificați cu atenție</string>
+    <string name="common_code_error_hint">Eroare de cod de verificare, vă rugăm să verificați datele introduse</string>
+
+    <string name="common_step_next">Urmatorul pas</string>
+    <string name="common_step_complete">finalizarea</string>
+    <string name="common_step_commit">Trimite</string>
+
+    <string name="common_permission_alert">Memento de autorizare</string>
+    <string name="common_permission_fail_1">Autorizarea nu a reușit, vă rugăm să acordați permisiunea corect</string>
+    <string name="common_permission_fail_2">Nu s-a obținut permisiunea, vă rugăm să acordați permisiunea manual</string>
+    <string name="common_permission_fail_3">Nu s-a obținut permisiunea, vă rugăm să acordați manual %s</string>
+    <string name="common_permission_fail_4">Permisiunea de poziționare în fundal nu este acordată, vă rugăm să selectați „Permiteți întotdeauna”</string>
+    <string name="common_permission_goto">Accesați Autorizare</string>
+
+    <string name="common_permission_calendar">Permisiuni pentru calendar</string>
+    <string name="common_permission_camera">Permisiunile camerei</string>
+    <string name="common_permission_contacts">Permisiuni pentru agenda de adrese</string>
+    <string name="common_permission_location">Permisiuni de locație</string>
+    <string name="common_permission_location_background">Permisiuni de poziționare în fundal</string>
+    <string name="common_permission_microphone">Permisiuni pentru microfon</string>
+    <string name="common_permission_phone">Permisiuni pentru telefon</string>
+    <string name="common_permission_call_log">Permisiuni de înregistrare a apelurilor</string>
+    <string name="common_permission_sensors">Permisiunile senzorului corporal</string>
+    <string name="common_permission_activity_recognition">Permisiune de fitness</string>
+    <string name="common_permission_sms">Permisiuni SMS</string>
+    <string name="common_permission_storage">Permisiuni de stocare</string>
+
+    <string name="common_permission_install">Instalați permisiunile aplicației</string>
+    <string name="common_permission_notification">Permisiunile barei de notificare</string>
+    <string name="common_permission_window">Permisiuni pentru ferestre flotante</string>
+    <string name="common_permission_setting">Permisiuni pentru setările sistemului</string>
+
+    <string name="common_network_hint">În prezent, nu există conexiune la rețea, vă rugăm să verificați setările de rețea</string>
+    <string name="common_no_more_data">Nu mai sunt date</string>
+
+    <string name="common_web_ssl_error_title">Certificatul de securitate actual al site-ului web a expirat sau nu este de încredere\nDoriți să continuați navigarea\?</string>
+    <string name="common_web_ssl_error_allow">Continua navigarea</string>
+    <string name="common_web_ssl_error_reject">reveniți la ultima pagină</string>
+
+    <string name="common_web_location_permission_title">Site-ul web actual trebuie să obțină locația dvs. geografică</string>
+    <string name="common_web_location_permission_allow">Acorda</string>
+    <string name="common_web_location_permission_reject">respinge</string>
+
+    <string name="common_web_call_phone_title">Numărul curent %s</string>
+    <string name="common_web_call_phone_allow">formați</string>
+    <string name="common_web_call_phone_reject">Anulare</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">Se încarcă…</string>
+
+    <string name="http_unknown_error">Eroare de solicitare, eroare necunoscută</string>
+    <string name="http_token_error">Conectarea nu a reușit, vă rugăm să vă conectați din nou</string>
+    <string name="http_data_explain_error">Excepție de analiză a datelor, așteptați.</string>
+    <string name="http_server_out_time">Solicitarea serverului a expirat, vă rugăm să încercați din nou mai târziu</string>
+    <string name="http_network_error">Solicitarea a eșuat, vă rugăm să verificați setările de rețea</string>
+    <string name="http_response_error">Serverul a răspuns anormal, vă rugăm să încercați din nou mai târziu.</string>
+    <string name="http_server_error">Anormalitate de conectare la server, vă rugăm să încercați din nou mai târziu</string>
+    <string name="http_request_cancel">Solicitarea a fost întreruptă, vă rugăm să încercați din nou</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Gol</string>
+    <string name="status_layout_error_request">Eroare de solicitare, vă rugăm să încercați din nou</string>
+    <string name="status_layout_error_network">Eroare de rețea, vă rugăm să încercați din nou</string>
+    <string name="status_layout_retry">Reîncercați</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">vă rugăm să selectați regiunea</string>
+    <string name="address_hint">vă rugăm să alegeți</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Vă rugăm să selectați o dată</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Vă rugăm să selectați o oră</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">versiune nouă găsită</string>
+
+    <string name="update_content">Actualizați conținutul</string>
+
+    <string name="update_no">Ne vedem data viitoare</string>
+    <string name="update_yes">actualizați imediat</string>
+
+    <string name="update_permission_hint">Trebuie să acordați permisiunea înainte de a putea descărca actualizările în mod normal.</string>
+
+    <string name="update_status_start">Descărcarea</string>
+    <string name="update_status_running">Se descarcă %d%%</string>
+    <string name="update_status_successful">Descărcarea este completă, faceți clic pentru a instala</string>
+    <string name="update_status_failed">Descărcarea eșuată, faceți clic pentru a încerca din nou</string>
+
+    <string name="update_no_update">Momentan cea mai recentă versiune</string>
+
+    <string name="update_notification_channel_id">Actualizați</string>
+    <string name="update_notification_channel_name">Notificare de upgrade</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">distribuie la...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Cercul de prieteni</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">spațiu QQ</string>
+    <string name="share_platform_link">copiază legătură</string>
+
+    <string name="share_platform_copy_hint">Copiat în clipboard</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Vă rugăm să introduceți parola de plată</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Trebuie selectate cel puțin %d elemente</string>
+    <string name="select_max_hint">Pot fi selectate cel mult %d elemente</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Verificarea identității</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Apăsați din nou pentru a ieși</string>
+    <string name="home_nav_index">telefon mobil</string>
+    <string name="home_nav_found">calculator</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">Inregistreaza-te</string>
+    <string name="login_forget">ai uitat parola\?</string>
+    <string name="login_text">Log in</string>
+
+    <string name="login_other">Alte metode de conectare</string>
+
+    <!-- 注册 -->
+    <string name="register_title">Inregistreaza-te</string>
+    <string name="register_hint">Numărul de telefon mobil este folosit doar pentru a vă conecta și pentru a proteja securitatea contului</string>
+    <string name="register_password_hint1">Setați o parolă de conectare din 6-18 cifre</string>
+    <string name="register_password_hint2">Vă rugăm să introduceți din nou parola</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">înființat</string>
+
+    <string name="setting_language_switchover">comutare de limbă</string>
+    <string name="setting_language_simple">Chineză simplificată</string>
+    <string name="setting_language_complex">chineză tradițională</string>
+    <string name="setting_update">Verifică pentru actualizări</string>
+
+    <string name="setting_password">schimbaţi parola</string>
+    <string name="setting_phone">Modificați telefonul mobil</string>
+
+    <string name="setting_auto">Logare automata</string>
+    <string name="setting_cache">Goliți memoria cache</string>
+
+    <string name="setting_agreement">acord de confidențialitate</string>
+    <string name="setting_about">despre noi</string>
+
+    <string name="setting_exit">sign out</string>
+
+    <!-- 关于 -->
+    <string name="about_title">despre noi</string>
+    <string name="about_author"><font color="#85b84f">Android</font> frate roată</string>
+
+    <string name="about_copyright">Copyright © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">uitați parola</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Setarea parolei de conectare</string>
+    <string name="password_reset_phone_hint1">Setați o parolă de conectare din 6-18 cifre</string>
+    <string name="password_reset_phone_hint2">Reintrodu parola</string>
+    <string name="password_reset_input_error">Cele două introduceri ale parolei sunt inconsecvente, vă rugăm să reintroduceți.</string>
+    <string name="password_reset_success">Modificat cu succes</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Setați numărul de mobil</string>
+    <string name="phone_reset_change_hint">Vă rugăm să utilizați noul număr de telefon mobil pentru a vă conecta data viitoare.</string>
+    <string name="phone_reset_commit">Leagă acum</string>
+
+    <string name="phone_reset_commit_succeed">Legarea reușită</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Informații personale</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">ID-ul de utilizator</string>
+    <string name="personal_data_name">Poreclă</string>
+    <string name="personal_data_name_hint">Setează porecla</string>
+
+    <string name="personal_data_address">zonă</string>
+    <string name="personal_data_address_hint">vă rugăm să alegeți</string>
+
+    <string name="personal_data_phone">număr de telefon</string>
+    <string name="personal_data_phone_hint">Leagă acum</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Pagina se încarcă...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Selectarea imaginii</string>
+    <string name="image_select_all">Toate pozele</string>
+
+    <string name="image_select_total">Total %d fotografii</string>
+
+    <string name="image_select_max_hint">De data aceasta pot fi selectate cel mult %d imagini</string>
+
+    <string name="image_select_error">Nu se poate selecta, imaginea a fost ștearsă</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Decuparea nu a reușit Telefonul actual nu acceptă decuparea imaginilor.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Selectare video</string>
+    <string name="video_select_all">Toate videoclipurile</string>
+
+    <string name="video_select_total">Total %d</string>
+
+    <string name="video_select_max_hint">De data aceasta pot fi selectate cel mult %d videoclipuri</string>
+
+    <string name="video_select_error">Nu se poate selecta, videoclipul a fost șters</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Nu se poate porni camera</string>
+    <string name="camera_image_error">Adresă de destinație greșită</string>
+
+</resources>

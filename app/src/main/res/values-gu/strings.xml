@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">સુંદર ચિત્રો વોલપેપર</string>
+    <string name="app_name_en">સુંદર વૉલપેપર</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">લોડ કરી રહ્યું છે...</string>
+
+    <string name="common_unknown_error">અજાણી ભૂલ</string>
+
+    <string name="common_confirm">ચોક્કસ</string>
+    <string name="common_cancel">રદ કરો</string>
+
+    <string name="common_year">વર્ષ</string>
+    <string name="common_month">ચંદ્ર</string>
+    <string name="common_day">દિવસ</string>
+
+    <string name="common_hour">કલાક</string>
+    <string name="common_minute">બિંદુ</string>
+    <string name="common_second">બીજું</string>
+
+    <string name="common_crash_hint">એપ્લિકેશનમાં એક નાનો અકસ્માત થયો હતો અને તેને ફરીથી શરૂ કરવામાં આવી રહી છે.</string>
+
+    <string name="common_network_error">વર્તમાન નેટવર્ક અનુપલબ્ધ છે, કૃપા કરીને નેટવર્ક સેટિંગ્સ તપાસો</string>
+
+    <string name="common_video_error_not_support">આ વિડિઓ આ ઉપકરણ પર પ્લેબેક માટે યોગ્ય નથી</string>
+    <string name="common_video_error_unknown">આ વિડિઓ ચલાવી શકાતી નથી</string>
+    <string name="common_video_error_supplement">ભૂલનો પ્રકાર: %d, ભૂલ કોડ: %d</string>
+
+    <string name="common_phone_input_hint">કૃપા કરીને ફોન નંબર દાખલ કરો</string>
+    <string name="common_phone_input_error">મોબાઇલ ફોન નંબર ખોટી રીતે દાખલ કર્યો છે</string>
+
+    <string name="common_password_input_error">કૃપા કરીને પાસવર્ડ દાખલ કરો</string>
+    <string name="common_password_input_unlike">બે પાસવર્ડ ઇનપુટ્સ અસંગત છે, કૃપા કરીને ફરીથી દાખલ કરો.</string>
+
+    <string name="common_code_input_hint">કૃપા કરીને ચકાસણી કોડ દાખલ કરો</string>
+    <string name="common_code_send">ચકાસણી કોડ મોકલો</string>
+    <string name="common_code_send_hint">ચકાસણી કોડ મોકલવામાં આવ્યો છે, કૃપા કરીને તેને કાળજીપૂર્વક તપાસો</string>
+    <string name="common_code_error_hint">ચકાસણી કોડ ભૂલ, કૃપા કરીને તમારું ઇનપુટ તપાસો</string>
+
+    <string name="common_step_next">આગળનું પગલું</string>
+    <string name="common_step_complete">સમાપ્ત કરો</string>
+    <string name="common_step_commit">સબમિટ કરો</string>
+
+    <string name="common_permission_alert">અધિકૃતતા રીમાઇન્ડર</string>
+    <string name="common_permission_fail_1">અધિકૃતતા નિષ્ફળ, કૃપા કરીને યોગ્ય રીતે પરવાનગી આપો</string>
+    <string name="common_permission_fail_2">પરવાનગી મેળવવામાં નિષ્ફળ, કૃપા કરીને મેન્યુઅલી પરવાનગી આપો</string>
+    <string name="common_permission_fail_3">પરવાનગી મેળવવામાં નિષ્ફળ, કૃપા કરીને %s ને મેન્યુઅલી આપો</string>
+    <string name="common_permission_fail_4">પૃષ્ઠભૂમિ સ્થિતિની પરવાનગી આપવામાં આવી નથી, કૃપા કરીને \"હંમેશા મંજૂરી આપો\" પસંદ કરો</string>
+    <string name="common_permission_goto">અધિકૃતતા પર જાઓ</string>
+
+    <string name="common_permission_calendar">કૅલેન્ડર પરવાનગીઓ</string>
+    <string name="common_permission_camera">કેમેરા પરવાનગીઓ</string>
+    <string name="common_permission_contacts">સરનામાં પુસ્તિકા પરવાનગીઓ</string>
+    <string name="common_permission_location">સ્થાન પરવાનગીઓ</string>
+    <string name="common_permission_location_background">પૃષ્ઠભૂમિ સ્થિતિ પરવાનગીઓ</string>
+    <string name="common_permission_microphone">માઇક્રોફોન પરવાનગીઓ</string>
+    <string name="common_permission_phone">ફોન પરવાનગીઓ</string>
+    <string name="common_permission_call_log">કૉલ રેકોર્ડ પરવાનગીઓ</string>
+    <string name="common_permission_sensors">બોડી સેન્સરની પરવાનગીઓ</string>
+    <string name="common_permission_activity_recognition">ફિટનેસ પરવાનગી</string>
+    <string name="common_permission_sms">SMS પરવાનગીઓ</string>
+    <string name="common_permission_storage">સંગ્રહ પરવાનગીઓ</string>
+
+    <string name="common_permission_install">એપ્લિકેશન પરવાનગીઓ ઇન્સ્ટોલ કરો</string>
+    <string name="common_permission_notification">સૂચના બાર પરવાનગીઓ</string>
+    <string name="common_permission_window">ફ્લોટિંગ વિન્ડો પરવાનગીઓ</string>
+    <string name="common_permission_setting">સિસ્ટમ સેટિંગ્સ પરવાનગીઓ</string>
+
+    <string name="common_network_hint">હાલમાં કોઈ નેટવર્ક કનેક્શન નથી, કૃપા કરીને નેટવર્ક સેટિંગ્સ તપાસો</string>
+    <string name="common_no_more_data">વધુ ડેટા નથી</string>
+
+    <string name="common_web_ssl_error_title">વર્તમાન વેબસાઇટ સુરક્ષા પ્રમાણપત્રની સમયસીમા સમાપ્ત થઈ ગઈ છે અથવા તે અવિશ્વસનીય છે\nશું તમે બ્રાઉઝ કરવાનું ચાલુ રાખવા માંગો છો\?</string>
+    <string name="common_web_ssl_error_allow">બ્રાઉઝ કરવાનું ચાલુ રાખો</string>
+    <string name="common_web_ssl_error_reject">છેલ્લા પૃષ્ઠ પર પાછા જાઓ</string>
+
+    <string name="common_web_location_permission_title">વર્તમાન વેબસાઇટને તમારું ભૌગોલિક સ્થાન મેળવવાની જરૂર છે</string>
+    <string name="common_web_location_permission_allow">અનુદાન</string>
+    <string name="common_web_location_permission_reject">અસ્વીકાર</string>
+
+    <string name="common_web_call_phone_title">વર્તમાન નંબર %s</string>
+    <string name="common_web_call_phone_allow">ડાયલ</string>
+    <string name="common_web_call_phone_reject">રદ કરો</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">લોડ કરી રહ્યું છે...</string>
+
+    <string name="http_unknown_error">વિનંતી ભૂલ, અજાણી ભૂલ</string>
+    <string name="http_token_error">લૉગિન નિષ્ફળ થયું, કૃપા કરીને ફરીથી લૉગ ઇન કરો</string>
+    <string name="http_data_explain_error">ડેટા પાર્સિંગ અપવાદ, કૃપા કરીને રાહ જુઓ.</string>
+    <string name="http_server_out_time">સર્વર વિનંતીનો સમય સમાપ્ત થયો, કૃપા કરીને પછીથી ફરી પ્રયાસ કરો</string>
+    <string name="http_network_error">વિનંતી નિષ્ફળ થઈ, કૃપા કરીને નેટવર્ક સેટિંગ્સ તપાસો</string>
+    <string name="http_response_error">સર્વરે અસામાન્ય રીતે પ્રતિસાદ આપ્યો, કૃપા કરીને પછીથી ફરી પ્રયાસ કરો.</string>
+    <string name="http_server_error">સર્વર કનેક્શન અસાધારણતા, કૃપા કરીને પછીથી ફરી પ્રયાસ કરો</string>
+    <string name="http_request_cancel">વિનંતી વિક્ષેપિત થઈ હતી, કૃપા કરીને ફરી પ્રયાસ કરો</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">ખાલી</string>
+    <string name="status_layout_error_request">વિનંતી ભૂલ, કૃપા કરીને ફરી પ્રયાસ કરો</string>
+    <string name="status_layout_error_network">નેટવર્ક ભૂલ, કૃપા કરીને ફરી પ્રયાસ કરો</string>
+    <string name="status_layout_retry">ફરી પ્રયાસ કરો</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">કૃપા કરીને પ્રદેશ પસંદ કરો</string>
+    <string name="address_hint">કૃપા કરી પસંદ કરો</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">કૃપા કરીને તારીખ પસંદ કરો</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">કૃપા કરીને સમય પસંદ કરો</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">નવી આવૃત્તિ મળી</string>
+
+    <string name="update_content">સામગ્રી અપડેટ કરો</string>
+
+    <string name="update_no">આગલી વખતે મળીશું</string>
+    <string name="update_yes">તરત અપડેટ કરો</string>
+
+    <string name="update_permission_hint">તમે સામાન્ય રીતે અપડેટ્સ ડાઉનલોડ કરી શકો તે પહેલાં તમારે પરવાનગી આપવી આવશ્યક છે.</string>
+
+    <string name="update_status_start">ડાઉનલોડ કરી રહ્યું છે</string>
+    <string name="update_status_running">%d%% ડાઉનલોડ કરી રહ્યું છે</string>
+    <string name="update_status_successful">ડાઉનલોડ પૂર્ણ થયું, ઇન્સ્ટોલ કરવા માટે ક્લિક કરો</string>
+    <string name="update_status_failed">ડાઉનલોડ નિષ્ફળ થયું, ફરી પ્રયાસ કરવા માટે ક્લિક કરો</string>
+
+    <string name="update_no_update">હાલમાં નવીનતમ સંસ્કરણ</string>
+
+    <string name="update_notification_channel_id">અપડેટ</string>
+    <string name="update_notification_channel_name">અપગ્રેડ સૂચના</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">શેર કરો...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">મિત્રોનું વર્તુળ</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ જગ્યા</string>
+    <string name="share_platform_link">લિંકની નકલ કરો</string>
+
+    <string name="share_platform_copy_hint">ક્લિપબોર્ડ પર કૉપિ કરી</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">કૃપા કરીને ચુકવણી પાસવર્ડ દાખલ કરો</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">ઓછામાં ઓછી %d આઇટમ પસંદ કરવી આવશ્યક છે</string>
+    <string name="select_max_hint">વધુમાં વધુ %d વસ્તુઓ પસંદ કરી શકાય છે</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">ઓળખ ચકાસણી</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">બહાર નીકળવા માટે ફરીથી દબાવો</string>
+    <string name="home_nav_index">સેલ ફોન</string>
+    <string name="home_nav_found">કમ્પ્યુટર</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">નોંધણી કરો</string>
+    <string name="login_forget">પાસવર્ડ ભૂલી ગયા\?</string>
+    <string name="login_text">પ્રવેશ કરો</string>
+
+    <string name="login_other">અન્ય લૉગિન પદ્ધતિઓ</string>
+
+    <!-- 注册 -->
+    <string name="register_title">નોંધણી કરો</string>
+    <string name="register_hint">મોબાઇલ ફોન નંબરનો ઉપયોગ ફક્ત લોગ ઇન કરવા અને એકાઉન્ટની સુરક્ષા માટે થાય છે</string>
+    <string name="register_password_hint1">6-18 અંકનો લોગિન પાસવર્ડ સેટ કરો</string>
+    <string name="register_password_hint2">કૃપા કરીને તમારો પાસવર્ડ ફરીથી દાખલ કરો</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">સ્થાપના</string>
+
+    <string name="setting_language_switchover">ભાષા સ્વીચ</string>
+    <string name="setting_language_simple">સરળ ચીની</string>
+    <string name="setting_language_complex">પારંપરિક ચિની</string>
+    <string name="setting_update">અપડેટ માટે ચકાસો</string>
+
+    <string name="setting_password">પાસવર્ડ બદલો</string>
+    <string name="setting_phone">મોબાઇલ ફોનમાં ફેરફાર કરો</string>
+
+    <string name="setting_auto">ઓટો લોગિન</string>
+    <string name="setting_cache">કેશ ખાલી કરો</string>
+
+    <string name="setting_agreement">ગોપનીયતા કરાર</string>
+    <string name="setting_about">અમારા વિશે</string>
+
+    <string name="setting_exit">સાઇન આઉટ કરો</string>
+
+    <!-- 关于 -->
+    <string name="about_title">અમારા વિશે</string>
+    <string name="about_author"><font color="#85b84f">એન્ડ્રોઇડ</font> ભાઈ વ્હીલ</string>
+
+    <string name="about_copyright">કૉપિરાઇટ © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">પાસવર્ડ ભૂલી જાઓ</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">લૉગિન પાસવર્ડ સેટ કરી રહ્યાં છીએ</string>
+    <string name="password_reset_phone_hint1">6-18 અંકનો લોગિન પાસવર્ડ સેટ કરો</string>
+    <string name="password_reset_phone_hint2">પાસવર્ડ ફરીથી નાખો</string>
+    <string name="password_reset_input_error">બે પાસવર્ડ ઇનપુટ્સ અસંગત છે, કૃપા કરીને ફરીથી દાખલ કરો.</string>
+    <string name="password_reset_success">સફળતાપૂર્વક સંશોધિત</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">મોબાઈલ નંબર સેટ કરો</string>
+    <string name="phone_reset_change_hint">આગલી વખતે લૉગ ઇન કરવા માટે કૃપા કરીને તમારા નવા મોબાઇલ ફોન નંબરનો ઉપયોગ કરો.</string>
+    <string name="phone_reset_commit">હવે બાંધો</string>
+
+    <string name="phone_reset_commit_succeed">બંધન સફળ</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">વ્યક્તિગત માહિતી</string>
+    <string name="personal_data_head">અવતાર</string>
+
+    <string name="personal_data_id">વપરાશકર્તા ID</string>
+    <string name="personal_data_name">ઉપનામ</string>
+    <string name="personal_data_name_hint">ઉપનામ સેટ કરો</string>
+
+    <string name="personal_data_address">વિસ્તાર</string>
+    <string name="personal_data_address_hint">કૃપા કરી પસંદ કરો</string>
+
+    <string name="personal_data_phone">ફોન નંબર</string>
+    <string name="personal_data_phone_hint">હવે બાંધો</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">પૃષ્ઠ લોડ થઈ રહ્યું છે...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">ચિત્રની પસંદગી</string>
+    <string name="image_select_all">બધા ચિત્રો</string>
+
+    <string name="image_select_total">કુલ %d ફોટા</string>
+
+    <string name="image_select_max_hint">આ વખતે વધુમાં વધુ %d ચિત્રો પસંદ કરી શકાય છે</string>
+
+    <string name="image_select_error">પસંદ કરવામાં અસમર્થ, છબી કાઢી નાખવામાં આવી છે</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">ક્રોપિંગ નિષ્ફળ થયું વર્તમાન ફોન ચિત્રો કાપવાનું સમર્થન કરતું નથી.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">વિડિઓ પસંદગી</string>
+    <string name="video_select_all">તમામ વીડિયો</string>
+
+    <string name="video_select_total">કુલ %d</string>
+
+    <string name="video_select_max_hint">આ વખતે વધુમાં વધુ %d વીડિયો પસંદ કરી શકાય છે</string>
+
+    <string name="video_select_error">પસંદ કરવામાં અસમર્થ, વિડિઓ કાઢી નાખવામાં આવી છે</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">કૅમેરા શરૂ કરવામાં અસમર્થ</string>
+    <string name="camera_image_error">ખોટું ગંતવ્ય સરનામું</string>
+
+</resources>

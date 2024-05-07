@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">아름다운 사진 벽지</string>
+    <string name="app_name_en">아름다운벽지</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">로드 중…</string>
+
+    <string name="common_unknown_error">알 수 없는 실수</string>
+
+    <string name="common_confirm">확신하는</string>
+    <string name="common_cancel">취소</string>
+
+    <string name="common_year">년도</string>
+    <string name="common_month">달</string>
+    <string name="common_day">일</string>
+
+    <string name="common_hour">시간</string>
+    <string name="common_minute">가리키다</string>
+    <string name="common_second">두번째</string>
+
+    <string name="common_crash_hint">애플리케이션에 사소한 사고가 발생하여 다시 시작하는 중입니다.</string>
+
+    <string name="common_network_error">현재 네트워크를 사용할 수 없습니다. 네트워크 설정을 확인하세요.</string>
+
+    <string name="common_video_error_not_support">이 동영상은 이 기기에서 재생하기에 적합하지 않습니다.</string>
+    <string name="common_video_error_unknown">이 동영상을 재생할 수 없습니다</string>
+    <string name="common_video_error_supplement">오류 유형: %d, 오류 코드: %d</string>
+
+    <string name="common_phone_input_hint">전화번호를 입력해주세요</string>
+    <string name="common_phone_input_error">휴대폰번호가 잘못 입력되었습니다.</string>
+
+    <string name="common_password_input_error">비밀번호를 입력 해주세요</string>
+    <string name="common_password_input_unlike">두 개의 비밀번호 입력이 일치하지 않습니다. 다시 입력하세요.</string>
+
+    <string name="common_code_input_hint">인증번호를 입력해주세요</string>
+    <string name="common_code_send">인증 코드 보내기</string>
+    <string name="common_code_send_hint">인증번호가 전송되었습니다. 잘 확인해주세요.</string>
+    <string name="common_code_error_hint">인증 코드 오류입니다. 입력 내용을 확인하세요.</string>
+
+    <string name="common_step_next">다음 단계</string>
+    <string name="common_step_complete">마치다</string>
+    <string name="common_step_commit">제출하다</string>
+
+    <string name="common_permission_alert">승인 알림</string>
+    <string name="common_permission_fail_1">승인에 실패했습니다. 권한을 올바르게 부여해 주세요.</string>
+    <string name="common_permission_fail_2">권한을 얻지 못했습니다. 수동으로 권한을 부여하세요.</string>
+    <string name="common_permission_fail_3">권한을 얻지 못했습니다. %s을(를) 수동으로 부여하십시오.</string>
+    <string name="common_permission_fail_4">백그라운드 위치 지정 권한이 부여되지 않았습니다. \"항상 허용\"을 선택하세요.</string>
+    <string name="common_permission_goto">승인으로 이동</string>
+
+    <string name="common_permission_calendar">캘린더 권한</string>
+    <string name="common_permission_camera">카메라 권한</string>
+    <string name="common_permission_contacts">주소록 권한</string>
+    <string name="common_permission_location">위치 권한</string>
+    <string name="common_permission_location_background">백그라운드 위치 지정 권한</string>
+    <string name="common_permission_microphone">마이크 권한</string>
+    <string name="common_permission_phone">전화 권한</string>
+    <string name="common_permission_call_log">통화 녹음 권한</string>
+    <string name="common_permission_sensors">신체 센서 권한</string>
+    <string name="common_permission_activity_recognition">피트니스 허가</string>
+    <string name="common_permission_sms">SMS 권한</string>
+    <string name="common_permission_storage">저장소 권한</string>
+
+    <string name="common_permission_install">앱 권한 설치</string>
+    <string name="common_permission_notification">알림 표시줄 권한</string>
+    <string name="common_permission_window">부동 창 권한</string>
+    <string name="common_permission_setting">시스템 설정 권한</string>
+
+    <string name="common_network_hint">현재 네트워크에 연결되어 있지 않습니다. 네트워크 설정을 확인하세요.</string>
+    <string name="common_no_more_data">더 이상 데이터가 없습니다</string>
+
+    <string name="common_web_ssl_error_title">현재 웹사이트 보안 인증서가 만료되었거나 신뢰할 수 없습니다.\n계속 탐색하시겠습니까\?</string>
+    <string name="common_web_ssl_error_allow">계속 탐색</string>
+    <string name="common_web_ssl_error_reject">마지막 페이지로 돌아가기</string>
+
+    <string name="common_web_location_permission_title">현재 웹사이트는 귀하의 지리적 위치를 획득해야 합니다</string>
+    <string name="common_web_location_permission_allow">승인하다</string>
+    <string name="common_web_location_permission_reject">거부하다</string>
+
+    <string name="common_web_call_phone_title">현재 번호 %s</string>
+    <string name="common_web_call_phone_allow">다이얼</string>
+    <string name="common_web_call_phone_reject">취소</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">로드 중…</string>
+
+    <string name="http_unknown_error">요청 오류, 알 수 없는 오류</string>
+    <string name="http_token_error">로그인에 실패했습니다. 다시 로그인해 주세요.</string>
+    <string name="http_data_explain_error">데이터 구문 분석 예외가 발생했습니다. 잠시 기다려 주십시오.</string>
+    <string name="http_server_out_time">서버 요청 시간이 초과되었습니다. 나중에 다시 시도해 주세요.</string>
+    <string name="http_network_error">요청이 실패했습니다. 네트워크 설정을 확인하세요.</string>
+    <string name="http_response_error">서버가 비정상적으로 응답했습니다. 나중에 다시 시도해 주세요.</string>
+    <string name="http_server_error">서버 연결이 비정상입니다. 나중에 다시 시도해 주세요.</string>
+    <string name="http_request_cancel">요청이 중단되었습니다. 다시 시도해 주세요.</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">비어 있는</string>
+    <string name="status_layout_error_request">요청 오류입니다. 다시 시도해 주세요.</string>
+    <string name="status_layout_error_network">네트워크 오류입니다. 다시 시도해 주세요.</string>
+    <string name="status_layout_retry">다시 해 보다</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">지역을 선택해주세요</string>
+    <string name="address_hint">선택해주세요</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">날짜를 선택하세요.</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">시간을 선택하세요.</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">새 버전이 발견되었습니다</string>
+
+    <string name="update_content">업데이트 내용</string>
+
+    <string name="update_no">다음에 또 만나요</string>
+    <string name="update_yes">즉시 업데이트</string>
+
+    <string name="update_permission_hint">업데이트를 정상적으로 다운로드하려면 권한을 부여해야 합니다.</string>
+
+    <string name="update_status_start">다운로드 중</string>
+    <string name="update_status_running">%d%% 다운로드 중</string>
+    <string name="update_status_successful">다운로드가 완료되었습니다. 클릭하여 설치하세요.</string>
+    <string name="update_status_failed">다운로드에 실패했습니다. 다시 시도하려면 클릭하세요.</string>
+
+    <string name="update_no_update">현재 최신 버전</string>
+
+    <string name="update_notification_channel_id">업데이트</string>
+    <string name="update_notification_channel_name">업그레이드 알림</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">공유하다…</string>
+
+    <string name="share_platform_wechat">위챗</string>
+    <string name="share_platform_moment">친구의 원</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ 공간</string>
+    <string name="share_platform_link">링크 복사</string>
+
+    <string name="share_platform_copy_hint">클립보드에 복사됨</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">결제 비밀번호를 입력해주세요</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">%d개 이상의 항목을 선택해야 합니다.</string>
+    <string name="select_max_hint">최대 %d개의 항목을 선택할 수 있습니다.</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">신원 확인</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">종료하려면 다시 누르세요.</string>
+    <string name="home_nav_index">휴대폰</string>
+    <string name="home_nav_found">컴퓨터</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">등록하다</string>
+    <string name="login_forget">비밀번호를 잊으셨나요\?</string>
+    <string name="login_text">로그인</string>
+
+    <string name="login_other">기타 로그인 방법</string>
+
+    <!-- 注册 -->
+    <string name="register_title">등록하다</string>
+    <string name="register_hint">휴대폰 번호는 로그인 및 계정 보안 보호 목적으로만 사용됩니다.</string>
+    <string name="register_password_hint1">6~18자리 로그인 비밀번호를 설정하세요.</string>
+    <string name="register_password_hint2">비밀번호를 다시 입력해주세요</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">설정</string>
+
+    <string name="setting_language_switchover">언어 스위치</string>
+    <string name="setting_language_simple">중국어 간체</string>
+    <string name="setting_language_complex">중국어 번체</string>
+    <string name="setting_update">업데이트 확인</string>
+
+    <string name="setting_password">비밀번호 변경</string>
+    <string name="setting_phone">휴대폰 수정</string>
+
+    <string name="setting_auto">자동 로그인</string>
+    <string name="setting_cache">캐시 비우기</string>
+
+    <string name="setting_agreement">개인 정보 보호 계약</string>
+    <string name="setting_about">회사 소개</string>
+
+    <string name="setting_exit">로그아웃</string>
+
+    <!-- 关于 -->
+    <string name="about_title">회사 소개</string>
+    <string name="about_author"><font color="#85b84f">기계적 인조 인간</font> 브라더 휠</string>
+
+    <string name="about_copyright">저작권 © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">비밀번호를 잊어버려</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">로그인 비밀번호 설정</string>
+    <string name="password_reset_phone_hint1">6~18자리 로그인 비밀번호를 설정하세요.</string>
+    <string name="password_reset_phone_hint2">비밀번호를 다시 입력하세요</string>
+    <string name="password_reset_input_error">두 개의 비밀번호 입력이 일치하지 않습니다. 다시 입력하세요.</string>
+    <string name="password_reset_success">수정되었습니다.</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">휴대폰 번호 설정</string>
+    <string name="phone_reset_change_hint">다음번에는 새로운 휴대폰 번호를 이용해 로그인해주세요.</string>
+    <string name="phone_reset_commit">지금 바인딩</string>
+
+    <string name="phone_reset_commit_succeed">바인딩 성공</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">개인 정보</string>
+    <string name="personal_data_head">화신</string>
+
+    <string name="personal_data_id">사용자 ID</string>
+    <string name="personal_data_name">닉네임</string>
+    <string name="personal_data_name_hint">닉네임 설정</string>
+
+    <string name="personal_data_address">영역</string>
+    <string name="personal_data_address_hint">선택해주세요</string>
+
+    <string name="personal_data_phone">전화 번호</string>
+    <string name="personal_data_phone_hint">지금 바인딩</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">페이지를 로드하는 중입니다...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">사진 선택</string>
+    <string name="image_select_all">모든 사진</string>
+
+    <string name="image_select_total">총 %d장의 사진</string>
+
+    <string name="image_select_max_hint">이번에는 최대 %d장의 사진을 선택할 수 있습니다.</string>
+
+    <string name="image_select_error">선택할 수 없습니다. 이미지가 삭제되었습니다.</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">자르기에 실패했습니다. 현재 휴대전화는 사진 자르기를 지원하지 않습니다.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">비디오 선택</string>
+    <string name="video_select_all">모든 동영상</string>
+
+    <string name="video_select_total">총 %d</string>
+
+    <string name="video_select_max_hint">이번에는 최대 %d개의 동영상을 선택할 수 있습니다.</string>
+
+    <string name="video_select_error">선택할 수 없습니다. 동영상이 삭제되었습니다.</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">카메라를 시작할 수 없습니다</string>
+    <string name="camera_image_error">잘못된 목적지 주소</string>
+
+</resources>

@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Pragtige prente plakpapier</string>
+    <string name="app_name_en">Pragtige muurpapier</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">laai …</string>
+
+    <string name="common_unknown_error">onbekende fout</string>
+
+    <string name="common_confirm">Sekerlik</string>
+    <string name="common_cancel">Kanselleer</string>
+
+    <string name="common_year">Jaar</string>
+    <string name="common_month">maan</string>
+    <string name="common_day">Dag</string>
+
+    <string name="common_hour">uur</string>
+    <string name="common_minute">punt</string>
+    <string name="common_second">Tweedens</string>
+
+    <string name="common_crash_hint">Die toepassing het \'n ligte ongeluk teëgekom en word herbegin.</string>
+
+    <string name="common_network_error">Die huidige netwerk is nie beskikbaar nie, gaan asseblief die netwerkinstellings na</string>
+
+    <string name="common_video_error_not_support">Hierdie video is nie geskik vir terugspeel op hierdie toestel nie</string>
+    <string name="common_video_error_unknown">Hierdie video kan nie gespeel word nie</string>
+    <string name="common_video_error_supplement">Fouttipe: %d, foutkode: %d</string>
+
+    <string name="common_phone_input_hint">Voer asseblief die telefoonnommer in</string>
+    <string name="common_phone_input_error">Selfoonnommer is verkeerd ingevoer</string>
+
+    <string name="common_password_input_error">Voer asseblief wagwoord in</string>
+    <string name="common_password_input_unlike">Die twee wagwoordinvoere is inkonsekwent, voer asseblief weer in.</string>
+
+    <string name="common_code_input_hint">Voer asseblief verifikasiekode in</string>
+    <string name="common_code_send">Stuur die verifikasiekode</string>
+    <string name="common_code_send_hint">Verifikasiekode is gestuur, gaan dit asseblief noukeurig na</string>
+    <string name="common_code_error_hint">Verifikasiekodefout, gaan asseblief jou invoer na</string>
+
+    <string name="common_step_next">Volgende stap</string>
+    <string name="common_step_complete">Voltooi</string>
+    <string name="common_step_commit">Indien</string>
+
+    <string name="common_permission_alert">Magtigingsherinnering</string>
+    <string name="common_permission_fail_1">Magtiging het misluk, gee asseblief toestemming korrek</string>
+    <string name="common_permission_fail_2">Kon nie toestemming kry nie, gee asseblief toestemming handmatig</string>
+    <string name="common_permission_fail_3">Kon nie toestemming kry nie, gee asseblief %s handmatig toe</string>
+    <string name="common_permission_fail_4">Toestemming vir agtergrondposisionering word nie verleen nie, kies asseblief \"Laat altyd toe\"</string>
+    <string name="common_permission_goto">Gaan na Magtiging</string>
+
+    <string name="common_permission_calendar">Kalendertoestemmings</string>
+    <string name="common_permission_camera">Kameratoestemmings</string>
+    <string name="common_permission_contacts">Adresboektoestemmings</string>
+    <string name="common_permission_location">Liggingtoestemmings</string>
+    <string name="common_permission_location_background">Agtergrondposisioneringstoestemmings</string>
+    <string name="common_permission_microphone">Mikrofoontoestemmings</string>
+    <string name="common_permission_phone">Foontoestemmings</string>
+    <string name="common_permission_call_log">Oproeprekordtoestemmings</string>
+    <string name="common_permission_sensors">Liggaamsensortoestemmings</string>
+    <string name="common_permission_activity_recognition">Fiksheidstoestemming</string>
+    <string name="common_permission_sms">SMS-toestemmings</string>
+    <string name="common_permission_storage">Bergingstoestemmings</string>
+
+    <string name="common_permission_install">Installeer programtoestemmings</string>
+    <string name="common_permission_notification">Kennisgewingbalktoestemmings</string>
+    <string name="common_permission_window">Toestemmings vir drywende vensters</string>
+    <string name="common_permission_setting">Toestemmings vir stelselinstellings</string>
+
+    <string name="common_network_hint">Daar is tans geen netwerkverbinding nie, gaan asseblief die netwerkinstellings na</string>
+    <string name="common_no_more_data">Geen meer data nie</string>
+
+    <string name="common_web_ssl_error_title">Die huidige webwerf-sekuriteitsertifikaat het verval of is onbetroubaar\nWil jy voortgaan om te blaai\?</string>
+    <string name="common_web_ssl_error_allow">Gaan voort om te blaai</string>
+    <string name="common_web_ssl_error_reject">gaan terug na die laaste bladsy</string>
+
+    <string name="common_web_location_permission_title">Die huidige webwerf moet jou geografiese ligging kry</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">verwerp</string>
+
+    <string name="common_web_call_phone_title">Huidige nommer %s</string>
+    <string name="common_web_call_phone_allow">skakel</string>
+    <string name="common_web_call_phone_reject">Kanselleer</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">laai …</string>
+
+    <string name="http_unknown_error">Versoekfout, onbekende fout</string>
+    <string name="http_token_error">Aanmelding het misluk, meld asseblief weer aan</string>
+    <string name="http_data_explain_error">Data-ontleding-uitsondering, wag asseblief.</string>
+    <string name="http_server_out_time">Bedienerversoek het uitgetel, probeer asseblief later weer</string>
+    <string name="http_network_error">Versoek het misluk, gaan asseblief netwerkinstellings na</string>
+    <string name="http_response_error">Die bediener het abnormaal gereageer, probeer asseblief later weer.</string>
+    <string name="http_server_error">Bedienerverbinding abnormaliteit, probeer asseblief later weer</string>
+    <string name="http_request_cancel">Die versoek is onderbreek, probeer asseblief weer</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Leeg</string>
+    <string name="status_layout_error_request">Versoekfout, probeer asseblief weer</string>
+    <string name="status_layout_error_network">Netwerkfout, probeer asseblief weer</string>
+    <string name="status_layout_retry">Probeer weer</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">kies asseblief die streek</string>
+    <string name="address_hint">kies asseblief</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Kies asseblief \'n datum</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Kies asseblief \'n tyd</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">nuwe weergawe gevind</string>
+
+    <string name="update_content">Dateer inhoud op</string>
+
+    <string name="update_no">Sien jou volgende keer</string>
+    <string name="update_yes">dateer onmiddellik op</string>
+
+    <string name="update_permission_hint">Jy moet eers toestemming verleen voordat jy opdaterings normaalweg kan aflaai.</string>
+
+    <string name="update_status_start">aflaai</string>
+    <string name="update_status_running">Laai tans %d%% af</string>
+    <string name="update_status_successful">Aflaai is voltooi, klik om te installeer</string>
+    <string name="update_status_failed">Kon nie aflaai nie, klik om weer te probeer</string>
+
+    <string name="update_no_update">Tans die nuutste weergawe</string>
+
+    <string name="update_notification_channel_id">Opdateer</string>
+    <string name="update_notification_channel_name">Gradeer kennisgewing</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">deel aan...</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Vriendekring</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ spasie</string>
+    <string name="share_platform_link">kopieer Skakel</string>
+
+    <string name="share_platform_copy_hint">Gekopieer na knipbord</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Voer asseblief betalingswagwoord in</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Ten minste %d items moet gekies word</string>
+    <string name="select_max_hint">Hoogstens %d items kan gekies word</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Identiteitsverifikasie</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Druk weer om uit te gaan</string>
+    <string name="home_nav_index">loopfoon</string>
+    <string name="home_nav_found">rekenaar</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">registreer</string>
+    <string name="login_forget">die wagwoord vergeet\?</string>
+    <string name="login_text">Teken aan</string>
+
+    <string name="login_other">Ander aanmeldmetodes</string>
+
+    <!-- 注册 -->
+    <string name="register_title">registreer</string>
+    <string name="register_hint">Selfoonnommer word slegs gebruik om aan te meld en rekeningsekuriteit te beskerm</string>
+    <string name="register_password_hint1">Stel \'n 6–18-syfer-aanmeldwagwoord in</string>
+    <string name="register_password_hint2">Voer asseblief weer jou wagwoord in</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">stel op</string>
+
+    <string name="setting_language_switchover">taal skakelaar</string>
+    <string name="setting_language_simple">Vereenvoudigde Sjinees</string>
+    <string name="setting_language_complex">tradisionele Sjinees</string>
+    <string name="setting_update">Kyk vir opdaterings</string>
+
+    <string name="setting_password">verander wagwoord</string>
+    <string name="setting_phone">Verander selfoon</string>
+
+    <string name="setting_auto">outomatiese aanmelding</string>
+    <string name="setting_cache">Maak die kas leeg</string>
+
+    <string name="setting_agreement">privaatheidsooreenkoms</string>
+    <string name="setting_about">oor ons</string>
+
+    <string name="setting_exit">teken uit</string>
+
+    <!-- 关于 -->
+    <string name="about_title">oor ons</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Broer Wiel</string>
+
+    <string name="about_copyright">Kopiereg © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">vergeet die wagwoord</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Stel aanmeldwagwoord in</string>
+    <string name="password_reset_phone_hint1">Stel \'n 6–18-syfer-aanmeldwagwoord in</string>
+    <string name="password_reset_phone_hint2">Voer wagwoord weer in</string>
+    <string name="password_reset_input_error">Die twee wagwoordinvoere is inkonsekwent, voer asseblief weer in.</string>
+    <string name="password_reset_success">Suksesvol gewysig</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Stel selfoonnommer</string>
+    <string name="phone_reset_change_hint">Gebruik asseblief jou nuwe selfoonnommer om volgende keer aan te meld.</string>
+    <string name="phone_reset_commit">Bind nou</string>
+
+    <string name="phone_reset_commit_succeed">Binding suksesvol</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">persoonlike inligting</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">Gebruikers-ID</string>
+    <string name="personal_data_name">Bynaam</string>
+    <string name="personal_data_name_hint">Stel bynaam</string>
+
+    <string name="personal_data_address">gebied</string>
+    <string name="personal_data_address_hint">kies asseblief</string>
+
+    <string name="personal_data_phone">telefoon nommer</string>
+    <string name="personal_data_phone_hint">Bind nou</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Die bladsy laai tans...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Prent seleksie</string>
+    <string name="image_select_all">Alle foto\'s</string>
+
+    <string name="image_select_total">Totaal %d foto\'s</string>
+
+    <string name="image_select_max_hint">Op die meeste %d prente kan hierdie keer gekies word</string>
+
+    <string name="image_select_error">Kan nie kies nie, die prent is uitgevee</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Kon nie sny nie. Die huidige foon ondersteun nie prente nie.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Video seleksie</string>
+    <string name="video_select_all">Alle video\'s</string>
+
+    <string name="video_select_total">Totaal %d</string>
+
+    <string name="video_select_max_hint">Op die meeste %d video\'s kan hierdie keer gekies word</string>
+
+    <string name="video_select_error">Kan nie kies nie, die video is uitgevee</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Kan nie kamera begin nie</string>
+    <string name="camera_image_error">Verkeerde bestemmingsadres</string>
+
+</resources>

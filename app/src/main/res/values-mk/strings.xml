@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Позадини со убави слики</string>
+    <string name="app_name_en">Прекрасна позадина</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">се вчитува…</string>
+
+    <string name="common_unknown_error">непозната грешка</string>
+
+    <string name="common_confirm">Секако</string>
+    <string name="common_cancel">Откажи</string>
+
+    <string name="common_year">година</string>
+    <string name="common_month">месечината</string>
+    <string name="common_day">Ден</string>
+
+    <string name="common_hour">час</string>
+    <string name="common_minute">точка</string>
+    <string name="common_second">Второ</string>
+
+    <string name="common_crash_hint">Апликацијата наиде на мала незгода и се рестартира.</string>
+
+    <string name="common_network_error">Тековната мрежа е недостапна, ве молиме проверете ги мрежните поставки</string>
+
+    <string name="common_video_error_not_support">Ова видео не е соодветно за репродукција на овој уред</string>
+    <string name="common_video_error_unknown">Ова видео не може да се репродуцира</string>
+    <string name="common_video_error_supplement">Вид на грешка: %d, код за грешка: %d</string>
+
+    <string name="common_phone_input_hint">Ве молиме внесете го телефонскиот број</string>
+    <string name="common_phone_input_error">Бројот на мобилниот телефон е погрешно внесен</string>
+
+    <string name="common_password_input_error">Ве молиме внесете лозинка</string>
+    <string name="common_password_input_unlike">Двата влеза на лозинка се неконзистентни, ве молиме внесете повторно.</string>
+
+    <string name="common_code_input_hint">ве молиме внесете го кодот за потврда</string>
+    <string name="common_code_send">Испратете го кодот за потврда</string>
+    <string name="common_code_send_hint">Кодот за потврда е испратен, ве молиме проверете го внимателно</string>
+    <string name="common_code_error_hint">Грешка во кодот за потврда, проверете го вашиот влез</string>
+
+    <string name="common_step_next">Следен чекор</string>
+    <string name="common_step_complete">Заврши</string>
+    <string name="common_step_commit">поднесете</string>
+
+    <string name="common_permission_alert">Потсетник за овластување</string>
+    <string name="common_permission_fail_1">Овластувањето не успеа, ве молиме дадете дозвола правилно</string>
+    <string name="common_permission_fail_2">Не успеа да се добие дозвола, ве молиме дајте дозвола рачно</string>
+    <string name="common_permission_fail_3">Не успеа да добие дозвола, доделете %s рачно</string>
+    <string name="common_permission_fail_4">Дозволата за позиционирање во заднина не е дадена, ве молиме изберете „Секогаш дозволувај“</string>
+    <string name="common_permission_goto">Одете во Овластување</string>
+
+    <string name="common_permission_calendar">Дозволи за календар</string>
+    <string name="common_permission_camera">Дозволи за камера</string>
+    <string name="common_permission_contacts">Дозволи за адресар</string>
+    <string name="common_permission_location">Дозволи за локација</string>
+    <string name="common_permission_location_background">Дозволи за позиционирање во заднина</string>
+    <string name="common_permission_microphone">Дозволи за микрофон</string>
+    <string name="common_permission_phone">Дозволи за телефон</string>
+    <string name="common_permission_call_log">Дозволи за снимање на повици</string>
+    <string name="common_permission_sensors">Дозволи за сензор за тело</string>
+    <string name="common_permission_activity_recognition">Дозвола за фитнес</string>
+    <string name="common_permission_sms">СМС дозволи</string>
+    <string name="common_permission_storage">Дозволи за складирање</string>
+
+    <string name="common_permission_install">Инсталирајте дозволи за апликација</string>
+    <string name="common_permission_notification">Дозволи за лентата за известување</string>
+    <string name="common_permission_window">Дозволи за лебдечки прозорци</string>
+    <string name="common_permission_setting">Дозволи за системски поставки</string>
+
+    <string name="common_network_hint">Во моментов нема мрежна врска, проверете ги мрежните поставки</string>
+    <string name="common_no_more_data">Нема повеќе податоци</string>
+
+    <string name="common_web_ssl_error_title">Тековниот безбедносен сертификат на веб-локацијата е истечен или не е доверлив\nДали сакате да продолжите со прелистувањето\?</string>
+    <string name="common_web_ssl_error_allow">Продолжете со прелистување</string>
+    <string name="common_web_ssl_error_reject">врати се на последната страница</string>
+
+    <string name="common_web_location_permission_title">Тековната веб-локација треба да ја добие вашата географска локација</string>
+    <string name="common_web_location_permission_allow">Грант</string>
+    <string name="common_web_location_permission_reject">отфрли</string>
+
+    <string name="common_web_call_phone_title">Тековен број %s</string>
+    <string name="common_web_call_phone_allow">бирање</string>
+    <string name="common_web_call_phone_reject">Откажи</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">се вчитува…</string>
+
+    <string name="http_unknown_error">Грешка во барањето, непозната грешка</string>
+    <string name="http_token_error">Најавувањето не успеа, ве молиме најавете се повторно</string>
+    <string name="http_data_explain_error">Исклучок од анализа на податоци, почекајте.</string>
+    <string name="http_server_out_time">Времето на барањето на серверот истече, обидете се повторно подоцна</string>
+    <string name="http_network_error">Барањето не успеа, проверете ги мрежните поставки</string>
+    <string name="http_response_error">Серверот одговори ненормално, обидете се повторно подоцна.</string>
+    <string name="http_server_error">Абнормалност во врската со серверот, обидете се повторно подоцна</string>
+    <string name="http_request_cancel">Барањето беше прекинато, обидете се повторно</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Празен</string>
+    <string name="status_layout_error_request">Грешка во барањето, обидете се повторно</string>
+    <string name="status_layout_error_network">Грешка во мрежата, обидете се повторно</string>
+    <string name="status_layout_retry">Обидете се повторно</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">ве молиме изберете го регионот</string>
+    <string name="address_hint">Ве молам одберете</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Изберете датум</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Ве молиме изберете време</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">пронајдена е нова верзија</string>
+
+    <string name="update_content">Ажурирајте ја содржината</string>
+
+    <string name="update_no">Се гледаме следниот пат</string>
+    <string name="update_yes">ажурирајте веднаш</string>
+
+    <string name="update_permission_hint">Мора да дадете дозвола пред да можете нормално да преземате ажурирања.</string>
+
+    <string name="update_status_start">преземање</string>
+    <string name="update_status_running">Се презема %d%%</string>
+    <string name="update_status_successful">Преземањето е завршено, кликнете за да се инсталира</string>
+    <string name="update_status_failed">Преземањето не успеа, кликнете за да се обидете повторно</string>
+
+    <string name="update_no_update">Моментално најновата верзија</string>
+
+    <string name="update_notification_channel_id">ажурирање</string>
+    <string name="update_notification_channel_name">Известување за надградба</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">споделете на…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Круг на пријатели</string>
+    <string name="share_platform_qq">Операција</string>
+    <string name="share_platform_qzone">Операција простор</string>
+    <string name="share_platform_link">копирајте Линк</string>
+
+    <string name="share_platform_copy_hint">Копирано во таблата со исечоци</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Внесете лозинка за плаќање</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Мора да се изберат најмалку %d ставки</string>
+    <string name="select_max_hint">Може да се изберат најмногу %d ставки</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Проверка на идентитетот</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Притиснете повторно за да излезете</string>
+    <string name="home_nav_index">мобилен телефон</string>
+    <string name="home_nav_found">компјутер</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">регистрираат</string>
+    <string name="login_forget">ја заборавивте лозинката\?</string>
+    <string name="login_text">Логирај Се</string>
+
+    <string name="login_other">Други методи за најавување</string>
+
+    <!-- 注册 -->
+    <string name="register_title">регистрираат</string>
+    <string name="register_hint">Бројот на мобилниот телефон се користи само за најавување и заштита на безбедноста на сметката</string>
+    <string name="register_password_hint1">Поставете лозинка за најавување од 6-18 цифри</string>
+    <string name="register_password_hint2">Ве молиме внесете ја вашата лозинка повторно</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">постави</string>
+
+    <string name="setting_language_switchover">префрлување јазик</string>
+    <string name="setting_language_simple">Поедноставен кинески</string>
+    <string name="setting_language_complex">традиционален кинески</string>
+    <string name="setting_update">Проверете дали има ажурирања</string>
+
+    <string name="setting_password">промени го пасвордот</string>
+    <string name="setting_phone">Изменете го мобилниот телефон</string>
+
+    <string name="setting_auto">автоматско најавување</string>
+    <string name="setting_cache">Испразнете го кешот</string>
+
+    <string name="setting_agreement">договор за приватност</string>
+    <string name="setting_about">за нас</string>
+
+    <string name="setting_exit">одјави се</string>
+
+    <!-- 关于 -->
+    <string name="about_title">за нас</string>
+    <string name="about_author"><font color="#85b84f">Андроид</font> Брат тркало</string>
+
+    <string name="about_copyright">Авторски права © 2018 - 2021 година</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">заборави ја лозинката</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Поставување лозинка за најавување</string>
+    <string name="password_reset_phone_hint1">Поставете лозинка за најавување од 6-18 цифри</string>
+    <string name="password_reset_phone_hint2">Внеси ја повторно лозинката</string>
+    <string name="password_reset_input_error">Двата влеза на лозинка се неконзистентни, ве молиме внесете повторно.</string>
+    <string name="password_reset_success">Успешно изменето</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Поставете мобилен број</string>
+    <string name="phone_reset_change_hint">Ве молиме користете го вашиот нов мобилен телефонски број за да се најавите следниот пат.</string>
+    <string name="phone_reset_commit">Врзи сега</string>
+
+    <string name="phone_reset_commit_succeed">Успешното врзување</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">лични податоци</string>
+    <string name="personal_data_head">аватар</string>
+
+    <string name="personal_data_id">Кориснички ID</string>
+    <string name="personal_data_name">Прекар</string>
+    <string name="personal_data_name_hint">Поставете прекар</string>
+
+    <string name="personal_data_address">област</string>
+    <string name="personal_data_address_hint">Ве молам одберете</string>
+
+    <string name="personal_data_phone">телефонски број</string>
+    <string name="personal_data_phone_hint">Врзи сега</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Страницата се вчитува...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Избор на слика</string>
+    <string name="image_select_all">Сите слики</string>
+
+    <string name="image_select_total">Вкупно %d фотографии</string>
+
+    <string name="image_select_max_hint">Овој пат може да се изберат најмногу %d слики</string>
+
+    <string name="image_select_error">Не може да се избере, сликата е избришана</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Сечење не успеа Тековниот телефон не поддржува сечење слики.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Избор на видео</string>
+    <string name="video_select_all">Сите видеа</string>
+
+    <string name="video_select_total">Вкупно %d</string>
+
+    <string name="video_select_max_hint">Овој пат може да се изберат најмногу %d видеа</string>
+
+    <string name="video_select_error">Не може да се избере, видеото е избришано</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Не може да се стартува камерата</string>
+    <string name="camera_image_error">Погрешна дестинација адреса</string>
+
+</resources>

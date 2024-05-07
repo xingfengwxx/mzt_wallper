@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Krásné obrázky tapety</string>
+    <string name="app_name_en">Krásná Tapeta</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">načítání…</string>
+
+    <string name="common_unknown_error">neznámá chyba</string>
+
+    <string name="common_confirm">Tak určitě</string>
+    <string name="common_cancel">zrušení</string>
+
+    <string name="common_year">Rok</string>
+    <string name="common_month">měsíc</string>
+    <string name="common_day">Den</string>
+
+    <string name="common_hour">hodina</string>
+    <string name="common_minute">směřovat</string>
+    <string name="common_second">Druhý</string>
+
+    <string name="common_crash_hint">V aplikaci došlo k drobné nehodě a probíhá restart.</string>
+
+    <string name="common_network_error">Aktuální síť je nedostupná, zkontrolujte nastavení sítě</string>
+
+    <string name="common_video_error_not_support">Toto video není vhodné pro přehrávání na tomto zařízení</string>
+    <string name="common_video_error_unknown">Toto video nelze přehrát</string>
+    <string name="common_video_error_supplement">Typ chyby: %d, kód chyby: %d</string>
+
+    <string name="common_phone_input_hint">Zadejte prosím telefonní číslo</string>
+    <string name="common_phone_input_error">Nesprávně zadané číslo mobilního telefonu</string>
+
+    <string name="common_password_input_error">Prosím vložte heslo</string>
+    <string name="common_password_input_unlike">Dvě zadání hesla jsou nekonzistentní, zadejte prosím znovu.</string>
+
+    <string name="common_code_input_hint">zadejte prosím ověřovací kód</string>
+    <string name="common_code_send">Odešlete ověřovací kód</string>
+    <string name="common_code_send_hint">Ověřovací kód byl odeslán, pečlivě jej zkontrolujte</string>
+    <string name="common_code_error_hint">Chyba ověřovacího kódu, zkontrolujte prosím zadané údaje</string>
+
+    <string name="common_step_next">Další krok</string>
+    <string name="common_step_complete">Dokončit</string>
+    <string name="common_step_commit">Předložit</string>
+
+    <string name="common_permission_alert">Připomenutí autorizace</string>
+    <string name="common_permission_fail_1">Autorizace se nezdařila, udělte oprávnění správně</string>
+    <string name="common_permission_fail_2">Nepodařilo se získat povolení, udělte prosím povolení ručně</string>
+    <string name="common_permission_fail_3">Nepodařilo se získat oprávnění, prosím udělte %s ručně</string>
+    <string name="common_permission_fail_4">Není uděleno oprávnění k umístění na pozadí, vyberte prosím „Vždy povolit“</string>
+    <string name="common_permission_goto">Přejděte do části Autorizace</string>
+
+    <string name="common_permission_calendar">Oprávnění kalendáře</string>
+    <string name="common_permission_camera">Oprávnění fotoaparátu</string>
+    <string name="common_permission_contacts">Oprávnění adresáře</string>
+    <string name="common_permission_location">Oprávnění k poloze</string>
+    <string name="common_permission_location_background">Oprávnění k umístění na pozadí</string>
+    <string name="common_permission_microphone">Oprávnění k mikrofonu</string>
+    <string name="common_permission_phone">Oprávnění telefonu</string>
+    <string name="common_permission_call_log">Oprávnění k nahrávání hovorů</string>
+    <string name="common_permission_sensors">Oprávnění tělesných senzorů</string>
+    <string name="common_permission_activity_recognition">Fitness povolení</string>
+    <string name="common_permission_sms">SMS oprávnění</string>
+    <string name="common_permission_storage">Oprávnění úložiště</string>
+
+    <string name="common_permission_install">Nainstalujte oprávnění aplikace</string>
+    <string name="common_permission_notification">Oprávnění lišty oznámení</string>
+    <string name="common_permission_window">Oprávnění pro plovoucí okno</string>
+    <string name="common_permission_setting">Oprávnění k nastavení systému</string>
+
+    <string name="common_network_hint">Momentálně není k dispozici žádné síťové připojení, zkontrolujte nastavení sítě</string>
+    <string name="common_no_more_data">Žádné další údaje</string>
+
+    <string name="common_web_ssl_error_title">Platnost aktuálního bezpečnostního certifikátu webu vypršela nebo je nedůvěryhodný\nChcete pokračovat v procházení\?</string>
+    <string name="common_web_ssl_error_allow">Pokračujte v procházení</string>
+    <string name="common_web_ssl_error_reject">vrátit se na poslední stránku</string>
+
+    <string name="common_web_location_permission_title">Aktuální web potřebuje získat vaši zeměpisnou polohu</string>
+    <string name="common_web_location_permission_allow">Grant</string>
+    <string name="common_web_location_permission_reject">odmítnout</string>
+
+    <string name="common_web_call_phone_title">Aktuální číslo %s</string>
+    <string name="common_web_call_phone_allow">číselník</string>
+    <string name="common_web_call_phone_reject">zrušení</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">načítání…</string>
+
+    <string name="http_unknown_error">Chyba požadavku, neznámá chyba</string>
+    <string name="http_token_error">Přihlášení se nezdařilo, přihlaste se prosím znovu</string>
+    <string name="http_data_explain_error">Výjimka analýzy dat, čekejte prosím.</string>
+    <string name="http_server_out_time">Vypršel časový limit požadavku serveru, zkuste to znovu později</string>
+    <string name="http_network_error">Požadavek se nezdařil, zkontrolujte nastavení sítě</string>
+    <string name="http_response_error">Server odpověděl abnormálně, zkuste to prosím znovu později.</string>
+    <string name="http_server_error">Neobvyklé připojení k serveru, zkuste to znovu později</string>
+    <string name="http_request_cancel">Požadavek byl přerušen, zkuste to prosím znovu</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Prázdný</string>
+    <string name="status_layout_error_request">Chyba požadavku, zkuste to prosím znovu</string>
+    <string name="status_layout_error_network">Chyba sítě, zkuste to znovu</string>
+    <string name="status_layout_retry">Zkuste to znovu</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">vyberte prosím region</string>
+    <string name="address_hint">prosím vyber si</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Vyberte prosím datum</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Vyberte prosím čas</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">nalezena nová verze</string>
+
+    <string name="update_content">Aktualizujte obsah</string>
+
+    <string name="update_no">Uvidíme se příště</string>
+    <string name="update_yes">okamžitě aktualizovat</string>
+
+    <string name="update_permission_hint">Než budete moci normálně stahovat aktualizace, musíte udělit oprávnění.</string>
+
+    <string name="update_status_start">stahování</string>
+    <string name="update_status_running">Stahování %d%%</string>
+    <string name="update_status_successful">Stahování je dokončeno, kliknutím nainstalujte</string>
+    <string name="update_status_failed">Stahování se nezdařilo, kliknutím to zkuste znovu</string>
+
+    <string name="update_no_update">Aktuálně nejnovější verze</string>
+
+    <string name="update_notification_channel_id">Aktualizace</string>
+    <string name="update_notification_channel_name">Oznámení o upgradu</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">sdílet s…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Okruh přátel</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ prostor</string>
+    <string name="share_platform_link">kopírovat odkaz</string>
+
+    <string name="share_platform_copy_hint">Zkopírováno do schránky</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Zadejte prosím heslo pro platbu</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Musí být vybráno alespoň %d položek</string>
+    <string name="select_max_hint">Lze vybrat maximálně %d položek</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Ověření identity</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Pro ukončení stiskněte znovu</string>
+    <string name="home_nav_index">mobilní telefon</string>
+    <string name="home_nav_found">počítač</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">Registrovat</string>
+    <string name="login_forget">zapomenout heslo\?</string>
+    <string name="login_text">Přihlásit se</string>
+
+    <string name="login_other">Další způsoby přihlášení</string>
+
+    <!-- 注册 -->
+    <string name="register_title">Registrovat</string>
+    <string name="register_hint">Číslo mobilního telefonu se používá pouze k přihlášení a ochraně zabezpečení účtu</string>
+    <string name="register_password_hint1">Nastavte 6–18místné přihlašovací heslo</string>
+    <string name="register_password_hint2">Zadejte prosím své heslo znovu</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">založit</string>
+
+    <string name="setting_language_switchover">přepínač jazyka</string>
+    <string name="setting_language_simple">Zjednodušená čínština</string>
+    <string name="setting_language_complex">tradiční čínština</string>
+    <string name="setting_update">Kontrola aktualizací</string>
+
+    <string name="setting_password">změnit heslo</string>
+    <string name="setting_phone">Upravit mobilní telefon</string>
+
+    <string name="setting_auto">automatické přihlášení</string>
+    <string name="setting_cache">Vymazání vyrovnávací paměti</string>
+
+    <string name="setting_agreement">dohoda o ochraně osobních údajů</string>
+    <string name="setting_about">o nás</string>
+
+    <string name="setting_exit">odhlásit se</string>
+
+    <!-- 关于 -->
+    <string name="about_title">o nás</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Bratrské kolo</string>
+
+    <string name="about_copyright">Copyright © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">zapomenout heslo</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Nastavení přihlašovacího hesla</string>
+    <string name="password_reset_phone_hint1">Nastavte 6–18místné přihlašovací heslo</string>
+    <string name="password_reset_phone_hint2">Znovu zadejte heslo</string>
+    <string name="password_reset_input_error">Dvě zadání hesla jsou nekonzistentní, zadejte prosím znovu.</string>
+    <string name="password_reset_success">Úspěšně upraveno</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Nastavte mobilní číslo</string>
+    <string name="phone_reset_change_hint">Pro příště použijte své nové mobilní telefonní číslo.</string>
+    <string name="phone_reset_commit">Svažte se</string>
+
+    <string name="phone_reset_commit_succeed">Vazba byla úspěšná</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">osobní informace</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">uživatelské ID</string>
+    <string name="personal_data_name">Přezdívka</string>
+    <string name="personal_data_name_hint">Nastavit přezdívku</string>
+
+    <string name="personal_data_address">plocha</string>
+    <string name="personal_data_address_hint">prosím vyber si</string>
+
+    <string name="personal_data_phone">telefonní číslo</string>
+    <string name="personal_data_phone_hint">Svažte se</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Stránka se načítá...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Výběr obrázku</string>
+    <string name="image_select_all">Všechny obrázky</string>
+
+    <string name="image_select_total">Celkem %d fotek</string>
+
+    <string name="image_select_max_hint">Tentokrát lze vybrat maximálně %d obrázků</string>
+
+    <string name="image_select_error">Nelze vybrat, obrázek byl smazán</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Oříznutí se nezdařilo. Aktuální telefon nepodporuje oříznutí obrázků.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Výběr videa</string>
+    <string name="video_select_all">Všechna videa</string>
+
+    <string name="video_select_total">Celkem %d</string>
+
+    <string name="video_select_max_hint">Tentokrát lze vybrat nejvýše %d videí</string>
+
+    <string name="video_select_error">Nelze vybrat, video bylo smazáno</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Fotoaparát nelze spustit</string>
+    <string name="camera_image_error">Špatná cílová adresa</string>
+
+</resources>

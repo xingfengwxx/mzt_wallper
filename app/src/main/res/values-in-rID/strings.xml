@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Wallpaper gambar yang indah</string>
+    <string name="app_name_en">Wallpaper Cantik</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">memuat…</string>
+
+    <string name="common_unknown_error">kesalahan yang tidak diketahui</string>
+
+    <string name="common_confirm">Tentu</string>
+    <string name="common_cancel">Membatalkan</string>
+
+    <string name="common_year">Tahun</string>
+    <string name="common_month">bulan</string>
+    <string name="common_day">Hari</string>
+
+    <string name="common_hour">jam</string>
+    <string name="common_minute">titik</string>
+    <string name="common_second">Kedua</string>
+
+    <string name="common_crash_hint">Aplikasi mengalami kecelakaan kecil dan sedang dimulai ulang.</string>
+
+    <string name="common_network_error">Jaringan saat ini tidak tersedia, silakan periksa pengaturan jaringan</string>
+
+    <string name="common_video_error_not_support">Video ini tidak cocok untuk diputar di perangkat ini</string>
+    <string name="common_video_error_unknown">Video ini tidak dapat diputar</string>
+    <string name="common_video_error_supplement">Jenis kesalahan: %d, kode kesalahan: %d</string>
+
+    <string name="common_phone_input_hint">Silakan masukkan nomor telepon</string>
+    <string name="common_phone_input_error">Nomor ponsel yang dimasukkan salah</string>
+
+    <string name="common_password_input_error">Silakan masukkan kata sandi</string>
+    <string name="common_password_input_unlike">Kedua inputan password tidak konsisten, silakan masukkan kembali.</string>
+
+    <string name="common_code_input_hint">silakan masukkan kode verifikasi</string>
+    <string name="common_code_send">Kirim kode verifikasi</string>
+    <string name="common_code_send_hint">Kode verifikasi telah terkirim, harap periksa dengan teliti</string>
+    <string name="common_code_error_hint">Kesalahan kode verifikasi, silakan periksa masukan Anda</string>
+
+    <string name="common_step_next">Langkah berikutnya</string>
+    <string name="common_step_complete">Menyelesaikan</string>
+    <string name="common_step_commit">kirim</string>
+
+    <string name="common_permission_alert">Pengingat otorisasi</string>
+    <string name="common_permission_fail_1">Otorisasi gagal, berikan izin dengan benar</string>
+    <string name="common_permission_fail_2">Gagal mendapatkan izin, harap berikan izin secara manual</string>
+    <string name="common_permission_fail_3">Gagal mendapatkan izin, berikan %s secara manual</string>
+    <string name="common_permission_fail_4">Izin pemosisian latar belakang tidak diberikan, silakan pilih \"Selalu izinkan\"</string>
+    <string name="common_permission_goto">Pergi ke Otorisasi</string>
+
+    <string name="common_permission_calendar">Izin kalender</string>
+    <string name="common_permission_camera">Izin kamera</string>
+    <string name="common_permission_contacts">Izin buku alamat</string>
+    <string name="common_permission_location">Izin lokasi</string>
+    <string name="common_permission_location_background">Izin pemosisian latar belakang</string>
+    <string name="common_permission_microphone">Izin mikrofon</string>
+    <string name="common_permission_phone">Izin telepon</string>
+    <string name="common_permission_call_log">Izin rekaman panggilan</string>
+    <string name="common_permission_sensors">Izin sensor tubuh</string>
+    <string name="common_permission_activity_recognition">Izin kebugaran</string>
+    <string name="common_permission_sms">Izin SMS</string>
+    <string name="common_permission_storage">Izin penyimpanan</string>
+
+    <string name="common_permission_install">Instal izin aplikasi</string>
+    <string name="common_permission_notification">Izin bilah notifikasi</string>
+    <string name="common_permission_window">Izin jendela mengambang</string>
+    <string name="common_permission_setting">Izin pengaturan sistem</string>
+
+    <string name="common_network_hint">Saat ini tidak ada koneksi jaringan, silakan periksa pengaturan jaringan</string>
+    <string name="common_no_more_data">Tidak ada data lagi</string>
+
+    <string name="common_web_ssl_error_title">Sertifikat keamanan situs web saat ini telah kedaluwarsa atau tidak dapat dipercaya\nApakah Anda ingin melanjutkan penjelajahan\?</string>
+    <string name="common_web_ssl_error_allow">Lanjutkan menjelajah</string>
+    <string name="common_web_ssl_error_reject">kembali ke halaman terakhir</string>
+
+    <string name="common_web_location_permission_title">Situs web saat ini perlu mendapatkan lokasi geografis Anda</string>
+    <string name="common_web_location_permission_allow">Menganugerahkan</string>
+    <string name="common_web_location_permission_reject">menolak</string>
+
+    <string name="common_web_call_phone_title">Angka saat ini %s</string>
+    <string name="common_web_call_phone_allow">panggil</string>
+    <string name="common_web_call_phone_reject">Membatalkan</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">memuat…</string>
+
+    <string name="http_unknown_error">Kesalahan permintaan, kesalahan tidak diketahui</string>
+    <string name="http_token_error">Gagal login, silakan login lagi</string>
+    <string name="http_data_explain_error">Pengecualian penguraian data, harap tunggu.</string>
+    <string name="http_server_out_time">Waktu permintaan server habis, coba lagi nanti</string>
+    <string name="http_network_error">Permintaan gagal, harap periksa pengaturan jaringan</string>
+    <string name="http_response_error">Server merespons tidak normal, silakan coba lagi nanti.</string>
+    <string name="http_server_error">Koneksi server tidak normal, silakan coba lagi nanti</string>
+    <string name="http_request_cancel">Permintaan terputus, silakan coba lagi</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Kosong</string>
+    <string name="status_layout_error_request">Permintaan error, silakan coba lagi</string>
+    <string name="status_layout_error_network">Kesalahan jaringan, silakan coba lagi</string>
+    <string name="status_layout_retry">Mencoba kembali</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">silakan pilih wilayahnya</string>
+    <string name="address_hint">tolong pilih</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Silakan pilih tanggal</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Silakan pilih waktu</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">versi baru ditemukan</string>
+
+    <string name="update_content">Perbarui konten</string>
+
+    <string name="update_no">Sampai jumpa lain waktu</string>
+    <string name="update_yes">segera perbarui</string>
+
+    <string name="update_permission_hint">Anda harus memberikan izin sebelum dapat mengunduh pembaruan secara normal.</string>
+
+    <string name="update_status_start">mengunduh</string>
+    <string name="update_status_running">Mengunduh %d%%</string>
+    <string name="update_status_successful">Download selesai, klik untuk menginstal</string>
+    <string name="update_status_failed">Pengunduhan gagal, klik untuk mencoba lagi</string>
+
+    <string name="update_no_update">Saat ini versi terbaru</string>
+
+    <string name="update_notification_channel_id">memperbarui</string>
+    <string name="update_notification_channel_name">Pemberitahuan peningkatan</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">bagikan ke…</string>
+
+    <string name="share_platform_wechat">Wechat wechat</string>
+    <string name="share_platform_moment">Lingkaran pertemanan</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">ruang QQ</string>
+    <string name="share_platform_link">Salin tautan</string>
+
+    <string name="share_platform_copy_hint">Disalin ke papan klip</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Silakan masukkan kata sandi pembayaran</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">Setidaknya %d item harus dipilih</string>
+    <string name="select_max_hint">Maksimal %d item dapat dipilih</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Verifikasi Identitas</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Tekan lagi untuk keluar</string>
+    <string name="home_nav_index">telepon selular</string>
+    <string name="home_nav_found">komputer</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">daftar</string>
+    <string name="login_forget">lupa kata sandinya\?</string>
+    <string name="login_text">Gabung</string>
+
+    <string name="login_other">Metode masuk lainnya</string>
+
+    <!-- 注册 -->
+    <string name="register_title">daftar</string>
+    <string name="register_hint">Nomor ponsel hanya digunakan untuk login dan melindungi keamanan akun</string>
+    <string name="register_password_hint1">Tetapkan kata sandi masuk 6–18 digit</string>
+    <string name="register_password_hint2">Silakan masukkan kata sandi Anda lagi</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">mempersiapkan</string>
+
+    <string name="setting_language_switchover">peralihan bahasa</string>
+    <string name="setting_language_simple">Cina disederhanakan</string>
+    <string name="setting_language_complex">Cina tradisional</string>
+    <string name="setting_update">Periksa pembaruan</string>
+
+    <string name="setting_password">ganti kata sandi</string>
+    <string name="setting_phone">Modifikasi ponsel</string>
+
+    <string name="setting_auto">masuk otomatis</string>
+    <string name="setting_cache">Mengosongkan cache</string>
+
+    <string name="setting_agreement">perjanjian privasi</string>
+    <string name="setting_about">tentang kami</string>
+
+    <string name="setting_exit">keluar</string>
+
+    <!-- 关于 -->
+    <string name="about_title">tentang kami</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Saudara Roda</string>
+
+    <string name="about_copyright">Hak Cipta © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">lupa kata sandinya</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Menetapkan kata sandi masuk</string>
+    <string name="password_reset_phone_hint1">Tetapkan kata sandi masuk 6–18 digit</string>
+    <string name="password_reset_phone_hint2">Masukkan Kembali password</string>
+    <string name="password_reset_input_error">Kedua inputan password tidak konsisten, silakan masukkan kembali.</string>
+    <string name="password_reset_success">Berhasil dimodifikasi</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Tetapkan nomor ponsel</string>
+    <string name="phone_reset_change_hint">Silakan gunakan nomor ponsel baru Anda untuk login di lain waktu.</string>
+    <string name="phone_reset_commit">Ikat sekarang</string>
+
+    <string name="phone_reset_commit_succeed">Pengikatan berhasil</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">informasi pribadi</string>
+    <string name="personal_data_head">avatar</string>
+
+    <string name="personal_data_id">identitas pengguna</string>
+    <string name="personal_data_name">nama panggilan</string>
+    <string name="personal_data_name_hint">Tetapkan nama panggilan</string>
+
+    <string name="personal_data_address">daerah</string>
+    <string name="personal_data_address_hint">tolong pilih</string>
+
+    <string name="personal_data_phone">nomor telepon</string>
+    <string name="personal_data_phone_hint">Ikat sekarang</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Halaman sedang dimuat...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Pemilihan gambar</string>
+    <string name="image_select_all">Semua gambar</string>
+
+    <string name="image_select_total">Jumlah %d foto</string>
+
+    <string name="image_select_max_hint">Maksimal %d gambar dapat dipilih kali ini</string>
+
+    <string name="image_select_error">Tidak dapat memilih, gambar telah dihapus</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Pemangkasan gagal. Ponsel saat ini tidak mendukung pemotongan gambar.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Pilihan video</string>
+    <string name="video_select_all">Semua video</string>
+
+    <string name="video_select_total">Jumlah %d</string>
+
+    <string name="video_select_max_hint">Maksimal %d video yang dapat dipilih kali ini</string>
+
+    <string name="video_select_error">Tidak dapat memilih, video telah dihapus</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Tidak dapat memulai kamera</string>
+    <string name="camera_image_error">Alamat tujuan salah</string>
+
+</resources>

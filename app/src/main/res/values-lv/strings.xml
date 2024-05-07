@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Skaistas tapetes ar attēliem</string>
+    <string name="app_name_en">Skaistas tapetes</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">ielāde…</string>
+
+    <string name="common_unknown_error">nezināma kļūda</string>
+
+    <string name="common_confirm">Protams</string>
+    <string name="common_cancel">Atcelt</string>
+
+    <string name="common_year">gads</string>
+    <string name="common_month">mēness</string>
+    <string name="common_day">diena</string>
+
+    <string name="common_hour">stunda</string>
+    <string name="common_minute">punktu</string>
+    <string name="common_second">Otrkārt</string>
+
+    <string name="common_crash_hint">Lietojumprogramma saskārās ar nelielu negadījumu, un tā tiek restartēta.</string>
+
+    <string name="common_network_error">Pašreizējais tīkls nav pieejams. Lūdzu, pārbaudiet tīkla iestatījumus</string>
+
+    <string name="common_video_error_not_support">Šis videoklips nav piemērots atskaņošanai šajā ierīcē</string>
+    <string name="common_video_error_unknown">Šo videoklipu nevar atskaņot</string>
+    <string name="common_video_error_supplement">Kļūdas veids: %d, kļūdas kods: %d</string>
+
+    <string name="common_phone_input_hint">Lūdzu, ievadiet tālruņa numuru</string>
+    <string name="common_phone_input_error">Mobilā tālruņa numurs ievadīts nepareizi</string>
+
+    <string name="common_password_input_error">Lūdzu, ievadiet paroli</string>
+    <string name="common_password_input_unlike">Abas ievadītās paroles ir pretrunīgas. Lūdzu, ievadiet vēlreiz.</string>
+
+    <string name="common_code_input_hint">lūdzu, ievadiet verifikācijas kodu</string>
+    <string name="common_code_send">Nosūtiet verifikācijas kodu</string>
+    <string name="common_code_send_hint">Verifikācijas kods ir nosūtīts, lūdzu, rūpīgi pārbaudiet to</string>
+    <string name="common_code_error_hint">Verifikācijas koda kļūda. Lūdzu, pārbaudiet ievadīto</string>
+
+    <string name="common_step_next">Nākamais solis</string>
+    <string name="common_step_complete">Pabeigt</string>
+    <string name="common_step_commit">Iesniegt</string>
+
+    <string name="common_permission_alert">Autorizācijas atgādinājums</string>
+    <string name="common_permission_fail_1">Autorizācija neizdevās. Lūdzu, piešķiriet atļauju pareizi</string>
+    <string name="common_permission_fail_2">Neizdevās iegūt atļauju. Lūdzu, piešķiriet atļauju manuāli</string>
+    <string name="common_permission_fail_3">Neizdevās iegūt atļauju, lūdzu, piešķiriet %s manuāli</string>
+    <string name="common_permission_fail_4">Fona pozicionēšanas atļauja netiek piešķirta, lūdzu, atlasiet “Vienmēr atļaut”</string>
+    <string name="common_permission_goto">Dodieties uz Autorizācija</string>
+
+    <string name="common_permission_calendar">Kalendāra atļaujas</string>
+    <string name="common_permission_camera">Kameras atļaujas</string>
+    <string name="common_permission_contacts">Adrešu grāmatas atļaujas</string>
+    <string name="common_permission_location">Atrašanās vietas atļaujas</string>
+    <string name="common_permission_location_background">Fona pozicionēšanas atļaujas</string>
+    <string name="common_permission_microphone">Mikrofona atļaujas</string>
+    <string name="common_permission_phone">Tālruņa atļaujas</string>
+    <string name="common_permission_call_log">Zvanu ierakstīšanas atļaujas</string>
+    <string name="common_permission_sensors">Ķermeņa sensoru atļaujas</string>
+    <string name="common_permission_activity_recognition">Fitnesa atļauja</string>
+    <string name="common_permission_sms">SMS atļaujas</string>
+    <string name="common_permission_storage">Krātuves atļaujas</string>
+
+    <string name="common_permission_install">Instalējiet lietotņu atļaujas</string>
+    <string name="common_permission_notification">Paziņojumu joslas atļaujas</string>
+    <string name="common_permission_window">Peldošo logu atļaujas</string>
+    <string name="common_permission_setting">Sistēmas iestatījumu atļaujas</string>
+
+    <string name="common_network_hint">Pašlaik nav tīkla savienojuma, lūdzu, pārbaudiet tīkla iestatījumus</string>
+    <string name="common_no_more_data">Nav vairāk datu</string>
+
+    <string name="common_web_ssl_error_title">Pašreizējam vietnes drošības sertifikātam ir beidzies derīguma termiņš vai tas ir neuzticams\nVai vēlaties turpināt pārlūkošanu\?</string>
+    <string name="common_web_ssl_error_allow">Turpiniet pārlūkošanu</string>
+    <string name="common_web_ssl_error_reject">dodieties atpakaļ uz pēdējo lapu</string>
+
+    <string name="common_web_location_permission_title">Pašreizējai vietnei ir jāiegūst jūsu ģeogrāfiskā atrašanās vieta</string>
+    <string name="common_web_location_permission_allow">Piešķirt</string>
+    <string name="common_web_location_permission_reject">noraidīt</string>
+
+    <string name="common_web_call_phone_title">Pašreizējais numurs %s</string>
+    <string name="common_web_call_phone_allow">ciparnīca</string>
+    <string name="common_web_call_phone_reject">Atcelt</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">ielāde…</string>
+
+    <string name="http_unknown_error">Pieprasījuma kļūda, nezināma kļūda</string>
+    <string name="http_token_error">Pieteikšanās neizdevās, lūdzu, piesakieties vēlreiz</string>
+    <string name="http_data_explain_error">Datu parsēšanas izņēmums, lūdzu, uzgaidiet.</string>
+    <string name="http_server_out_time">Iestājās servera pieprasījuma noildze. Lūdzu, vēlāk mēģiniet vēlreiz</string>
+    <string name="http_network_error">Pieprasījums neizdevās. Lūdzu, pārbaudiet tīkla iestatījumus</string>
+    <string name="http_response_error">Serveris atbildēja neparasti. Lūdzu, vēlāk mēģiniet vēlreiz.</string>
+    <string name="http_server_error">Servera savienojuma novirze. Lūdzu, vēlāk mēģiniet vēlreiz</string>
+    <string name="http_request_cancel">Pieprasījums tika pārtraukts. Lūdzu, mēģiniet vēlreiz</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">Tukšs</string>
+    <string name="status_layout_error_request">Pieprasījuma kļūda. Lūdzu, mēģiniet vēlreiz</string>
+    <string name="status_layout_error_network">Tīkla kļūda. Lūdzu, mēģiniet vēlreiz</string>
+    <string name="status_layout_retry">Mēģiniet vēlreiz</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">lūdzu izvēlieties reģionu</string>
+    <string name="address_hint">Lūdzu izvēlies</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">Lūdzu, atlasiet datumu</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">Lūdzu, atlasiet laiku</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">atrasta jauna versija</string>
+
+    <string name="update_content">Atjaunināt saturu</string>
+
+    <string name="update_no">Tiksimies nākamreiz</string>
+    <string name="update_yes">nekavējoties atjaunināt</string>
+
+    <string name="update_permission_hint">Lai varētu normāli lejupielādēt atjauninājumus, vispirms ir jāpiešķir atļauja.</string>
+
+    <string name="update_status_start">lejupielāde</string>
+    <string name="update_status_running">Notiek %d%% lejupielāde</string>
+    <string name="update_status_successful">Lejupielāde ir pabeigta, noklikšķiniet, lai instalētu</string>
+    <string name="update_status_failed">Lejupielāde neizdevās. Noklikšķiniet, lai mēģinātu vēlreiz</string>
+
+    <string name="update_no_update">Šobrīd jaunākā versija</string>
+
+    <string name="update_notification_channel_id">Atjaunināt</string>
+    <string name="update_notification_channel_name">Paziņojums par jaunināšanu</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">kopīgot ar…</string>
+
+    <string name="share_platform_wechat">WeChat</string>
+    <string name="share_platform_moment">Draugu loks</string>
+    <string name="share_platform_qq">QQ</string>
+    <string name="share_platform_qzone">QQ telpa</string>
+    <string name="share_platform_link">kopēt saiti</string>
+
+    <string name="share_platform_copy_hint">Kopēts starpliktuvē</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">Lūdzu, ievadiet maksājuma paroli</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint"><![CDATA[Ir jāatlasa vismaz %d vienumi]]></string>
+    <string name="select_max_hint">Var atlasīt ne vairāk kā %d vienumus</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">Identitātes pārbaude</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">Nospiediet vēlreiz, lai izietu</string>
+    <string name="home_nav_index">Mobilais telefons</string>
+    <string name="home_nav_found">dators</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">Pixabay</string>
+
+    <!-- 登录 -->
+    <string name="login_register">reģistrēties</string>
+    <string name="login_forget">aizmirsi paroli\?</string>
+    <string name="login_text">Pieslēgties</string>
+
+    <string name="login_other">Citas pieteikšanās metodes</string>
+
+    <!-- 注册 -->
+    <string name="register_title">reģistrēties</string>
+    <string name="register_hint">Mobilā tālruņa numurs tiek izmantots tikai, lai pieteiktos un aizsargātu konta drošību</string>
+    <string name="register_password_hint1"><![CDATA[Iestatiet 6–18 ciparu pieteikšanās paroli]]></string>
+    <string name="register_password_hint2">Lūdzu, vēlreiz ievadiet savu paroli</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">uzstādīt</string>
+
+    <string name="setting_language_switchover">valodas slēdzis</string>
+    <string name="setting_language_simple">Vienkāršotā ķīniešu valoda</string>
+    <string name="setting_language_complex">tradicionālā ķīniešu</string>
+    <string name="setting_update">Meklēt atjauninājumus</string>
+
+    <string name="setting_password">mainīt Paroli</string>
+    <string name="setting_phone">Modificēt mobilo tālruni</string>
+
+    <string name="setting_auto">automātiska pieteikšanās</string>
+    <string name="setting_cache">Iztukšojiet kešatmiņu</string>
+
+    <string name="setting_agreement">privātuma līgums</string>
+    <string name="setting_about">par mums</string>
+
+    <string name="setting_exit">izrakstīties</string>
+
+    <!-- 关于 -->
+    <string name="about_title">par mums</string>
+    <string name="about_author"><font color="#85b84f">Android</font> Brālis Rats</string>
+
+    <string name="about_copyright">Autortiesības © 2018–2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">aizmirst paroli</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">Pieteikšanās paroles iestatīšana</string>
+    <string name="password_reset_phone_hint1"><![CDATA[Iestatiet 6–18 ciparu pieteikšanās paroli]]></string>
+    <string name="password_reset_phone_hint2">Ievadiet paroli vēlreiz</string>
+    <string name="password_reset_input_error">Abas ievadītās paroles ir pretrunīgas. Lūdzu, ievadiet vēlreiz.</string>
+    <string name="password_reset_success">Veiksmīgi pārveidots</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">Iestatiet mobilā tālruņa numuru</string>
+    <string name="phone_reset_change_hint">Lūdzu, izmantojiet savu jauno mobilā tālruņa numuru, lai pieteiktos nākamreiz.</string>
+    <string name="phone_reset_commit">Piesiet tagad</string>
+
+    <string name="phone_reset_commit_succeed">Saistīšana sekmīga</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">Personīgā informācija</string>
+    <string name="personal_data_head">iemiesojums</string>
+
+    <string name="personal_data_id">Lietotāja ID</string>
+    <string name="personal_data_name">Nika vārds</string>
+    <string name="personal_data_name_hint">Iestatiet segvārdu</string>
+
+    <string name="personal_data_address">apgabalā</string>
+    <string name="personal_data_address_hint">Lūdzu izvēlies</string>
+
+    <string name="personal_data_phone">telefona numurs</string>
+    <string name="personal_data_phone_hint">Piesiet tagad</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">Lapa tiek ielādēta...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">Attēlu izvēle</string>
+    <string name="image_select_all">Visas bildes</string>
+
+    <string name="image_select_total">Kopā %d fotoattēli</string>
+
+    <string name="image_select_max_hint">Šoreiz var atlasīt ne vairāk kā %d attēlus</string>
+
+    <string name="image_select_error">Nevar izvēlēties, attēls ir izdzēsts</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">Apgriešana neizdevās Pašreizējais tālrunis neatbalsta attēlu apgriešanu.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">Video izvēle</string>
+    <string name="video_select_all">Visi video</string>
+
+    <string name="video_select_total">Kopā %d</string>
+
+    <string name="video_select_max_hint">Šoreiz var atlasīt ne vairāk kā %d videoklipus</string>
+
+    <string name="video_select_error">Nevar atlasīt, videoklips ir izdzēsts</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">Nevar palaist kameru</string>
+    <string name="camera_image_error">Nepareiza galamērķa adrese</string>
+
+</resources>

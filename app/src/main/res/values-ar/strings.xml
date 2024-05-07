@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">صور خلفيات جميلة</string>
+    <string name="app_name_en">خلفية جميلة</string>
+
+    <!-- 通用的 -->
+    <string name="common_loading">تحميل…</string>
+
+    <string name="common_unknown_error">خطأ غير معروف</string>
+
+    <string name="common_confirm">بالتأكيد</string>
+    <string name="common_cancel">يلغي</string>
+
+    <string name="common_year">سنة</string>
+    <string name="common_month">قمر</string>
+    <string name="common_day">يوم</string>
+
+    <string name="common_hour">ساعة</string>
+    <string name="common_minute">نقطة</string>
+    <string name="common_second">ثانية</string>
+
+    <string name="common_crash_hint">واجه التطبيق حادثًا بسيطًا ويتم الآن إعادة تشغيله.</string>
+
+    <string name="common_network_error">الشبكة الحالية غير متاحة، يرجى التحقق من إعدادات الشبكة</string>
+
+    <string name="common_video_error_not_support">هذا الفيديو غير مناسب للتشغيل على هذا الجهاز</string>
+    <string name="common_video_error_unknown">هذا الفيديو لا يمكن أن تقوم</string>
+    <string name="common_video_error_supplement">نوع الخطأ: %d، رمز الخطأ: %d</string>
+
+    <string name="common_phone_input_hint">الرجاء إدخال رقم الهاتف</string>
+    <string name="common_phone_input_error">تم إدخال رقم الهاتف المحمول بشكل غير صحيح</string>
+
+    <string name="common_password_input_error">الرجاء إدخال كلمة المرور</string>
+    <string name="common_password_input_unlike">إدخالا كلمة المرور غير متناسقين، يرجى إعادة الإدخال.</string>
+
+    <string name="common_code_input_hint">الرجاء إدخال رمز التحقق</string>
+    <string name="common_code_send">أرسل رمز التحقق</string>
+    <string name="common_code_send_hint">تم إرسال رمز التحقق، يرجى التحقق منه بعناية</string>
+    <string name="common_code_error_hint">خطأ في رمز التحقق، يرجى التحقق من إدخالك</string>
+
+    <string name="common_step_next">الخطوة التالية</string>
+    <string name="common_step_complete">ينهي</string>
+    <string name="common_step_commit">يُقدِّم</string>
+
+    <string name="common_permission_alert">تذكير بالتفويض</string>
+    <string name="common_permission_fail_1">فشل التفويض، يرجى منح الإذن بشكل صحيح</string>
+    <string name="common_permission_fail_2">فشل الحصول على الإذن، يرجى منح الإذن يدويًا</string>
+    <string name="common_permission_fail_3">فشل الحصول على الإذن، يرجى منح %s يدويًا</string>
+    <string name="common_permission_fail_4">لم يتم منح إذن تحديد الموقع في الخلفية، يرجى تحديد \"السماح دائمًا\"</string>
+    <string name="common_permission_goto">انتقل إلى التفويض</string>
+
+    <string name="common_permission_calendar">أذونات التقويم</string>
+    <string name="common_permission_camera">أذونات الكاميرا</string>
+    <string name="common_permission_contacts">أذونات دفتر العناوين</string>
+    <string name="common_permission_location">أذونات الموقع</string>
+    <string name="common_permission_location_background">أذونات تحديد المواقع في الخلفية</string>
+    <string name="common_permission_microphone">أذونات الميكروفون</string>
+    <string name="common_permission_phone">أذونات الهاتف</string>
+    <string name="common_permission_call_log">أذونات تسجيل المكالمات</string>
+    <string name="common_permission_sensors">أذونات استشعار الجسم</string>
+    <string name="common_permission_activity_recognition">إذن اللياقة</string>
+    <string name="common_permission_sms">أذونات الرسائل القصيرة</string>
+    <string name="common_permission_storage">أذونات التخزين</string>
+
+    <string name="common_permission_install">تثبيت أذونات التطبيق</string>
+    <string name="common_permission_notification">أذونات شريط الإعلام</string>
+    <string name="common_permission_window">أذونات النافذة العائمة</string>
+    <string name="common_permission_setting">أذونات إعدادات النظام</string>
+
+    <string name="common_network_hint">لا يوجد حاليا أي اتصال بالشبكة، يرجى التحقق من إعدادات الشبكة</string>
+    <string name="common_no_more_data">لا مزيد من البيانات</string>
+
+    <string name="common_web_ssl_error_title">لقد انتهت صلاحية شهادة أمان موقع الويب الحالية أو أنها غير جديرة بالثقة\nهل تريد متابعة التصفح؟</string>
+    <string name="common_web_ssl_error_allow">استمر في التصفح</string>
+    <string name="common_web_ssl_error_reject">العودة إلى الصفحة الأخيرة</string>
+
+    <string name="common_web_location_permission_title">يحتاج الموقع الحالي إلى الحصول على موقعك الجغرافي</string>
+    <string name="common_web_location_permission_allow">منحة</string>
+    <string name="common_web_location_permission_reject">يرفض</string>
+
+    <string name="common_web_call_phone_title">الرقم الحالي %s</string>
+    <string name="common_web_call_phone_allow">يتصل</string>
+    <string name="common_web_call_phone_reject">يلغي</string>
+
+    <!-- 网络请求 -->
+    <string name="http_loading">تحميل…</string>
+
+    <string name="http_unknown_error">خطأ في الطلب، خطأ غير معروف</string>
+    <string name="http_token_error">فشل تسجيل الدخول، يرجى تسجيل الدخول مرة أخرى</string>
+    <string name="http_data_explain_error">استثناء تحليل البيانات، يرجى الانتظار.</string>
+    <string name="http_server_out_time">انتهت مهلة طلب الخادم، يرجى المحاولة مرة أخرى لاحقًا</string>
+    <string name="http_network_error">فشل الطلب، يرجى التحقق من إعدادات الشبكة</string>
+    <string name="http_response_error">استجاب الخادم بشكل غير طبيعي، يرجى المحاولة مرة أخرى لاحقًا.</string>
+    <string name="http_server_error">خطأ في الاتصال بالخادم، يرجى المحاولة مرة أخرى لاحقًا</string>
+    <string name="http_request_cancel">تمت مقاطعة الطلب، يرجى المحاولة مرة أخرى</string>
+
+    <!-- 状态布局 -->
+    <string name="status_layout_no_data">فارغ</string>
+    <string name="status_layout_error_request">خطأ في الطلب، يرجى المحاولة مرة أخرى</string>
+    <string name="status_layout_error_network">خطأ في الشبكة، يرجى المحاولة مرة أخرى</string>
+    <string name="status_layout_retry">أعد المحاولة</string>
+
+    <!-- 地区对话框 -->
+    <string name="address_title">يرجى تحديد المنطقة</string>
+    <string name="address_hint">اختر من فضلك</string>
+
+    <!-- 日期对话框 -->
+    <string name="date_title">الرجاء تحديد التاريخ</string>
+
+    <!-- 时间对话框 -->
+    <string name="time_title">الرجاء تحديد الوقت</string>
+
+    <!-- 升级对话框 -->
+    <string name="update_title">تم العثور على نسخة جديدة</string>
+
+    <string name="update_content">تحديث المحتوى</string>
+
+    <string name="update_no">أراك المرة القادمة</string>
+    <string name="update_yes">التحديث على الفور</string>
+
+    <string name="update_permission_hint">يجب عليك منح الإذن قبل أن تتمكن من تنزيل التحديثات بشكل طبيعي.</string>
+
+    <string name="update_status_start">جارى التحميل</string>
+    <string name="update_status_running">جارٍ التنزيل %d%%</string>
+    <string name="update_status_successful">اكتمل التنزيل، انقر للتثبيت</string>
+    <string name="update_status_failed">فشل التنزيل، انقر للمحاولة مرة أخرى</string>
+
+    <string name="update_no_update">حاليا أحدث نسخة</string>
+
+    <string name="update_notification_channel_id">تحديث</string>
+    <string name="update_notification_channel_name">ترقية الإخطار</string>
+
+    <!-- 分享对话框 -->
+    <string name="share_title">مشاركة ل...</string>
+
+    <string name="share_platform_wechat">وي شات</string>
+    <string name="share_platform_moment">دائرة الأصدقاء</string>
+    <string name="share_platform_qq">ف ف</string>
+    <string name="share_platform_qzone">مساحة QQ</string>
+    <string name="share_platform_link">نسخ الوصلة</string>
+
+    <string name="share_platform_copy_hint">نسخ إلى الحافظة</string>
+
+    <!-- 支付密码对话框 -->
+    <string name="pay_title">الرجاء إدخال كلمة مرور الدفع</string>
+
+    <!-- 选择对话框 -->
+    <string name="select_min_hint">يجب تحديد %d عنصر على الأقل</string>
+    <string name="select_max_hint">يمكن تحديد %d عنصر على الأكثر</string>
+
+    <!-- 身份校验对话框 -->
+    <string name="safe_title">التحقق من الهوية</string>
+
+    <!-- 首页 -->
+    <string name="home_exit_hint">اضغط مرة أخرى للخروج</string>
+    <string name="home_nav_index">الهاتف الخلوي</string>
+    <string name="home_nav_found">حاسوب</string>
+    <string name="home_nav_message">360</string>
+    <string name="home_nav_me">بيكساباي</string>
+
+    <!-- 登录 -->
+    <string name="login_register">يسجل</string>
+    <string name="login_forget">نسيت كلمة المرور؟</string>
+    <string name="login_text">تسجيل الدخول</string>
+
+    <string name="login_other">طرق تسجيل الدخول الأخرى</string>
+
+    <!-- 注册 -->
+    <string name="register_title">يسجل</string>
+    <string name="register_hint">يُستخدم رقم الهاتف المحمول فقط لتسجيل الدخول وحماية أمان الحساب</string>
+    <string name="register_password_hint1">قم بتعيين كلمة مرور لتسجيل الدخول مكونة من 6 إلى 18 رقمًا</string>
+    <string name="register_password_hint2">الرجاء إدخال كلمة المرور الخاصة بك مرة أخرى</string>
+
+    <!-- 设置 -->
+    <string name="setting_title">يثبت</string>
+
+    <string name="setting_language_switchover">تبديل اللغة</string>
+    <string name="setting_language_simple">الصينية المبسطة</string>
+    <string name="setting_language_complex">الصينية التقليدية</string>
+    <string name="setting_update">تحقق من وجود تحديثات</string>
+
+    <string name="setting_password">تغيير كلمة المرور</string>
+    <string name="setting_phone">تعديل الهاتف المحمول</string>
+
+    <string name="setting_auto">تسجيل تلقائى</string>
+    <string name="setting_cache">إفراغ ذاكرة التخزين المؤقت</string>
+
+    <string name="setting_agreement">اتفاقية الخصوصية</string>
+    <string name="setting_about">معلومات عنا</string>
+
+    <string name="setting_exit">خروج</string>
+
+    <!-- 关于 -->
+    <string name="about_title">معلومات عنا</string>
+    <string name="about_author"><font color="#85b84f">ذكري المظهر</font> عجلة الأخ</string>
+
+    <string name="about_copyright">حقوق النشر © 2018 – 2021</string>
+
+    <!-- 忘记密码 -->
+    <string name="password_forget_title">ننسى كلمة المرور</string>
+
+    <!-- 重置密码 -->
+    <string name="password_reset_title">ضبط كلمة المرور لتسجيل الدخول</string>
+    <string name="password_reset_phone_hint1">قم بتعيين كلمة مرور لتسجيل الدخول مكونة من 6 إلى 18 رقمًا</string>
+    <string name="password_reset_phone_hint2">إعادة إدخال كلمة المرور</string>
+    <string name="password_reset_input_error">إدخالا كلمة المرور غير متناسقين، يرجى إعادة الإدخال.</string>
+    <string name="password_reset_success">تم التعديل بنجاح</string>
+
+    <!-- 修改手机号 -->
+    <string name="phone_reset_title">ضبط رقم الجوال</string>
+    <string name="phone_reset_change_hint">يرجى استخدام رقم هاتفك المحمول الجديد لتسجيل الدخول في المرة القادمة.</string>
+    <string name="phone_reset_commit">ربط الآن</string>
+
+    <string name="phone_reset_commit_succeed">الربط ناجح</string>
+
+    <!-- 个人资料 -->
+    <string name="personal_data_title">معلومات شخصية</string>
+    <string name="personal_data_head">الصورة الرمزية</string>
+
+    <string name="personal_data_id">معرف المستخدم</string>
+    <string name="personal_data_name">كنية</string>
+    <string name="personal_data_name_hint">تعيين اللقب</string>
+
+    <string name="personal_data_address">منطقة</string>
+    <string name="personal_data_address_hint">اختر من فضلك</string>
+
+    <string name="personal_data_phone">رقم التليفون</string>
+    <string name="personal_data_phone_hint">ربط الآن</string>
+
+    <!-- 浏览器 -->
+    <string name="web_title">جارٍ تحميل الصفحة...</string>
+
+    <!-- 图片选择 -->
+    <string name="image_select_title">اختيار الصورة</string>
+    <string name="image_select_all">كل الصور</string>
+
+    <string name="image_select_total">إجمالي %d صورة</string>
+
+    <string name="image_select_max_hint">يمكن تحديد %d صورة فقط على الأكثر هذه المرة</string>
+
+    <string name="image_select_error">غير قادر على التحديد، لقد تم حذف الصورة</string>
+
+    <!-- 裁剪图片 -->
+    <string name="image_crop_error_not_support">فشل الاقتصاص. الهاتف الحالي لا يدعم اقتصاص الصور.</string>
+
+    <!-- 视频选择 -->
+    <string name="video_select_title">اختيار الفيديو</string>
+    <string name="video_select_all">جميع مقاطع الفيديو</string>
+
+    <string name="video_select_total">إجمالي %د</string>
+
+    <string name="video_select_max_hint">يمكن تحديد %d مقطع فيديو هذه المرة على الأكثر</string>
+
+    <string name="video_select_error">غير قادر على التحديد، لقد تم حذف الفيديو</string>
+
+    <!-- 拍照和拍摄 -->
+    <string name="camera_launch_fail">غير قادر على بدء تشغيل الكاميرا</string>
+    <string name="camera_image_error">عنوان الوجهة خاطئ</string>
+
+</resources>
