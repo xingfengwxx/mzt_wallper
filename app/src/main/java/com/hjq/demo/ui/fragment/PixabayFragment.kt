@@ -94,22 +94,21 @@ class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener,
     }
 
     fun test() {
-        // Create an English-German translator:
         val options = TranslatorOptions.Builder()
-            .setSourceLanguage(TranslateLanguage.ENGLISH)
-            .setTargetLanguage(TranslateLanguage.CHINESE)
+            .setSourceLanguage(TranslateLanguage.CHINESE)
+            .setTargetLanguage(TranslateLanguage.ENGLISH)
             .build()
-        val englishGermanTranslator = Translation.getClient(options)
+        val translator = Translation.getClient(options)
 
         var conditions = DownloadConditions.Builder()
             .requireWifi()
             .build()
-        englishGermanTranslator.downloadModelIfNeeded(conditions)
+        translator.downloadModelIfNeeded(conditions)
             .addOnSuccessListener {
                LogUtils.i("下载语言模型成功")
 
-                val text = "Hello World"
-                englishGermanTranslator.translate(text)
+                val text = "裁剪失败，当前手机不支持裁剪图片"
+                translator.translate(text)
                     .addOnSuccessListener { translatedText ->
                         LogUtils.i("翻译成功：$translatedText")
                     }
