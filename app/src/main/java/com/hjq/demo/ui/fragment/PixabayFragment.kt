@@ -3,7 +3,12 @@ package com.hjq.demo.ui.fragment
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.StringUtils
+import com.google.mlkit.common.model.DownloadConditions
+import com.google.mlkit.nl.translate.TranslateLanguage
+import com.google.mlkit.nl.translate.Translation
+import com.google.mlkit.nl.translate.TranslatorOptions
 import com.gyf.immersionbar.ImmersionBar
 import com.hjq.bar.TitleBar
 import com.hjq.base.BaseAdapter
@@ -28,7 +33,8 @@ import com.scwang.smart.refresh.layout.listener.OnRefreshListener
  * email : 1099420259@qq.com
  * description : Pixabay: https://pixabay.com/
  */
-class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, BaseAdapter.OnItemClickListener  {
+class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener,
+    BaseAdapter.OnItemClickListener {
 
     companion object {
         fun newInstance(): PixabayFragment {
@@ -66,8 +72,9 @@ class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, Base
     }
 
     override fun initData() {
-
+        test()
     }
+
     override fun onRefresh(refreshLayout: RefreshLayout) {
         adapter?.clearData()
 
@@ -84,6 +91,37 @@ class PixabayFragment : TitleBarFragment<AppActivity>(), OnRefreshListener, Base
             categoryList as ArrayList<CategoryBean>,
             Const.WallpaperType.TYPE_PIXABAY,
         )
+    }
+
+    fun test() {
+        // Create an English-German translator:
+        val options = TranslatorOptions.Builder()
+            .setSourceLanguage(TranslateLanguage.ENGLISH)
+            .setTargetLanguage(TranslateLanguage.CHINESE)
+            .build()
+        val englishGermanTranslator = Translation.getClient(options)
+
+        var conditions = DownloadConditions.Builder()
+            .requireWifi()
+            .build()
+        englishGermanTranslator.downloadModelIfNeeded(conditions)
+            .addOnSuccessListener {
+               LogUtils.i("下载语言模型成功")
+
+                val text = "Hello World"
+                englishGermanTranslator.translate(text)
+                    .addOnSuccessListener { translatedText ->
+                        LogUtils.i("翻译成功：$translatedText")
+                    }
+                    .addOnFailureListener { exception ->
+                        LogUtils.i("翻译失败：$exception")
+                    }
+            }
+            .addOnFailureListener { exception ->
+                LogUtils.i("下载语言模型失败：$exception")
+            }
+
+
     }
 
 

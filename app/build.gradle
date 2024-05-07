@@ -214,6 +214,9 @@ dependencies {
     // Firebase
     implementation platform('com.google.firebase:firebase-bom:32.0.0')
     implementation 'com.google.firebase:firebase-analytics'
+    // Firebase机器学习套件
+//    implementation 'com.google.firebase:firebase-ml-natural-language'
+//    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model'
 
     // Tab栏: https://github.com/angcyo/DslTabLayout
     implementation 'com.github.angcyo.DslTablayout:TabLayout:3.5.5'
@@ -227,6 +230,8 @@ dependencies {
     debugImplementation "com.bytedance.tools.codelocator:codelocator-lancet-all:2.0.4"
 
     implementation "androidx.lifecycle:lifecycle-common-java8:2.2.0"
+
+    implementation 'com.google.mlkit:translate:17.0.2'
 
     // 悬浮窗：https://github.com/getActivity/XToast
     // 日志输出：https://github.com/getActivity/Logcat
