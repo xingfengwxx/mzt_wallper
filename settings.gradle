@@ -38,4 +38,3 @@ rootProject.name = "mzt_wallpaper"
 include ':app'
 include ':library:base'
 include ':library:widget'
-include ':library:umeng'

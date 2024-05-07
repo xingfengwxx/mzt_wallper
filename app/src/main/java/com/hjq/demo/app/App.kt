@@ -29,7 +29,6 @@ import com.hjq.http.model.HttpParams
 import com.hjq.http.ssl.HttpSslFactory
 import com.hjq.language.MultiLanguages
 import com.hjq.toast.ToastUtils
-import com.hjq.umeng.UmengClient
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import com.tencent.bugly.crashreport.CrashReport
@@ -116,8 +115,6 @@ class App : Application() {
             // 本地异常捕捉
             CrashHandler.register(application)
 
-            // 友盟统计、登录、分享 SDK
-            UmengClient.init(application, AppConfig.isLogEnable())
 
             // Bugly 异常捕捉
             CrashReport.initCrashReport(application, AppConfig.getBuglyId(), AppConfig.isDebug())
