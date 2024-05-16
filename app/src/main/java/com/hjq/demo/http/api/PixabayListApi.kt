@@ -32,7 +32,7 @@ class PixabayListApi : IRequestServer, IRequestApi {
     @HttpRename("per_page")
     private val PAGE_SIZE = Const.Config.PAGE_SIZE
 
-    private val safesearch = false
+    private val safesearch = true
 
     private val editors_choice = true
 
