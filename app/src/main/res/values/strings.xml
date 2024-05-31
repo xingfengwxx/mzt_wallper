@@ -256,4 +256,10 @@
     <string name="camera_launch_fail">无法启动相机</string>
     <string name="camera_image_error">目标地址错误</string>
 
+    <string name="set_lock_screen_wallpaper">设置锁定屏幕壁纸</string>
+    <string name="set_main_screen_wallpaper">设置主屏幕壁纸</string>
+    <string name="set_all_screen_wallpaper">同时设置</string>
+    <string name="toast_set_wallpaper_success">设置壁纸成功</string>
+    <string name="toast_set_wallpaper_failed">设置壁纸失败</string>
+
 </resources>

@@ -16,6 +16,9 @@
     <!--去除谷歌广告id权限-->
     <uses-permission android:name ="com.google.android.gms.permission.AD_ID" tools:node ="remove" />
 
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
 
     <!-- Application 节点详解：https://developer.android.google.cn/guide/topics/manifest/application-element -->
     <!-- Activity 节点详解：https://developer.android.google.cn/guide/topics/manifest/activity-element -->

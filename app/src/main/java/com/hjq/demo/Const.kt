@@ -30,4 +30,10 @@ object Const {
         const val TYPE_360 = 2
         const val TYPE_PIXABAY = 3
     }
+
+    object ScreenType {
+        const val MAIN = 1
+        const val LOCK = 2
+        const val ALL = 3
+    }
 }

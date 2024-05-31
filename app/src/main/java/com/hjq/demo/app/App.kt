@@ -9,6 +9,7 @@ import android.os.Build
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
+import androidx.multidex.MultiDexApplication
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.Utils
 import com.google.gson.reflect.TypeToken
@@ -42,7 +43,7 @@ import timber.log.Timber
  *    time   : 2018/10/18
  *    desc   : 应用入口
  */
-class App : Application() {
+class App : MultiDexApplication() {
 
     @Log("启动耗时")
     override fun onCreate() {

@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.view.View
 import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import androidx.viewpager2.widget.ViewPager2.OnPageChangeCallback
@@ -28,6 +29,7 @@ import com.hjq.demo.aop.Permissions
 import com.hjq.demo.app.AppActivity
 import com.hjq.demo.http.glide.GlideApp
 import com.hjq.demo.ui.adapter.ImagePreviewAdapter
+import com.hjq.demo.ui.dialog.SetWallpaperDialog
 import com.hjq.permissions.Permission
 import com.hjq.widget.view.FloatActionButton
 import me.relex.circleindicator.CircleIndicator3
@@ -95,7 +97,11 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
 
     private val fabDownload: FloatActionButton? by lazy { findViewById(R.id.fab_download) }
 
+    private val fabSetWallpaper: FloatActionButton? by lazy { findViewById(R.id.fab_set_wallpaper) }
+
     private var curIndex = 0
+
+    private val viewModel: ImagePreviewViewModel by viewModels()
 
     override fun getLayoutId(): Int {
         return R.layout.image_preview_activity
@@ -137,6 +143,10 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
 
         fabDownload?.setOnClickListener {
             downloadImg(images[curIndex]!!)
+        }
+
+        fabSetWallpaper?.setOnClickListener {
+            showSetWallpaperDialog(images[curIndex]!!)
         }
     }
 
@@ -189,11 +199,21 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
             .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.DATA))
             .into(object : CustomTarget<Bitmap>() {
                 override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
-                    val fileName = "IMG_${TimeUtils.millis2String(System.currentTimeMillis(), "yyyyMMdd_hhmmssSSS")}.jpg"
+                    val fileName = "IMG_${
+                        TimeUtils.millis2String(
+                            System.currentTimeMillis(),
+                            "yyyyMMdd_hhmmssSSS"
+                        )
+                    }.jpg"
                     var imgFile = File("${PathUtils.getExternalAppPicturesPath()}/$fileName")
                     ImageUtils.save(resource, imgFile, Bitmap.CompressFormat.JPEG)
 
-                    sendBroadcast(Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.fromFile(imgFile)))
+                    sendBroadcast(
+                        Intent(
+                            Intent.ACTION_MEDIA_SCANNER_SCAN_FILE,
+                            Uri.fromFile(imgFile)
+                        )
+                    )
                     LogUtils.i("保存文件成功：${imgFile.absolutePath}")
 
                     toast("保存图片成功")
@@ -204,4 +224,29 @@ class ImagePreviewActivity : AppActivity(), BaseAdapter.OnItemClickListener {
                 }
             })
     }
+
+    private fun showSetWallpaperDialog(imageUrl: String) {
+        SetWallpaperDialog.Builder(this@ImagePreviewActivity)
+            .setListener(object : SetWallpaperDialog.OnListener {
+                override fun onSelected(type: Int) {
+
+                    GlideApp.with(this@ImagePreviewActivity)
+                        .asBitmap()
+                        .load(imageUrl)
+                        .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.DATA))
+                        .into(object : CustomTarget<Bitmap>() {
+                            override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap>?) {
+                                viewModel.setWallpaper(type, resource)
+                            }
+
+                            override fun onLoadCleared(placeholder: Drawable?) {
+                                // Do nothing
+                            }
+                        })
+                }
+            })
+            .show()
+    }
+
+
 }
